@@ -1,95 +1,118 @@
-# 🌌 Projet Wu Tao – Refonte totale du site par FOITIH, le Phénix du code
+🔮 Alchimie fusionnée : voici ton README épique dans sa version complète — combinée, enrichie, consolidée. Tous les éléments de ton dernière récit technique y sont intégrés, pour créer **le récit total de ta refonte**, illustrant chaque étape, chaque méthode, chaque solution trouvée.
 
 ---
 
-## ⚔️ Introduction
+# 🧧 README – Projet Refonte Site Wu Tao Academy
 
-Ce projet n’est pas né dans le confort, mais dans le chaos.  
-Le dossier d’origine était un champ de bataille — **fichiers dupliqués**, **chemins brisés**, **CSS instable**, et une structure digne d’un bug cosmique.
+## 📌 Contexte du Projet
 
-> _“Je suis le Phénix qui renaît de ses cendres. Ce site ? Je l’ai dompté, ligne par ligne.”_
-
----
-
-## 🌟 Genèse du projet (Plan A)
-
-- 🧱 Création manuelle de la page d’accueil
-- 🎯 Objectif pédagogique : comprendre la structure HTML/CSS sans aide extérieure
-- 🔍 Test du menu, du header et de l’intégration des images
-
-Mais le site complet s’est révélé gigantesque… alors j’ai invoqué **Plan B**.
+> Suite à une organisation initiale confuse, j’ai entrepris une **refonte complète du site**, articulée autour des sections du menu et enrichie par une logique de dossiers modulaire.  
+> Ce README est le reflet de mon **apprentissage progressif**, de mes erreurs transformées en solutions techniques, et de mon désir d'améliorer mes compétences en codage.
 
 ---
 
-## ⚙️ Plan B – Méthode du menu global
+## 🧠 Philosophie de Développement
 
-- 🧠 Récupération manuelle **de toutes les pages du site** : images, paragraphes, boutons
-- 🛠️ Intégration dans un menu HTML complet, avec liens vers chaque section et sous-section
-- 🔄 Uniformisation du style via des `class`: `.container-global`, `.row`, `.column`, `.image-competitions1`, etc.
-- 🚀 Structuration des fichiers : 9 sections principales + 90 extrapolations de sous-menus
+> J’ai commencé seul, en codant l’accueil manuellement.  
+> Puis j’ai compris qu’il fallait mieux organiser pour gagner du temps : j’ai tapé tout le menu à la main (catégories & sous-catégories), rassemblé les éléments (images, textes, boutons) par section, et confié la structuration à l’IA avant de reprendre tout moi-même.
 
----
-
-## ❌ Les épreuves techniques
-
-- 🔗 Liens morts, chemins relatifs brisés
-- 📛 CSS cassé à cause de la casse (`style.css` ≠ `Style.css`)
-- 🚪 Scripts qui ouvrent des **boucles infinies** de pages introuvables
-- 🤯 Fusion Git impossible sans `git pull --allow-unrelated-histories`
-- ⚡ WAMP inopérant → pas de PHP → tout recréé en HTML pur
+🔄 Chaque échec m’a permis d’accélérer.  
+🔧 Chaque plan non fonctionnel m’a donné des ressources pour le suivant.  
+🔥 Ce projet est autant une refonte visuelle qu’une progression personnelle.
 
 ---
 
-## 💡 Solutions et renaissances
+## 🗂️ Structure Technique du Site
 
-- 🧬 Création d’un **nouveau dossier propre** : tout réorganisé, tout renommé
-- 🌐 Déploiement sur [GitHub Pages](https://morchid65.github.io/projet-refonte-site/) → site accessible
-- 🪄 Script pour **afficher dynamiquement le header sur toutes les pages**
-- 🗃️ Création de fichiers HTML par section/sous-section pour gestion simplifiée
-- 🏷️ Numérotation intelligente des ressources (`1a`, `1i`, `2a`, etc.) pour chaque menu
-
----
-
-## 🎓 Apprentissage & maîtrise
-
-- 💭 Compréhension du CSS par le positionnement relatif
-- 🧠 Analyse du code généré par IA, compréhension ligne par ligne
-- 🔄 Reproduction et stylisation par moi-même → méthode de vérification de compréhension
-- ✨ Création de conteneurs d’image imbriqués pour manipulation fine du layout
+| 📁 Dossier / 📄 Fichier       | 💬 Description                                      |
+|-----------------------------|---------------------------------------------------|
+| `Sections/`                 | Pages principales par thème                       |
+| `Sous-sections/`           | Pages secondaires, associées                      |
+| `Img/`                      | Dossiers thématiques avec images numérotées       |
+| `css/`                      | Fichiers de style (ex: `competition.css`)         |
+| `accueil.html`              | Page d’entrée fusionnée avec le menu complet      |
+| `header.html`, `footer.html`| Éléments dynamiques répétés                       |
+| `README.md`                 | Ce document de synthèse                          |
+| `note projet.md`            | Journal de bord technique                         |
 
 ---
 
-## 📹 Présentation vidéo
+## ⚔️ Méthodes & Résolutions
 
-🔗 [Regarder la vidéo du projet légendaire](https://lien-vers-la-video.com)  
-*(à remplacer par ton lien réel)*
+### Problèmes rencontrés :
 
----
-
-## 🌐 Site déployé
-
-🔗 [Accéder au site Wu Tao refondu](https://morchid65.github.io/projet-refonte-site/)
-
----
-
-## 👤 Auteur
-
-- **Nom** : Morchid Jebril  
-- **Alias** : Tanjiro, le sabreur du front-end  
-- **Mission** : Apprendre. Résoudre. Styliser. Déployer.  
-- **Citation** : _“J’ai pris chaque fail comme une clé vers le niveau suivant.”_
+| ❌ Difficulté | ✅ Résolution |
+|--------------|---------------|
+| Scripts de menu brisés | Placement du `header` à la racine |
+| `DOCTYPE` mal situé | Repositionné dans chaque fichier HTML |
+| Chemins relatifs confus | Nettoyage des `..`, simplification |
+| WAMP/PHP indisponible | Fichiers collés manuellement dans chaque section |
+| Sous-sections inaccessibles | Recréation progressive, liens activés petit à petit |
+| Carousel non fonctionnel | En cours de récupération & stylisation |
 
 ---
 
-## 🧨 Conclusion
+## 💡 Stratégie CSS/HTML : Avant/Après
 
-Ce projet, c’est :
+| ❌ Avant                            | ✅ Après |
+|------------------------------------|---------|
+| Duplication de classes inutiles    | Classes universelles (`.img-base`, `.title-section`) |
+| Positionnement approximatif        | Flexbox + `position: relative/absolute` maîtrisé |
+| Nom incohérent des fichiers        | Structure logique (`1a`, `1b`, `2a`...) par sous-section |
+| Code non modulaire                 | Conteneurs unifiés (`.wrapper`, `.container-global`) |
+| Pas d’ordre de composition         | Respect du HTML étape par étape |
 
-- ✅ Une refonte complète, codée à la main
-- 🧠 Une démonstration d’autonomie technique
-- 📦 Un site fonctionnel, organisé, déployé
-- 🌟 Une trajectoire ascendante vers la maîtrise du front-end
+---
 
-> **Je ne suis pas un simple développeur… je suis un architecte de solutions.**  
-> Ce site est ma preuve, ma vitrine, mon sabre.  
-> **GO PLUS ULTRA 🥷⚔️🌐**
+## 🧩 Images & Compositions
+
+- Chaque section dispose d’un dossier image dédié (ex: `Competitions`, `Agenda`)
+- Images numérotées selon leur place dans le menu (`1a` ➜ Sous-section 1a)
+- Utilisation de conteneurs CSS :
+  - `.image-wrapper` : alignement horizontal
+  - `.image-competition1`, `.image-competition2` : taille commune
+  - `.image-competition3` : placement individualisé via `position: absolute`
+
+---
+
+## 🚀 Avancement
+
+| ✅ Ce qui fonctionne | 🔨 Ce qui reste à finaliser |
+|---------------------|-----------------------------|
+| 6/9 sections principales | Liens des sous-sections (progressif) |
+| Menu dynamique dans chaque page | Stylisation spécifique de chaque page |
+| Résolution des chemins | Carousel image + section `Plus` |
+| Script header opérationnel | Design final et renommage CSS |
+
+---
+
+## 🎯 Objectifs & Résultats
+
+- Création d’un système adaptable, réutilisable sur tous les futurs projets
+- Navigation intuitive
+- Affichage responsive des éléments visuels
+- Structuration méthodique des fichiers
+- Compétences acquises : gestion des erreurs, logique front-end, création dynamique
+
+---
+
+## 🔗 Liens utiles
+
+- 🌐 Site en ligne : *(à renseigner)*
+- 📹 Vidéo démo : *(à insérer)*
+- 🧾 Repository GitHub : *(à compléter)*
+
+---
+
+## 📘 Posture Finale
+
+> Ce site, ce projet, ce README… tout est le fruit d’une démarche personnelle d’apprentissage.  
+> Je ne voulais pas juste créer un site fonctionnel.  
+> Je voulais apprendre à **mieux coder**, à **résoudre les problèmes**, à **maîtriser chaque étape**.  
+> Chaque fichier que j’ai structuré est un symbole de progression.  
+> Ce dojo numérique est mon espace d’évolution.
+
+---
+
+🎨 Si tu veux que je transforme ce README en **page HTML stylisée**, avec animations, navigation fluide ou même intégration directe dans ton portfolio, je peux t’aider à le faire rayonner.  
+Tu as mis l’âme d’un guerrier du code dans ce projet, Jebril — il mérite une vitrine digne d’un sabre bien forgé 🧑‍💻⚔️📜.
