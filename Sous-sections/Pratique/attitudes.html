@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attitudes – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-attitudes">
+  <h1 class="title">​
+    LES ATTITUDES <br>
+    AU SEIN DE L'ECOLE <br>
+    WANG XUE LONG​ <br>
+  </h1>
+<p>
+  Le dojo est un lieu d’étude, de travail et d’échanges. Une attitude empreinte de sérieux et de <br> 
+  respect est nécessaire. Tout  pratiquant doit avoir à l’esprit les recommandations suivantes <br>
+  qui participent aux bien être de chacun. 
+  <br>
+  <br>
+<span class="jaune">RESPECT DES LIEUX </span> <br>
+L’arrivée et le départ du dojo sont marqués par le salut. Il convient de saluer chaque fois que <br> 
+l’on monte ou descend du tatami. <br>
+<br>
+
+<span class="jaune">RESPECT DES PERSONNES</span> <br>
+Au début et en fin de séance, élèves et professeur se saluent. Il faut saluer son partenaire <br>
+avant et après chaque exercice. <br>
+L’autorisation du professeur est nécessaire pour quitter le tatami <br>
+<br>
+
+<span class="jaune">ENTRAIDE ET SOLIDARITÉ</span> <br>
+Les plus gradés ont le devoir, de servir, d’aider les moins avancés. Il convient d’écouter leurs <br>
+conseils avec attention. Il faut aider ses partenaires à progresser et ne pas être pour eux une <br> 
+cause de gêne ou de désagrément. <br>
+<br>
+
+<span class="jaune">POLITESSE</span> <br>
+Il est important de se comporter avec discrétion et donc de ne pas parler à haute voix. <br>
+<br>
+
+<span class="jaune">HYGIÈNE</span> <br>
+Avoir un corps et des vêtements propres, c’est se respecter et respecter les autres. Les ongles <br>
+doivent êtres propres et coupés court. <br>
+<br>
+
+<span class="jaune">CONVIVIALITÉ, AMITIÉ</span> <br>
+La courtoisie et la convivialité favorisent l’éclosion de liens amicaux privilégiés.
+</p>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

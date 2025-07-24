@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Horaires & Inscriptions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Horaires / Inscriptions -->
+    <section class="horaires-section">
+      <div class="colonne">
+      <div class="image-texte-container">
+            <img class="image-horaires rounded-image" src="/Img/Horaires et Inscriptions/1f.avif" alt="Horaires des cours">
+         <p class="text-standard5">
+          <span class="h1" style="color: #d3f60e; display: block; font-weight: 600;">HORAIRES DES COURS 2023/2024</span>
+          <span style="color: #e74c3c; display: block;">Enfants Groupe 1 (5 - 10 ans)</span>
+          <span style="color: #f5b041; display: block;">Mercredi 18h à 19h (dojo, 1er étage)</span>
+          <span style="color: #e74c3c; display: block;">Enfants Groupe 2 (5 - 10 ans)</span>
+          <span style="color: #f5b041; display: block;">Jeudi 18h-19h (dojo, 1er étage)</span>
+          <span style="color: #e74c3c; display: block;">Adolescents (11 à 15 ans)</span>
+          <span style="color: #f5b041; display: block;">Mercredi 19h - 20h30 (dojo, 1er étage)</span>
+          <span style="color: #e74c3c; display: block;">Tai Chi (à partir de 12 ans)</span>
+          <span style="color: #f5b041; display: block;">Jeudi 19h à 20h (dojo, 1er étage)</span>
+          <span style="color: #e74c3c; display: block;">Kung Fu Adultes (à partir de 16 ans)</span>
+          <span style="color: #f5b041; display: block;">Jeudi 20h à 21h30 (dojo, 1er étage)</span>
+          <span style="color: #e74c3c; display: block;">Self-Défense Femmes</span>
+          <span style="color: #f5b041; display: block;">Mercredi 20h30-21h30 (dojo, 1er étage)</span>
+</p>
+</div>
+
+<div class="image-container">
+  <img class="image-inscription rounded-image" src="/Img/Horaires et Inscriptions/2f.avif" alt="Procédure d'inscription">
+  <img class="image-inscription2 rounded-image" src="https://static.wixstatic.com/media/cf687c_a7eefa108cff49308b9d7f9d401ca6e1~mv2.jpg/v1/fill/w_356,h_280,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/107827907_10158428186049518_796543328327.jpg" alt="Procédure d'inscription">
+</div>
+</div>
+
+
+
+      <p class="text-standard6">
+        <span style="color: #e1d709; display: block;">Des cours supplémentaires (gratuits), peuvent être donnés dans la nature</span>
+        <span style="color: #e74c3c; display: block;">LES HORAIRES ET JOURS DE COURS PEUVENT ÊTRE MODIFIÉS SELON LES <br>PROTOCOLES SANITAIRES</span>
+      </p>
+
+
+    </section>
+  </main>
+
+  <!-- Pied de page injecté -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

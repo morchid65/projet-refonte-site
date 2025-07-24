@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multimédias – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-multimedia">
+  <div class="containeur-global-centre-row2">
+    <img class="border-grey" src="https://static.wixstatic.com/media/cf687c_86ed039e66784e2c83835f857a4c0e4e~mv2_d_2428_1966_s_2.jpg/v1/fill/w_306,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20180811_151123.jpg" alt="Multimédia 1">
+    <img class="gris-clair" src="https://static.wixstatic.com/media/cf687c_7abb23c8ffde4522a58ed961187e2324~mv2_d_2322_2911_s_2.jpg/v1/fill/w_457,h_573,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20180811_112020.jpg" alt="Multimédia 2">
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

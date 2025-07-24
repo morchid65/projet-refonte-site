@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Organisation du pratiquant – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-organisation">
+  <h1 class="title-main">L'organisation  du pratiquant (conseils)</h1>
+  <div class="text-image6">
+  <p class="p7">
+    Lors de la pratique du Wu Tao, il est nécessaire d'e s'équiper d'un sac de sport, que <br>
+    ce soit pour les adultes que pour les enfants !!! <br>
+    En effet chez les enfants, l'organisation du sac de sport permet une <br>
+    responsabilisation de leurs materiels (tenues, armes, bouteille d'eau....).​ <br>
+    De plus le fait d'arriver et de repartir en tenue peu poser problème surtout <br>
+    en hiver car la transpiration peu imbiber les vêtements de pratique et ainsi faire un <br>
+    choc thermique lors de la sortie de l'enfant de la salle de sport.... <br>
+    Un Sac de sport doit comporter : <br>
+    La tenue, une bouteille d'eau, une petite serviette, une barre de céréale (le cas d'un <br>
+    coup de fatigue !!)
+    
+ <br> <br> <br>
+
+L'hydratation <br>
+
+Nos dépenses quotidiennes en eau : <br>
+
+​L’adulte sédentaire dépense 2 à 3 litres d’eau par jour. L’élimination se fait par les urines (1 à 1,5 litres), la <br>
+respiration (300 à 600 ml), la sudation au repos (400 à 1000 ml), les selles (50 à 200 ml). Ces pertes sont <br>
+compensées pour moitié par l’alimentation et pour moitié par absorption d’eau. Dans le cas d’une pratique <br>
+sportive, la sudation représente la plus grosse perte en eau. Elle peut atteindre plusieurs litres par heure ! <br>
+Dans ces conditions, s’hydrater devient vital.​ <br>
+Les risques liés à la déshydratation <br>
+
+En cas de déshydratation, des contractures musculaires peuvent apparaître, puis sur le long terme des <br>
+tendinites.
+
+﻿
+  </p>
+  <div class="image-container7">
+    <img class="radius" src="https://static.wixstatic.com/media/cf687c_c1db82281ae35b85624db59a5c4a7003.jpg/v1/fill/w_172,h_122,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_c1db82281ae35b85624db59a5c4a7003.jpg" alt="Équipement du pratiquant">
+    <img src="https://static.wixstatic.com/media/cf687c_874b20b11eae5011e30551527035952c.jpg/v1/fill/w_85,h_126,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_874b20b11eae5011e30551527035952c.jpg" alt="Hydratation et récupération">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

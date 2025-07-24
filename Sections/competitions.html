@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Compétitions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Compétitions -->
+    <section class="section-competitions">
+      <div class="image-container">
+
+        <div class="image-wrapper">
+          <img class="image-competition1 rounded-image" src="/Img/Compétitions/page1/1.avif" alt="Compétition 1">
+          <img class="image-competition2 rounded-image" src="https://static.wixstatic.com/media/cf687c_6169b34b25ab43b499f9c4ba1d858110~mv2.jpg" alt="Compétition 2">
+        </div>
+
+        <img class="image-competition3 rounded-image" src="https://static.wixstatic.com/media/cf687c_0eacfa89f93047bea9dfc59ef12ce6d1~mv2.jpg" alt="Compétition 3">
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

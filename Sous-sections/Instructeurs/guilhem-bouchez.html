@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guilhem Bouchez – Instructeur Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/instructeurs.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-guilhem-bouchez">
+
+<p class="p1">
+<strong class="align-center">NOM INSTRUCTEUR</strong> <br>
+<strong class="align-center">Guilhem Bouchez </strong><br>
+<br>
+<h1 class="h1">PRATIQUES <br> Ceinture Noire 1 Duan (FFAEMC)</h1> 
+
+​
+<h1 class="h1">PRATIQUES</h1>
+<p class="p1">
+- 9  ans de TAEKONDO (Ceinture rouge deux barrettes) <br>
+
+- 2012 à  aujourd'hui pratique KUNG-FU Sino-vietnamien (WU DAO - WU TAO WANG XUE LONG) <br>
+
+- 2012 à aujourd'hui pratique TAI-CHI Style Chen <br>
+</p>
+​
+
+​
+<h1 class="h1">AUTRES</h1> <br>
+<p class="p1">
+Depuis 2018 Assistant instructeur (Ecole wu tao wang xue long) <br>
+</p>
+
+</p>
+  <div class="image-container">
+    <img class="image-instructeur rounded-image" src="https://static.wixstatic.com/media/cf687c_dc310fec60444cf5b7556fb2440b09f0~mv2.jpg/v1/fill/w_328,h_328,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20220623-WA0007.jpg" alt="Guilhem Bouchez">
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

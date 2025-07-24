@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Kung-Fu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Kung-Fu Présentation -->
+    <section class="kungfu-section">
+      <h1 class="title-main2">Présentation</h1>
+
+      <div class="content-wrapper">
+        <div class="text-container">
+          <p class="text-standard">
+            De racine sino-vietnamienne, le WU TAO associe terminologie chinoise : <br><br>
+            <strong>WU</strong> désigne, le chiffre 5<br>
+            <strong>TAO</strong> : désigne, la voie<br>
+            <strong>WU TAO</strong> signifie, les 5 voies<br><br>
+
+            <u>Cela fait référence à une légende :</u><br><br>
+
+            5 maîtres, chacun spécialisé dans l’étude d’une arme, décidèrent de se transmettre leur savoir respectif afin d’élargir leur connaissance de<br>
+            la pratique martiale.<br><br>
+
+            Ces 5 armes sont le corps (pieds-poings…), le fléau, le bâton, le sabre et …l’esprit (la philosophie, la sagesse).<br>
+            Le WU TAO aborde un travail global du corps et une double approche :<br><br>
+
+            <strong>Externe</strong> et <strong>Interne</strong>, en fait une discipline complète accessible tant aux enfants qu’aux adultes, aux femmes qu’aux hommes.
+            La pratique sollicite l’intégralité du corps et n’oublie pas d’associer le mental, l’esprit à ce travail. Les dissocier serait inconcevable.<br><br>
+
+            <u>La partie externe comprend :</u><br><br>
+
+            Des exercices d’échauffement : renforcement musculaire et assouplissement, cardio, coordination, déplacement, équilibre…<br>
+            des techniques à deux défensives et offensives très variées : poings, pieds, avec des spécificités de piques, balayages, clefs, casses, ciseaux…<br>
+            des enchaînements codifiés, le maniement des armes : fléau, bâton, sabre, des assauts conventionnels ou souples<br><br>
+
+            <u>La partie interne</u> est développée par son Tai chi de style Chen : enchaînements, mains collées, respiration, décontraction...<br><br><br><br>
+
+            Le WU TAO lie les deux aspects et c'est pour cela qu'il est très complet… il développe l'harmonie du corps et de l’esprit.
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img class="image-kungfu rounded-image centered-image" src="https://static.wixstatic.com/media/cf687c_9c26f7bdb27440a7a83b80e8762304f3~mv2.jpg" alt="Wu Tao Kung-Fu">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

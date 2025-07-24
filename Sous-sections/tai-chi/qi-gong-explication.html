@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Qi Gong – Explication</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/tai-chi.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-qi-gong-explication">
+
+  <div class="texte">
+      <h1 class="h1">LE QI CONG</h1>
+
+      <p class="texte-qigong">
+        Explication : <br>
+        Le qi gong est une discipline visant à maîtriser le souffle, ou énergie vitale (le “qi”, se <br> prononçant <span class="jaune">“tchi”</span>, <span class="jaune">“gong”</span> signifiant travail). <br><br>
+
+        Le qi comprend 2 courants d’énergie opposés, yin (froid), et yang (chaud), dont <br> l’équilibre peut être perturbé en raison de dysfonctionnements internes et de causes <br> externes. 
+        Il faut alors le rétablir pour se soigner, l’idéal étant de pratiquer le qi gong <br> pour prévenir les maladies et renforcer le système immunitaire. <br>
+
+        Avec le Tai-chi-chuan (un art martial), il forme l’un des 5 aspects de la médecine <br>chinoise. 
+        Il s’appuie sur l’un de ses principes : la circulation du souffle selon les <br> méridiens du corps, pour maintenir son équilibre énergétique et la santé des organes. <br>
+        Sa pratique consiste en l’exécution de mouvements lents, synchronisés avec la <br> respiration abdominale. <br><br>
+
+        Le qi gong entraîne la concentration et renforce la maîtrise de son corps grâce à une <br> gestuelle variée, au maintien de postures immobiles, d’étirements et de moments de <br> visualisation.
+        Son objectif est de parvenir à l’harmonie corporelle et mentale. <br><br>
+
+        Pour le pratiquer, pas d’impératif de condition physique. 
+        Le qi gong est accessible <br> aux débutants de tous âges, seniors, personnes handicapées, enfants et adultes.
+      </p>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

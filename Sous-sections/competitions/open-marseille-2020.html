@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open Marseille 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-marseille-2020">
+  <h1 class="titre">Open Marseille 2020</h1>
+
+<div class="containeur-image2">
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_72eb14e0ffa54719a3efc6019bfc9fd9~mv2.jpg/v1/fill/w_205,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1528_JPG.jpg" alt="">
+      <p>
+    Première place en Tai Chi  Style Chen <br>
+    Mains nues
+  </p>
+ <img class="border-white" src="https://static.wixstatic.com/media/cf687c_7fdfda00ac3a4930a6e1baf75e4ac32b~mv2.jpg/v1/fill/w_255,h_114,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1531_JPG.jpg" alt="">
+</div>
+
+<div class="containeur-image2">
+    <img class="border-white position-right" src="https://static.wixstatic.com/media/cf687c_c8cd6a25b7b74b6795c55a1e0e181c1c~mv2.jpg/v1/fill/w_200,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1554_JPG.jpg" alt="">
+
+  <p>
+    Première place en Duilian avec <br>
+    Hugo Hervel <br>
+  </p>
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_cf5bf73585e249fe84edbe0fd3001cfe~mv2.jpg/v1/fill/w_172,h_193,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1539_JPG.jpg" alt="">
+</div>
+
+<div class="containeur-image2">
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_4d3951fefc1b446194baf05e27589365~mv2.jpg/v1/fill/w_347,h_159,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1593_JPG.jpg" alt="">
+    <p>
+    Première place en Tai Chi <br>
+    Style Chen - Epée <br>
+  </p>
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_4df0e5684a2d40eaaca1fc28358d8d26~mv2.jpg/v1/fill/w_230,h_145,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1577_JPG.jpg" alt="">
+</div>
+
+
+
+
+
+<div class="containeur-image3">
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_4cd7d1971f974e6d8d3f04ddaed4f8cd~mv2.jpg/v1/fill/w_154,h_230,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1630_JPG.jpg" alt="">
+    <div class="flex-start-row">
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_941a110cce7c4056a44dfde42cdacc43~mv2.jpg/v1/fill/w_102,h_331,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1623_JPG.jpg" alt="">
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_baa67ddff1d94cf6a3536dafadd2b810~mv2.jpg/v1/fill/w_105,h_266,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/PODIUM%20DUILIAN_JPG.jpg" alt="">
+</div>
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

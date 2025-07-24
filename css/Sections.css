@@ -1,0 +1,389 @@
+.image-agenda {
+    border-radius: 50%;    
+    display: block;
+    margin: auto;
+    border: 3px solid #fff;
+
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 900px;
+    left: 20px; /* Décalage horizontal */
+}
+
+.image-agenda {
+    object-fit: contain; /* Garde l’image intacte */
+}
+
+.agenda-title {
+    font-size: 40px;
+    color: rgb(223, 3, 3);
+}
+
+
+
+
+
+.text-standard {
+    left: 787px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+    align-items: left;
+    font-size: 21px;
+    line-height: 1.5;
+    margin: auto;
+    text-align: left;
+    color: #fff; /* Couleur du texte */
+    padding: 0px; /* Ajoute un peu d'espace autour du texte */}
+
+.self-defense-section {
+    display: flex;
+    justify-content: center;
+}
+
+.title-main1 {
+    font-size: 75px;
+    text-align: center;
+    font-weight: 100; /* Correction */
+    left: 20px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+    color: rgb(139, 221, 32);
+    margin-bottom: 5px; /* Espace entre le titre et le texte */
+}
+
+
+.self-defense-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-right {
+    width: 30%;
+    display: flex;
+    right: 200px; /* Décalage horizontal */
+    position: relative;
+    border: #fff solid 6px; /* Bordure de l'image */
+}
+
+.image-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    left: 250px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+}
+
+.image-self-defense {
+    width: 600px; /* Ajuste la taille de l’image à droite */
+}
+
+.image-self-defense2 {
+    width: 500px; /* Image en bas */
+    border-radius: 50%;
+    border: 7px solid #fff;
+    height: auto;
+
+}
+
+
+
+
+
+.title-main2 {
+    text-align: left;
+    color: #fff;
+    font-size: 35;
+    font-weight: 10;
+}
+
+.kungfu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text-container {
+    width: 65%;
+    text-align: left;
+}
+
+.image-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-kungfu {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 900px;
+    border: 7px solid #fff;
+    position: relative;
+    left: 400px;
+}
+
+
+
+
+
+
+.title-main-3 {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-weight: 550; 
+    left: 90px;
+    margin-top: 100px; /* Espace au-dessus du titre */
+    position: relative;
+}
+
+/* Image principale positionnée à gauche */
+.image-tai-chi1 {
+    width: 100%;
+    max-width: 376px; /* Ajuste la taille de l’image */
+    border: 7px solid #fff;
+    float: left;
+    left: 772px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+    top: 1px; /* Espace en bas de l'image */
+
+}
+
+/* Image de grande taille */
+.image-tai-chi2, .image-tai-chi3 {
+    width: 950%;
+    max-width: 700px; /* Ajuste la taille de l’image */
+    border: 7px solid #fff;
+    height: auto; /* Garde les proportions de l’image */
+    align-items: flex-start;
+}
+
+.image-tai-chi2 {
+    margin-right: 50px; /* Crée un espace entre les deux images */
+    margin-top: 80px; /* Espace en haut de l'image */
+    max-width: 600px; /* Ajuste la taille de l’image */
+    height: auto; /* Garde les proportions de l’image */
+    left: 795px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+}
+.image-tai-chi3 {
+    margin-left: 875px; /* Crée un espace entre les deux images */
+}
+
+
+/* Alignement général du texte et des images */
+.content-wrapper1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    width: 88%;
+    text-align: center;
+    line-height: 1; /* Ajuste l'espacement entre les lignes */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+
+
+
+
+.image-texte-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: 20px;
+    padding: 50px;
+}
+
+.text-standard5 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 100;
+}
+
+
+.horaires-section {
+    background-color: #222;
+    padding: 20px 10px;
+    margin: 0px 500px;
+    flex-direction: row;
+}
+
+.colonne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-horaires {
+    border: 7px solid #222;
+    margin-top: 50px;
+}
+
+.image-inscription {
+    border: solid 4px #fff;
+    position: relative;
+    margin-left: 200px;
+}
+
+.image-inscription2 {
+    border: solid 8px #222;
+    position: relative;
+    margin-left: 300px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;                 /* Espacement naturel entre les deux images */
+}
+
+
+
+
+
+
+
+
+.h3 {
+    color: rgb(166, 3, 3);
+    text-align: center;
+    font-size: 25px;
+}
+
+.section-pratique {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;      /* Centre les images horizontalement */
+  align-items: flex-start;      /* Permet le décalage vertical */
+  gap: 100px;                    /* Gère l’espace entre les images */
+  width: 100%;
+  margin-bottom: 200px;          /* Espace en bas de la section */
+}
+
+.image-pratique,
+.image-pratique2 {
+  width: 300px;
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  display: block;               /* Supprime l’espace blanc sous l’image */
+  margin: 0;                    /* Supprime les anciens margin-left/right */
+}
+
+.image-pratique {
+  border: 4px solid #fff;
+}
+
+.image-pratique2 {
+  border: 4px solid #222;
+  margin-top: 200px;             /* Décalage vertical géré uniquement ici */
+}
+
+
+
+
+.image-instructeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border : 4px solid #fff;
+    border-radius: 50%; /* Ajuste la bordure pour un effet arrondi */
+}
+
+.title-main {
+    font-size: 50px;
+}
+
+.image-container0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(161, 160, 160);
+    padding: 200px 50px;
+    margin: 0px 700px;
+}
+
+.section-instructeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 250px;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Permet le décalage vertical */
+    gap: 20px; /* Espace entre les images */
+    right: 100px; /* Décalage horizontal */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+}
+
+.image-competition3 {
+    width: 100%;
+    max-width: 300px; /* Ajuste la taille de l’image */
+    border: 7px solid #fff;
+    margin-top: 80px; /* Espace en haut de l'image */
+}
+
+
+.image-competition1, .image-competition2 {
+    border: #222 solid 4px; /* Bordure de l'image */
+}
+
+.image-wrapper {
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: flex-end; /* Centre les images verticalement */
+    gap: 40px; /* Espace entre les images */
+}
+
+.image-competition2 {
+    position: absolute; /* Permet de superposer les images */
+    top: 310px; /* Ajuste la position verticale */
+    right: 20px; /* Ajuste la position horizontale */
+    width: 700px; /* Ajuste la taille de l’image */
+    height: auto; /* Garde les proportions de l’image */
+}
+
+.image-competition1 {
+    position: relative; /* Permet de superposer les images */
+    right: 220px; /* Ajuste la position horizontale */
+}
+
+.image-competition1{
+    width: 500px;
+    height: auto; /* Garde les proportions de l’image */
+    margin-top: 20px; /* Espace en haut de l'image */
+}

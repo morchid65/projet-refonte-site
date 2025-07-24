@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salut – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section>   
+  <div class="text-image">    
+    <div class="text">
+  <h1 class="title">Le simple salut du tigre et du dragon​​</h1>
+  <p class="texte-strict">
+​
+Le salut est un élément essentiel de la pratique car il permet d'ouvrir une porte vers le monde intérieur. La particularité des Arts du <br>
+Poing, ou Arts Chevaleresques, que l'on nomme improprement arts martiaux, avec ou sans majuscules, est de se référer à une <br>
+tradition généralement issue d'Extrême Orient. Or, que ce soit en Chine, au Japon, en Corée, au Vietnam, en Inde, en Malaisie, en <br> 
+Indonésie, en Thaïlande et dans tous les autres pays concernés, cette tradition inclut nécessairement le rituel du salut. Et le salut <br> 
+est l'ultime marque de respect envers cette tradition. Il est le rituel de passage entre l'être vulgaire, celui qui ne sait pas, et I’ initié <br>
+ou, du moins, celui qui cherche à savoir et à progresser sur la Voie et dans une voie issue d'Extrême 0rient. Il est également le rituel <br> 
+de passage entre un lieu vulgaire, où l'on peut faire n'importe quoi, et un lieu consacré à la pratique et à |'étude de la Voie. <br> <br>
+​
+Dans la tradition il permet à la fois de se purifier soi-même et de purifier le lieu de la pratique. Le salut est un rituel mais aucun rituel <br>
+ne peut avoir lieu sans salut. Il est donc un rituel essentiel. <br> <br>
+​
+Il est malheureusement souvent oublié, négligé, critiqué puisque cette notion de rituel fait peur. En latin classique « ritus ›› signifie <br>
+simplement « selon la règle ›› et implique une notion de rectitude, de droiture. Il n'est donc pas ici question de religion ou de  <br>
+mais simplement de respecter une règle. Étymologiquement celle ou celui qui ne la respecte pas devient « per-versus » puisqu'il se <br>
+situe en dehors ou à côté de cette règle ce qui, de tous temps et en tous lieux, à été considéré comme perturbateur. ll semble qu'iI <br>
+soit préférable d'accepter de se rectifier afin, simplement, d'emprunter la Voie. <br> <br>
+​
+Le Daodejing (Tao Te King) de Laozí (Lao Tseu) explique simplement: « Lorsqu'un être évolué (Zhengren -littéralement être qui a <br>
+trouvé la rectitude) entend parler de la Voie, il la suit simplement. Lorsqu'un être éduqué entend parler de la Voie tantôt il la suit, <br>
+tantôt il s'en écarte. Lorsqu'un crétin (Xiaoren - littérallement "petit être " ou "homme de rien ") entend parler de la Voie, il éclate de <br>
+rire. Si le crétin n'éclatait pas de rire en entendant parler de la Voie, la Voie ne serait plus la Voie. ›› <br> <br>
+​
+Il existe plusieurs saluts (Jingli). <br> <br>
+​
+Le grand salut implique cinq respects particuliers: <br>
+le respect de la pratique; <br>
+    le respect de l'outil de la pratique (arme ou bâton...); <br>
+    le respect de l'espace de la pratique (lieu de la pratique); <br>
+    le respect de |'enseignant; <br>
+    le respect des pratiquants; <br>
+    éventuellement, en cas de démonstration, le respect du public (élément extérieur). <br>
+Il représente donc un cycle complet. <br>
+</p>
+
+</div>
+  <div class="image-container">
+    <img class="img" src="https://static.wixstatic.com/media/cf687c_c18e0d81b7fe946e5157755af908a435.jpg/v1/fill/w_156,h_131,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_c18e0d81b7fe946e5157755af908a435.jpg" alt="Salut Tigre et Dragon">
+    <img src="https://static.wixstatic.com/media/cf687c_a3dcb3147839316893025dbc2557349a.jpg/v1/fill/w_160,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_a3dcb3147839316893025dbc2557349a.jpg" alt="Respect et tradition">
+  </div>
+</section>
+
+
+
+
+
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

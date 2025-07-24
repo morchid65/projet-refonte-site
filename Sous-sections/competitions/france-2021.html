@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat de France 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-france-2021">
+  <div class="containeur-global2">
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_83c5091082a1481697e873075e6b1a82~mv2.png/v1/fill/w_523,h_285,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG%20FRANCE.png" alt="Championnat de France 2021">
+  </div>
+
+  <div class="texte-image-ligne">
+    <img src="https://static.wixstatic.com/media/cf687c_19c0e4737f944c8d965bddc2c4fef839~mv2.png/v1/fill/w_362,h_279,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DIPLOME%20TAIJI%20FRANCE%202021.png" alt="Diplôme Taiji France 2021">
+<div>
+<p class="paragraphe-jaune-left">
+  3 -ème Place Tai chi mains nues : catégorie Vétérans 1 et 2  <br>
+  (35-55 ans) soit, <br>
+  1 Place catégorie Vétérans 2 (52 ans) <br>
+</p>
+<p class="paragraphe-khaki-left">
+  3 -ème Place Tai chi épée : catégorie Vétérans 1 et <br>
+  2  (35-55 ans) soit, 1 Place catégorie Vétérans 2 (52 ans) <br>
+</p>
+<p class="paragraphe1">
+Vétéran 1 :35-45 ans / Vétérans 2 : 45-55 ans
+</p>
+</div>
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

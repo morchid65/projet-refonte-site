@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open de France 2020 – E-Competition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-france-2020">
+  <h1 class="titre">Open de France 2020 E-Competition</h1>
+  <div class="containeur-image2">
+  <div class="texte-image-colonne">
+<p class="paragraphe-align-left">
+  <strong class="paragraphe-vert">Résultats Tai chi</strong> <br>
+- <strong class="jaune2">Senior</strong> : 3 -ème place Hugo Hervel (mains nues) <br>
+- <strong class="jaune2">Vétéran 1-2</strong> : <br>
+* 3 ème place Christian Michaud (mains nues) - 1 er Vétéran 2 <br>
+* 4 ème place Christian Michaud (épée) - 1 er Vétéran 2 <br>
+- <strong class="jaune2">Vétéran 3-4</strong> <br>
+* 5 ème place Josiane Rosay (mains nues) - 2 ème Vétéran 4 <br>
+<br>
+<br>
+<strong class="paragraphe-vert">Résultat Kung-Fu - Wushu</strong> <br>
+- <strong class="jaune2">Vétéran 1-2</strong> : 3 ème place Christian Michaud (Tri <br> 
+bâton- arme flexible) - 1 er Vétéran 2
+</p>
+    <img src="https://static.wixstatic.com/media/cf687c_dc33e6676b91455c9b8996afaf0939ea~mv2.jpg/v1/fill/w_596,h_323,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/OPEN%20FRANCE%20FFK.jpg" alt="">
+
+  </div>
+
+  <div class="containeur-global2">
+    <img src="https://static.wixstatic.com/media/cf687c_bf70db229e8d41eda3baa3c128ab0d81~mv2.png/v1/fill/w_308,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TAI%20CHI%20HUGO_PNG.png" alt="Tai Chi Hugo">
+    <img src="https://static.wixstatic.com/media/cf687c_bf70db229e8d41eda3baa3c128ab0d81~mv2.png/v1/fill/w_308,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TAI%20CHI%20HUGO_PNG.png" alt="Tai Chi Hugo">
+    <img src="https://static.wixstatic.com/media/cf687c_bf70db229e8d41eda3baa3c128ab0d81~mv2.png/v1/fill/w_308,h_214,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/TAI%20CHI%20HUGO_PNG.png" alt="Tai Chi Hugo">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

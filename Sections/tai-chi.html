@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Tai Chi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté dynamiquement -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Tai Chi Présentation -->
+    <section class="tai-chi-section">
+      <h1 class="title-main-3">WU TAO TAI CHI Forme Chen</h1>
+
+      <div class="content-wrapper1">
+        <img class="image-tai-chi1 rounded-image" src="/Img/Kung-Fu/1.avif" alt="Tai Chi">
+
+        <div class="text-container">
+          <p class="text-standard">
+            Dérivé des arts martiaux, le Tai-Chi est une discipline corporelle d’origine chinoise comportant un ensemble de mouvements<br>
+            continus et circulaires exécutés avec lenteur et précision dans un ordre préétabli. Il met aussi l’accent sur la maîtrise de<br>
+            la respiration. La pratique vise entre autres à améliorer la souplesse, à renforcer le système musculosquelettique et à maintenir<br>
+            une bonne santé physique, mentale et spirituelle.<br><br>
+
+            Le style Chen est le plus ancien et le parent des cinq styles traditionnels de Tai Chi Chuan. Il est le troisième style en termes de<br>
+            popularité mondiale. Il se caractérise par ses postures plus <strong>basses</strong>, ses « <strong>enroulements de soie</strong> » <br> (chan si jin) et ses éclats explosifs (fa jin).<br>
+            Même si le Tai Chi style Chen reste une discipline proche de l'art martial, il peut être enseigné à tout public. Mettant de côté les <br> moments "explosifs",
+            ce style s’adapte aussi bien aux personnes à mobilité réduite qu’aux personnes âgées.<br><br>
+
+            Son approche au sein de l'école est progressive (mouvement par mouvement) et adaptée aux personnes, afin que tous les <br> pratiquants puissent trouver leur "équilibre".<br><br>
+
+            L’instructeur de l’école suit des formations aussi bien avec les moines du Temple de Shaolin qu’avec l’équipe de Chine de Tai Chi<br>
+            ou avec M. Todeschini Damien, international de Tai Chi.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-images">
+        <img class="image-tai-chi2 rounded-image" src="https://static.wixstatic.com/media/cf687c_cb7c0e984eb54aa4808d2a58300c6f69.jpg" alt="Tai Chi Entraînement">
+        <img class="image-tai-chi3 rounded-image" src="/Img/Kung-Fu/2.avif" alt="Tai Chi Mouvements">
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté dynamiquement -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

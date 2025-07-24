@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open National Kung-Fu 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-national-kungfu-2021">
+
+<div class="containeur-global-ligne">
+<div class="containeur-image-colonne">
+    <div class="flex-start">
+    <img src="https://static.wixstatic.com/media/cf687c_aeb2ec2ee366426d8ac44edde5339021~mv2.png/v1/fill/w_288,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/armes%20courtes.png" alt="Open National Kung-Fu 2021">
+    </div>
+  <div class="flex-end">
+    <img src="https://static.wixstatic.com/media/cf687c_aeb2ec2ee366426d8ac44edde5339021~mv2.png/v1/fill/w_288,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/armes%20courtes.png" alt="Open National Kung-Fu 2021">
+  </div>
+</div>
+
+  <div class="containeur-global-ligne">
+  <div>
+  <img src="https://static.wixstatic.com/media/cf687c_4fe6c78a65824cf780e60a5567daa145~mv2.jpg/v1/fill/w_382,h_542,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/open_de_kung_fu_national_1.jpg" alt="">
+  </div>
+  <div>
+
+  <div>
+      <p class="paragraphe1">
+        <u>Résultats : </u><br>
+        3 -ème place pour : <br> 
+          - Taolu mains nues <br>
+          - Taolu sabre <br>
+          - Taolu Tri bâton <br>
+      </p>
+    <img src="https://static.wixstatic.com/media/cf687c_aeb2ec2ee366426d8ac44edde5339021~mv2.png/v1/fill/w_288,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/armes%20courtes.png" alt="Open National Kung-Fu 2021">
+   </div>
+   </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Septembre 2023</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/sous-section-agenda.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth = location.pathname.split('/').length - 2;
+    const path = '../'.repeat(depth) + 'header.html';
+    fetch(path)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-septembre">
+  <div class="wrapper">
+    <h1 class="title-main">
+      Journée des <br> Associations
+      <p class="text-standard">
+        Dimanche 10 septembre 2023 <br>
+        sur le cours du 4-septembre <br>
+        (10h30 à 17h30).
+      </p>
+    </h1>
+  </div>
+
+  <div class="images-independantes">
+    <div class="bloc-association">
+      <img class="association" src="https://static.wixstatic.com/media/cf687c_50fa7f9006ff4067afd4ff6dcadd2c29~mv2.jpg/v1/fill/w_229,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/thumbnail_V3%20Affiche%20Forum%20Rubik's%20Cube.jpg.jpg" alt="association">
+    </div>
+    <div class="bloc-wutao">
+      <img class="wutaoacademy" src="https://static.wixstatic.com/media/cf687c_856ad34c62874b92ab05d376a7739697~mv2.png/v1/fill/w_596,h_490,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/affiche%20numerique.png" alt="">
+    </div>
+  </div>
+
+
+
+    
+    <div class="schedule">
+
+      <h2 class="title-sub"><span class="venez">VENEZ</span> Découvrir notre Art avec nos démonstrations</h2>
+      <h3 class="title-event">DÉBUT DES COURS 2023</h3>
+    </div>
+
+      <div class="schedule2">
+        <h1 class="p0"><strong>MERCREDI 6 SEPTEMBRE</strong></h1>
+        <p class="p1">18 H Enfants (groupe 1) - 19 H Adolescents - 20h30 Sabre Laser / Duan Bing</p>
+        <p class="p2"><strong>JEUDI 7 SEPTEMBRE</strong></p>
+        <p class="p3">18 H Enfants (groupe 2) - 19 H Tai chi - 20 H Kung Fu Adultes</p>
+      </div> 
+  </section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

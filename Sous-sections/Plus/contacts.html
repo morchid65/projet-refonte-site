@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacts – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-contacts">
+<div class="containeur-global-centre-row">
+<div class="containeur-global-centre-column">
+    <div class="flex-end-row2">
+<p class="text-align-left">
+   <strong>Téléphone :</strong> 06 03 21 41 23 (HR) <br>
+   <strong>Instructeur :</strong> Christian Michaud <br>
+   Réseau FACEBOOK (cliquez sir l'icône) <br>
+</p>
+<!-- Icône Facebook stylisée comme bouton -->
+ <a href="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e316f544f9094143b9eac01f1f19e697.png">
+  <img src="/Img/Plus/Facebook.avif">
+</a>
+</div>
+  <form>
+    <p style="font-size: 17px; font-weight: 100;">Pour nous laisser un message</p>
+    <input type="text" id="name" name="name" placeholder="Nom*" required>
+<br>
+<br>
+    <input type="email" id="email" name="email" placeholder="Email*" required>
+<br>
+<br>
+    <input type="text" id="subject" name="subject" placeholder="Subject">
+<br>
+<br>
+    <textarea id="message" name="message" placeholder="Message"></textarea>
+<br>
+    <button class="btn2" type="submit">Envoyer</button>
+    
+  </form>
+</div>
+  <div cl>
+    <img class="border-grey size-img" src="https://static.wixstatic.com/media/cf687c_d6ce92fb5d6ec3feae91ebef8d91cc68.jpg/v1/fill/w_396,h_266,al_c,lg_1,q_80,enc_avif,quality_auto/cf687c_d6ce92fb5d6ec3feae91ebef8d91cc68.jpg" alt="">
+    <p class="size-paragraphe2">
+      Dojo  du Gymnase Gaston Rebuffat,​ <br>
+      complexe sportifs des Artauds, <br>
+      quartier des Artauds, 13390 AURIOL <br>
+    </p>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* 🎨 Configuration du texte */
+font-family: Arial, sans-serif; /* Définition de la police principale */
+font-size: 40px; /* Taille du texte pour une bonne visibilité */
+font-weight: 300; /* Épaisseur du texte (évite un effet trop fin avec 100) */
+font-style: italic; /* Met le texte en italique */
+text-transform: uppercase; /* Convertit tout le texte en majuscules */
+letter-spacing: 15px; /* Espacement entre les lettres pour une meilleure lisibilité */
+text-align: center; /* Centre le texte horizontalement */
+
+/* 🏗️ Apparence et bordures */
+border: 2px solid #fe3538; /* Bordure rouge de 2px d'épaisseur */
+border-radius: 4px; /* Coins légèrement arrondis pour un effet plus fluide */
+background: linear-gradient(#222, #333); /* Dégradé pour un fond plus esthétique */
+
+/* 📏 Espacement */
+line-height: 50px; /* Espacement entre les lignes pour éviter un effet compact */
+padding: 10px 20px; /* Espacement interne : 10px en haut/bas et 20px sur les côtés */
+margin: 20px; /* Espacement externe autour de l’élément */
+
+/* 🏗️ Organisation avec Flexbox */
+display: flex; /* Active le système de grille flexible (Flexbox) */
+flex-direction: row; /* Aligne les éléments horizontalement */
+justify-content: center; /* Centre les éléments horizontalement */
+align-items: center; /* Centre les éléments verticalement */
+gap: 20px; /* Ajoute un espacement constant entre chaque élément */
+flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+
+/* 🔗 Style des liens */
+list-style: none; /* Supprime les puces des listes */
+text-decoration: none; /* Supprime le soulignement des liens */
+display: block; /* Rend le lien en format bloc (prend toute la largeur disponible) */
+transition: all 0.3s ease-in-out; /* Ajoute une transition fluide lors des interactions */
+
+/* 🖼️ Gestion des images */
+width: 300px; /* Largeur fixe pour les images */
+height: auto; /* Hauteur ajustée automatiquement pour éviter la déformation */
+object-fit: cover; /* Assure que l'image garde ses proportions sans être étirée */
+border-radius: 20px; /* Coins arrondis pour un effet esthétique sans être totalement circulaire */
+border: 4px solid #222; /* Bordure noire autour des images */
+background: #fff; /* Fond blanc derrière l’image */
+
+/* 🔁 Effets et interactions */
+cursor: pointer; /* Affiche un curseur en forme de main au survol */
+transition: all 0.3s ease-in-out; /* Ajoute une animation fluide sur les changements */
+transform: scale(1); /* Évite les bugs de mise à l'échelle */
+
+.button:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'élément au survol pour un effet interactif */
+}
+
+/* 🔝 Superposition des éléments */
+z-index: 100; /* Place l'élément au-dessus des autres si nécessaire */
+
+/* 🖱️ Interactions et accessibilité */
+outline: none; /* Supprime le contour bleu par défaut lors du focus */
+user-select: none; /* Empêche la sélection du texte (utile pour éviter les copiers involontaires) */
+
+/* 🧩 Responsive et mise en page */
+max-width: 100%; /* Assure que l'élément ne dépasse jamais la largeur du parent */
+box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
+
+/* 🌈 Couleurs et ombres */
+color: #fff; /* Couleur du texte */
+box-shadow: 0 4px 8px #0005; /* Ombre plus douce pour un effet visuel plus léger */

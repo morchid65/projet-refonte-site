@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pratique chez les enfants – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-enfant">
+  <h1 class="title-main">La pratique chez les enfants</h1>
+  <div class="text-align-center">
+<p>
+"S'intéresser aux enfants, c'est s'intéresser à l'avenir", Les arts martiaux ont depuis très  longtemps prouvé <br>
+leur valeur éducative  pour les plus jeunes.​ <br>
+Un vieil adage affirme que "la valeur n'attend pas le nombre des années", nous pourrions ajouter que "les <br>
+années n'altèrent pas la valeur !". <br>
+Ont peut commencer la pratique très jeune (raisonnablement  autour de  7 à 8 ans) et on peu encore la <br>
+pratiquer  à un age très avancé (70 ans et plus). <br>
+Pour les enfants et les adolescents, la recherche  de l'optimisation des qualités physiques (souplesse, <br>
+renforcement adapté, cardio-training, coordination, vitesse, etc.) doivent être la priorité en terme de <br>
+planification des apprentissages.​ <br> <br>
+
+<p class="align-left">
+Les bases fondamentales seront abordées avec progressivité, précision, en veillant à  bien respecter les <br>
+règles de l'art. En effet, il est plus facile de prendre de bonnes habitudes que d'en perdre des mauvaises. <br> <br>
+ 
+
+Les qualités développées  : <br>
+Les capacités psychomotrices et en particulier la perception de son propre corps dans l'espace (schéma <br>
+corporel) semble être les qualités premières qu'un enfant développera par la pratique des arts martiaux.​ <br>
+Aucun profil morphologique ou psychologique n'est requis pour devenir un bon pratiquant. Filles, garçons, <br>
+grands, petits, longilignes, robustes, hyperactifs,  introvertis, rapides, lents,  tous sont aptes à la pratique du <br>
+Wu Dao. <br>
+
+Les qualités qui sont attachées généralement à la pratique des arts martiaux sont nombreuses : <br>
+
+Discipline du corps et de l'esprit, concentration, maîtrise  corporelle, respect de ses partenaires <br>
+d'entrainement, hygiène de vie, développement de la force, de la souplesse, de l'agilité, régulation de <br>
+l'agressivité chez certains, les arts martiaux sont une véritable école de volonté qui formera le jeune adulte <br>
+en devenir en lui donnant les bases physiques et mentales solides. <br>
+</p>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

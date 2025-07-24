@@ -1,0 +1,16 @@
+<div id="header-container"></div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+</script>
+ <main>
+        <h1>Nom de la page</h1>
+        <p>Ajoute ici le texte, les images et tout le contenu spécifique.</p>
+        <img src="image-sous-section.jpg" alt="Image de la sous-section">
+    </main>
+</body>
+
+</html>

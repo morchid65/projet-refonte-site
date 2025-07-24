@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voyage à Shaolin – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-voyages-shaolin">
+  <h1 class="titre">Stages - Chine - Shaolin</h1>
+  <div class="containeur-global-centre-row">
+  <div>
+<div class="containeur-global-centre-column">
+<img src="https://static.wixstatic.com/media/cf687c_a7dba0a4221c4614970ebac4c764913f~mv2_d_2048_1536_s_2.jpg/v1/fill/w_275,h_204,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/chine%20203.jpg" alt="">
+<img src="https://static.wixstatic.com/media/cf687c_c9080079781848e3b9d4a22e21851df0~mv2_d_2048_1536_s_2.jpg/v1/fill/w_295,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/chine%20191.jpg" alt="">
+<div class="containeur-global-centre-row">
+<div class="containeur-global-centre-column">
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=svRs4oDoV-M" target="_blank">Ecole Shaolin</a></button>
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=88FhSzyY-d0" target="_blank">Échauffement Chine</a></button>
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=O6tP8xjSLqE" target="_blank">Échauffement 1 Chine</a></button>
+  </div>
+
+<div class="containeur-global-centre-column">
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=uLbITQOBAvw" target="_blank">Échauffement 2 Chine</a></button>
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=YQJnrf-2piQ" target="_blank">Échauffement 3 Chine</a></button>
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=zLry9iXTQrw" target="_blank">Échauffement 4 Chine</a></button></div>
+</div>
+</div>
+</div>
+<div class="containeur-global-centre-column">
+  <img src="https://static.wixstatic.com/media/cf687c_27aef2716ebb4946845dc2b2b716f36f.jpg/v1/fill/w_395,h_296,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_27aef2716ebb4946845dc2b2b716f36f.jpg" alt="">
+  <button><a class="btn-link" href="https://www.youtube.com/watch?v=gSTdMx8eCLY">Travail ecole Shaolin - Chine</a></button>
+  <img src="https://static.wixstatic.com/media/cf687c_b19b34df42844790b517d70503d3bd38~mv2_d_1536_2048_s_2.jpg/v1/fill/w_165,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/chine%20210.jpg" alt="">
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

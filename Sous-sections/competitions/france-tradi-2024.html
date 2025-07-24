@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat de France Traditionnel 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-france-tradi-2024">
+  <div class="container-global">
+  <div class="image-container">
+    <img class="img-base1" src="https://static.wixstatic.com/media/cf687c_a7c7b8fa43fb4774a2124a8a319ee3b9~mv2.png" alt="France Tradi 2024">
+    <div>
+      <h1 class="title-sub">3e PLACE DE NEL GASCON</h2>
+        <img class="img-base3" src="https://static.wixstatic.com/media/cf687c_c986698ec9d04a9d8b8d61593ceedaca~mv2.jpg/v1/fill/w_307,h_232,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sanchou-15.jpg" alt="">
+    </div>
+  </div>
+  <div class="image-container2">
+    <img class="img-base2 img-radius" src="https://static.wixstatic.com/media/cf687c_9713146a5322403cb798e1d69c9e36c9~mv2.jpg" alt="431830314_n">
+    <img class="img-base3" src="https://static.wixstatic.com/media/cf687c_5fbacb2b51ea40f48f875f6beca62b90~mv2.jpg/v1/fill/w_204,h_404,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/432451109_10161168439714518_3996227767924398960_n.jpg" alt="Sanchou-15">
+    <p class="p1">
+      C. Michaud <br>
+      Juge de Taolu & Arbitre Central de Sanshou
+    </p>
+  
+  <div class="image-container3">
+      <img class="img-base4" src="https://static.wixstatic.com/media/cf687c_27efde365c874758b8de786237214579~mv2.jpg/v1/fill/w_659,h_173,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Chpt-de-France-de-Kung-FU-110-scaled.jpg" alt="">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

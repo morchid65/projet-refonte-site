@@ -1,0 +1,179 @@
+
+
+VERSION 1 :
+<!-- Menu de navigation principale -->
+<nav>
+    <ul class="Menu">
+        <li>Accueil</li>
+        <li>Agenda
+                <ul>
+                    <li>Championnats de France de Wushu 2024</li>
+                    <li>Septembre 2023</li>
+                    <li>Juillet 2023</li>
+                    <li>Décembre 2022</li>
+                    <li>Décembre 2021</li>
+                    <li>Septembre 2019 - Décathlon</li>
+                </ul>
+            </li>
+        <li>Self-Défenses femmes</li>
+        <li>Kung-Fu
+                <ul>
+                    <li>Programme Type Enfants/Ados</li>
+                    <li>Programme Type Adultes</li>
+                    <li>Guide Technique</li>
+                    <li>Tarifs Kung fu</li>
+                    <li>Sabre / Duan bing</li>
+                </ul>
+            </li>
+        <li>Tai Chi
+            <ul>
+                <li>Programme Type Tai-Chi</li>
+                <li>Le Qi Cong Explication</li>
+                <li>Le Qi Cong Dans notre Ecole</li>
+                <li>Guide Technique</li>
+                <li>Tai Chi Raquette</li>
+                <li>Tarifs Tai Chi</li>
+            </ul>
+        </li>
+        <li>Horaires / Inscriptions
+            <ul>
+                <li>Tarifs</li>
+                <li>Inscriptions Numérique</li>
+            </ul>
+        </li>
+        <li>Pratique
+            <ul>
+Enseignement 
+La tenue 
+Code Moral
+Attitudes
+                <li>Le salut</li>
+                <li>Chez la Femme</li>
+                <li>Chez l'enfant</li>
+                <li>Ceintures enfants</li>
+                <li>Les Grades adultes</li>
+                <li>Wu Tao aménagé Handicapé</li>
+                <li>Organisation du Pratiquants</li>
+            </ul>
+        </li>
+        <li>Instructeurs
+            <ul>
+                <li>Christian Michaud</li>
+                <li>Josiane Rosay</li>
+                <li>Guilhem Bouchez</li>
+                <li>Rencontres Martiales</li>
+            </ul>
+        </li>
+        <li>Compétitions
+            <ul>
+                <li>Championnat de France traditionnel 2024</li>
+                <li>Open Kung fu 2024</li>
+                <li>Championnat de France Tradi</li>
+                <li>Championnat de France Moderne 2023</li>
+                <li>Coupe de France Jeunes 2022</li>
+                <li>Championnat National Sanda 2022</li>
+                <li>Open National Kung fu 2021</li>
+                <li>Championnat de France 2021</li>
+                <li>Europa Tai Chi 2021</li>
+                <li>Open de France 2020</li>
+                <li>Open National Kung-Fu</li>
+                <li>Sélectifs France 2020</li>
+                <li>Open Marseille 2020</li>
+                <li>Open Européen 2018</li>
+                <li>Compétitions Officielles 2018</li>
+            </ul>
+        </li>
+        <li>Plus.....
+            <ul>
+                <li>Multimédias</li>
+                <li>Vidéos</li>
+                <li>Articles de Presse</li>
+                <li>Section Enfants</li>
+                <li>Sections Adultes</li>
+                <li>Section Tai Chi</li>
+                <li>Journée Handicap 2013</li>
+                <li>Voyages Shaolin</li>
+                <li>Stage Italie 2023</li>
+                <li>Pasino 2023</li>
+                <li>Wudang 2018</li>
+                <li>Stage Italie 2016</li>
+                <li>Schorées Films</li>
+                <li>Adhérents</li>
+                <li>Contacts</li>
+
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+
+J AI FAIS LE CODE SEUL AU DEBUT NOTAMMENT LA PAGE D ACCUEIL ENSUITE J AI EU UNE BONNE IDEE JE ME SUIS DIS QUE J ALLAIT PRENDRE TOUT LE MENU DU SITE AVEC LES CATEGORIES ET SOUS CATEGORIES QUE J AVAIS ECRIT MOI MEME AU COMPLET AU PARAVANT ENSUITE PARCE QUE JE ME SUIS RENDU COMPTE QUE FAIRE TOUT PAGE PAR PAGE C EST BEAUCOUP TROP LONG JE ME SUIS DIT POURQUOI PAS PRENDRE TOUT LES ELEMENTS DE TOUTE LES PAGES ET ENSUITE JE MET DANS CHAQUE PARTIE DU MENU TOUT LES PARAGRAPHES LES IMAGES TOUT POUR LES METTRES SUR CHAQUE PARTIE ENSUITE C EST PLUS SIMPLE POUR CREER LES CLASS CA EVITE DE FAIRE DES DOUBLONS DE FAIRE DES ERREURS D ETRE PLUS ORGANISE J AI FAIT CELA CAR JE ME SUIS DIS QUE SI JE PREND SEULEMENT LE LIEN (1SEUL) QUI AMMENNE VERS CHAQUE CATEGORIE ET SOUS CATEGORIE ET QUE JE L INTEGRE CE SERA BEAUCOUP TROP FACILE LE SITE AURAIT ETE FINIS EN 1 SEUL CLIQUE ALORS J AI PREVU CE PLAN B TOUT SIMPLEMENT POUR GAGNER DU TEMPS APRES DE LONGUES HEURES ET JOURS PASSES SUR LA PAGE D ACCUEIL J AI REGARDE LES AUTRES PAGES J AI VU A QUEL POINT C ETAIT LONG DE CONFIGUR2 CHAQUE PAGE AVEC POSITION DE L IMAGE DU PARAGRAPHES ETC C ETAIT VRAIMENT TRES LONG PLUSIEURS SEMAINES A TERMINER OR MON OBJECTIF ETAIT DE TOUJOURS ETRE EFFICIENT TROUVE DES MOYENS D ALLER PLUS VITE COMME J AI DES LACUNES ET QUE JE SUIS TRES LONG JE PEUX FACILEMENT TROUVER DE BONNE IDEE DONC J AI DECIDE D UTILISER LE PLAN B MA METHODE QUE J OPTIMISE TOUJOURS ET ENCORE j ai recopie tout le menu entier chaque page chaque image chaque bouton j ai tout recuperer dans le menu que j ai tapé à la main ensuite j ai donné à l IA pour tout bien structuré et j ai montré les images de chaque pages pour pouvoir avoir le style exact une fois que cela est fait je refait tout par moi meme j analyse le code j essaye de me familiariser avec pour le maitriser et ensuite j ajoute des fonctionnalités par moi meme dans un autre code pour voir si j ai bien compris le code j ai créé plusieurs dossier avec le nom de chaque categorie du menu les sous categorie donc les images je l ai ai representé par des numéros pour garder dans l ordre et simple à utilisé pour ne confendre aucun fichier image j ai nommé les fichiers 1a à 1i avec les sous catégories 2a si il y a une sous catégorie pour savoir à tout moment quel image à quel position exact du menu il se trouve ensuite une foisque j ai reussi à reorganise le cde html avec l IA car j avais rassembler tout les elements (images, vidéos, boutons, paragraphes, titres) de chaque page du menu complet j ai tout bien organisé le code complet je les mis au propre comme j avais deja fait la page d'accueil (qui etait le plan A que j avais mis en suspend à cause des liens qui menait vers le site complet je ne voulais pas ça une tel facilité neamnoins il y avait comme meme des infos important à garder j'ai decidé de les utilisé pour plus tard) seul en autonomie je n avais pas besoin de tout refaire le style du site j'ai décidé donc décidé de fusionner le menu que j ai fait du site complet à la page d'accueil pour pouvoir avoir tout dans la premiere page et pouvoir naviguer dans chaque page du menu qui se trouve dans l accueil mais par contre le plus compliqué c est de savoir comment faire pour faire fonctionner le menu (lorsque je clique sur une section ou sous section il faut que ça mene vers la bonne page) mais je suis capable de savoir comment faire c'est juste que cela prend du temps le seul bemole encore c 'est le style que je n ai pas encore appliqué sur les pages c est pour cela que j ai créer tout ses fichiers au prealable et minutieusement bien referencé pour pouvoir gagner enormement de temps et reapplique chaque style de chaque page de chaque categorie du menu ce qui prend un temps considerable c est pour cela que en tant que dev j'ai décidé de collaboré avec l IA pour gagner du temps la partie la plus importante donc celle de l accueil avec l affichage du menu je l ai fait deja avec tout le style que dois contenir chaque page un style uniformisé qui va apparaitre sur chaque page j ai fais le plus important maintenant c est l assemblage la recomposition de chaque style de chaque page car tout est bien fait dans l accueil mais pour le plan B c est pas pareil je me suis comme meme appliqué en recoltons les informations de chaque page dans un ordre ultra precis la seul chose que je n ai pas fait c est que j ai tout mis en mode paragraphes la plus part du temps mais parfois j ai pris la peine de mettre en titre mais c est pour gagner du temps encore une fois si j aurais pris mon temps sur cette partie il ne fait aucun doute que j aurais gagner enormement de temps mais au final j'ai décidé d'aller au plus simple meme si j avoue que j aurais bien voulu prendre le temps sur cette etape de recolte du menu car au debut j avais fait juste l accueil mais quand j ai vu tout ce qu il y avait dans l autre partie du menu je me suis dit c est impossible de finir en 1 semaine or que si c est possible j aurais meme etait capable de finir avant en utilisant l IA du debut à la fin mais mon objectif n est pas la ce que je souhaite avant tout dans ce projet de refonte du site c est d aller chercher les competences d'aller améliorer mais capacité pour coder et trouver des solutions aux problemes combler les lacunes que j ai en codage donc j ai decidé d'utilise ses methodes que j ai trouvé au fur et à mesure je suis en difficulté car LIA N est pas capable de faire correctment le retranscription de l image je vais devoir le faire moi et cette fois ci j ai une autre methode toutes les sections dans un fichier je vais tout faire à part je vais créer page par page comme avec les images malheureusment je vais surement trouver un subterfuge pour aller plus vite d ailleurs car mtn je suis obligé de refaire l accueil qu ej avais déjà fait. reutiliser l en tete de l accueil de partout et reprendre chaque section et le coller dans un nouveau fichier avec pour nom la section qui lui correspond ou si une sous section la sous section qui correspond faire ça pour tout le menu et créer un fichier css pour chaque section dans le html il faut en tete + section dans le body mettre l image si besoins pour la faire afficher j ai continué le travail en complétant le menu j ai reussi à les lié cette fois ce que je voulais faire depuis le debut et ensuite maintenant je vais faire la composition de chaque page car ma methode le plan B ne fonctionne pas bien alors j ai trouvé alternative plus long mais qui fonctionne pour l instant et bien je fais un menu complet que je colle le meme dans chaque categorie et sous categorie car j ai fait tout le menu en fichier html ça veut dire que chaque partie chaque page du menu j ai fait une page html pour que ce soit plus facile à manipuler et à gerer. j ai renomme les fichiers tous des 2 dossiers CAT comme ça ne marchais pas j ai rajouté un chemin relatif avec nom du dossier et nom du fichier en utilisant des listes ordonnée et desordonné j aurais pu creer un fichier header et footer pour qu il s affiche pls fois mais le wamp ne fonctionne pas je peux utiliser php je dois refaire comme le plan na pas fonctionner je reprend cette fois limage precise et pas la page entiere comme j ai fait au debut je vais aller dans chaque page cette fois pas d organisation aussi pointu car je vais faire les choses au fur et à mesure sinon impossible et je fais sa dans tout le menu le probleme avec lien des pages retablis (utilisation de 2 menu un des 2 menu les plus court avec que des sections ne fonctionnait pas j ai utilisé le plus long est le plus complet je pense qu il faut enlever .. pour que tout fonctionne mais trop tard utiliser le meme partout permet de gagner du temps pls facile à gerer) les chemins relatif des images resolus (enlever les 2points au debut car direct il pointe sur le dossier pas de sous dossier) je dois à chaque fois cliquer sur le lien du fichier pour creer un nouveau fichier reprendre l ancien avec les infos et copier et coller sur chacun des fichiers pour les 9 sections donc ouvrir chaque sous menu et menu sur chacun des 9 fichiers principaux pour enfin que ça marche et pareil pour les 90 sous menu (extrapolation) j ai fait un script pour que le header s affiche dynamiquement sur chaque page j ai commencé à finalisé le site en mettant en place le site pour chaque section principal malheureusement les sous section ne fonctionne pas sauf 1 j ai 6/9 des sections principales j ai un fichier html avec les ressources car il faisait partie du plan precedent qui n a pas fonctionner mais chaque partie du plan que j ai mis en place j'ai pu utilisé des ressources des anciens plan car chaque processus que j ai emprunté durant ce processus était relié étroitement donc j ai pu gagné du temps à chaque fois qu un de mes plan échouait mais à chaque fois les plans qui échouent à chaque fois que je trouve une alternative ça me permet de me rapprocher de plus en plus de la finalisation du site j ai eu des soucis avec le css mais petit à petit j ai réussi à m'améliorer malgres que je n ai pas terminé mon travail j ai fais une page css competition pour commencer j ai fais plusieurs composition que j ai essayé afin de controler précisément chaque partie des images que je souhaite grace au html 2 images était sur la meme colonne le meme axe je l ai ai mis dans le meme container d image pour pouvoir les manipuler ensemble et il ya avais un autre container qui contrôle tout donc il fallait etre tres precis j était en difficulté pour centrer les 3 images à l endroit  precis j ai donc du utiliser position relative pour positionner exactement les images ou je le ssouhaite dans le css ce qui est bien ce que nous pouvons utiliser les 3 images mais il faut qu il soit dans le meme repertoire parent pas obliger il faut qu il soit dans le container global voila pour pouvoir les controler la taille la position etc pour cela il faut faire .image-competitions, .image-competitions2 {
+} aussi css et sensible à la casse donc il ne tolere aucune erreur d aucune sorte (d'orthographe) position relative pour pouvoir utiliser les images et les positionner ou l on veut grace aux commandes de position que l on va utilisé ah oui aussi j ai pas fait au hasard j ai regroupé les images de competition 1 et 2 comme ceci .image-competitions1, .image-competitons2 pour les utiliser car ils avaient la meme taille ensuite je les ai mis séparément pour la position en utilisant notamment wrapper qui a bien aidé dans la mise en place de la composition tout simplement et image 3 de competitions3 je l ai fait à part en utilisant le container global au faut il faut tout simplement suivre l ordre du html etape par etape pour aller vite voila ce qui manquait dans l explication
+
+
+J’ai créé une page CSS appelée competition.css pour organiser visuellement la section compétitions de mon site. > > Dès le départ, je savais que je voulais une disposition maîtrisée image par image — pas un placement aléatoire. J’ai donc testé différentes compositions pour voir comment positionner chaque image avec précision. > > Les images .image-competition1 et .image-competition2 étaient sur le même axe horizontal, donc je les ai groupées dans un même conteneur HTML (.image-wrapper). Ce wrapper m’a permis de les aligner, les manipuler ensemble avec Flexbox, tout en gardant la possibilité de les superposer avec position: relative et absolute. > > Côté CSS, comme elles avaient la même taille, je les ai regroupées dans une règle commune : > .image-competition1, .image-competition2 { ... } > Ça m’a évité de répéter du code, et surtout ça garantit une cohérence visuelle. > > L’image .image-competition3, elle, était pensée comme un élément indépendant. Je l’ai mise à part, mais toujours dans le même container global .image-container. Ainsi, je peux gérer son positionnement et sa taille séparément, tout en gardant une structure propre. > > L’ensemble (.image-wrapper + .image-competition3) est inclus dans .image-container, qui est mon conteneur global. C’est lui qui gère la disposition générale avec display: flex, gap, justify-content, etc. > > Mon gros défi a été de positionner les trois images exactement où je le voulais. Le centrage automatique n’était pas suffisant. J’ai donc utilisé position: relative pour le wrapper et position: absolute pour les images superposées, ce qui m’a donné un vrai contrôle millimétré avec top, right, etc. > > Ce que j’ai appris aussi, c’est que le CSS est hyper sensible à la casse et à l’orthographe. Une seule erreur sur un nom de classe ou une propriété, et le style ne s’applique pas. Il faut être ultra précis. > > Et surtout, il faut respecter l’ordre logique du HTML, étape par étape, si on veut que le CSS fonctionne rapidement et proprement. Chaque élément doit être structuré dans un conteneur adapté, sinon on se complique la vie pour rien.
+
+Mon Processus de Refonte du Site  
+Au départ, j'ai commencé à coder seul, notamment la page d'accueil, mais rapidement j'ai eu une idée plus efficace. Pourquoi ne pas prendre tout le menu du site avec ses catégories et sous-catégories que j'avais préalablement écrites  
+
+Optimisation du Processus  
+Créer chaque page individuellement prendrait beaucoup trop de temps.  
+Regrouper tous les éléments de chaque page (images, vidéos, boutons, paragraphes, titres...) permettrait une organisation plus fluide.  
+Une fois tout le contenu récupéré, il suffit de les intégrer dans chaque partie du menu.  
+
+Cette approche me permet aussi de créer des classes CSS plus facilement, sans erreurs ni doublons.  
+
+Passage au Plan B  
+Initialement, j'avais prévu d'utiliser simplement les liens vers les pages, mais c'était trop simple et aurait fini le site en un clic.  
+J'ai donc opté pour un plan plus structuré pour gagner du temps  
+1. Rassembler tout le contenu du site dans une structure bien organisée.  
+2. Recréer chaque section avec précision en gardant un ordre rigoureux.  
+3. Confier le code HTML à l’IA pour une organisation optimale avant de le reprendre moi-même.  
+
+Structuration des Dossiers  
+Pour éviter toute confusion des fichiers, j'ai établi une méthode ultra précise  
+Chaque catégorie du menu a son propre dossier  
+Les sous-catégories sont bien référencées avec des numéros (exemple 1a, 1b, 2a...)  
+Chaque élément a une position exacte dans la hiérarchie du menu  
+
+Fusion de l’Accueil et du Menu  
+Puisque j’avais déjà fait l’accueil, inutile de tout refaire.  
+J’ai simplement fusionné l’accueil avec le menu pour que la navigation soit directement accessible depuis la première page.  
+
+Défi rendre le menu fonctionnel  
+Lorsqu’on clique sur une catégorie ou sous-catégorie, il faut qu’elle mène à la bonne page.  
+Je sais comment le faire, mais cela demande du temps.  
+
+Uniformisation du Style  
+Un style global a été appliqué sur chaque page, ce qui me permet de recomposer plus rapidement chaque section du site.  
+J’ai réuni les éléments de chaque page et structuré proprement le HTML pour éviter les doublons.  
+
+Problème rencontré avec la Recomposition  
+Bien que le Plan B soit efficace, il ne fonctionne pas parfaitement.  
+Nouvelle approche  
+1. Reprendre chaque section individuellement au lieu d’une organisation trop rigide.  
+2. Créer un fichier HTML et CSS pour chaque section pour éviter le désordre.  
+
+Création d’un Menu Dynamique  
+Plutôt que d’avoir un menu différent sur chaque page, j’ai trouvé une solution plus rapide  
+Un seul menu copié sur chaque catégorie et sous-catégorie  
+Un fichier HTML dédié à chaque partie du menu pour simplifier la gestion  
+
+Résolution des Chemins Relatifs  
+Problème certaines images ne s’affichaient pas  
+Solution  
+Supprimer les .. inutiles dans les chemins  
+Vérifier la structure des dossiers pour éviter les erreurs  
+
+Finalisation et Tests  
+Les liens des pages sont bien rétablis  
+Le header s'affiche dynamiquement sur chaque page  
+6/9 sections principales sont fonctionnelles, reste à finaliser les sous-sections  
+
+Objectif Final  
+J’ai pu exploiter chaque processus échoué pour optimiser la structure du site.  
+Chaque étape m’a permis d’apprendre, de progresser et de gagner du temps.  
+L’objectif reste de perfectionner le CSS pour finaliser le projet  
+
+Avec cette méthode, je peux gérer la refonte efficacement, tout en améliorant mes compétences. 

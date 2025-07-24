@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open Européen 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-europeen-2018">
+
+<div class="containeur-global2">
+<div class="flex-end-row2">
+  <img src="https://static.wixstatic.com/media/cf687c_81f18dfe247142f1a43b1a9664cb26a9~mv2.jpg/v1/fill/w_206,h_176,al_c,q_80,enc_avif,quality_auto/podium%20mains%20nues%202018%20Europa%20tai%20chi_JP.jpg" alt="">
+  <img src="https://static.wixstatic.com/media/cf687c_f7035112d50349fdadbf3a931e7877ff~mv2.jpg/v1/fill/w_315,h_444,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/europa%20tai%20chi%20page%20garde_JPG.jpg" alt="">
+  <img src="https://static.wixstatic.com/media/cf687c_81f18dfe247142f1a43b1a9664cb26a9~mv2.jpg/v1/fill/w_206,h_176,al_c,q_80,enc_avif,quality_auto/podium%20mains%20nues%202018%20Europa%20tai%20chi_JP.jpg" alt="">
+</div>
+
+<div class="flex-start-row2">
+    <p>
+    <strong class="rouge">2 ème Place</strong> Tai Chi style <br> 
+    chen mains nues
+  </p>
+  <img src="https://static.wixstatic.com/media/cf687c_f95ff139e92a4bf3a8e8e41d632da4bd~mv2.jpg/v1/fill/w_344,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41854129_328812241009404_219322681922892.jpg" alt="">
+  <p>
+     <strong class="rouge">1 er Place</strong> Tai Chi style <br>
+    chen  à l'épée
+  </p>
+</div>
+</div>
+
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

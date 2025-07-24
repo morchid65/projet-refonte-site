@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tai Chi – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+  <style>
+    .gallery-toggle { cursor: pointer; font-weight: bold; margin-bottom: 1em; }
+    .gallery-content { display: none; flex-wrap: wrap; gap: 10px; margin-bottom: 2em; }
+    .gallery-content img { max-width: 300px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-tai-chi">
+  <h1 class="title-main">Tai Chi – Galerie</h1>
+
+  <div class="gallery-toggle" onclick="toggleGallery()">🖼️ Cliquez ici pour afficher la galerie Tai Chi</div>
+  <div class="gallery-content" id="taiChiGallery">
+    <img src="/Img/Horaires et Inscriptions/1f.avif" alt="Tai Chi 1" />
+    <img src="https://static.wixstatic.com/media/cf687c_90a841762f1942aa9d1e7c1f3f847ed9~mv2.jpg" alt="Tai Chi 2" />
+    <img src="https://static.wixstatic.com/media/cf687c_cdb60c3162ec48da875729379732df69~mv2.jpg" alt="Tai Chi 3" />
+    <!-- Tu peux ajouter autant d’images que tu veux ici -->
+  </div>
+</section>
+
+<div id="footer-container"></div>
+<script>
+  fetch('footer.html').then(r => r.text()).then(d => {
+    document.getElementById('footer-container').innerHTML = d;
+  });
+
+  function toggleGallery() {
+    const gallery = document.getElementById("taiChiGallery");
+    gallery.style.display = gallery.style.display === "flex" ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>

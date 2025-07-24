@@ -1,0 +1,245 @@
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.programme3 {
+    width: 30%;
+    height: auto;
+    border: 3px solid #222;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-color: 20px solid rgb(203, 175, 175);
+}
+
+.programme4 {
+    width: 30%;
+    height: auto;
+    border: 3px solid #222;
+}
+
+
+.texte-qigong {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.texte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 50px;
+}
+
+.jaune {
+    color: khaki;
+}
+
+
+.section-guide-technique {
+    padding: 50px;
+}
+
+.container-texte-image {
+    display: flex;
+}
+
+.image-container {
+    flex-direction: row;
+}
+
+.texte-centered {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.p1 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.guide2 {
+    position: absolute;
+    margin-left: 560px;
+    top: 790px;
+}
+
+
+
+
+
+
+
+
+.bloc-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.image-wrapper,
+.image-wrapper2 {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.img-taichi {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texte-wrapper {
+  flex: 1 1 600px;
+  min-width: 400px;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.description {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #fff;
+}
+
+.titre-rouge {
+  color: red;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+
+.tarifs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.img-texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.texte-tarif {
+  flex: 1 1 400px;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.note-rouge {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #e84118;
+  font-weight: bold;
+}
+
+.img-tai-chi {
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.rouge {
+  color: #e84118;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.encadre-blanc {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 2px solid #fff;
+  color: #e84118;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #fff; /* ou noir si tu veux renforcer le contraste */
+}
+
+
+.rouge1 {
+  color: #e84118;
+  font-weight: bold;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.banniere-tai-chi {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tarifs-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.eventail {
+    border: 4px solid #fff;
+    margin-bottom: 50px;
+    position: relative;
+    right: 290px;
+    bottom: 10px;
+}
+
+.banniere-img {
+    border: 4px solid #fff;
+    border-radius: 50%
+}
+
+.p {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+.note {
+    color: #e84118;
+
+}

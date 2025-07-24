@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compétitions Officielles 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-competitions-officielles-2018">
+  <h1 class="title-main">Compétitions Officielles 2018</h1>
+
+<div class="containeur-global2">
+<div class="texte-image-ligne">
+  <img src="https://static.wixstatic.com/media/cf687c_64649f91840f4b47a3efa4f969181240~mv2.jpg/v1/fill/w_288,h_179,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_64649f91840f4b47a3efa4f969181240~mv2.jpg" alt="">
+  <p class="paragraphe-align-left">
+    Christian Michaud <br>
+​
+<strong>
+  - Double <strong class="rouge">Champion PACA</strong> 2018 Tai Chi <br>
+moderne mains nues et épée <br>
+​<br>
+- Double <strong class="rouge">Vice Champion de france</strong> Tai Chi <br>
+moderne mains nues et épée
+</strong>
+  </p>
+</div>
+<div class="containeur-image2">
+  <img src="https://static.wixstatic.com/media/cf687c_763f555c2dce450aa7f0834e27dfcbea~mv2_d_2111_1535_s_2.jpg/v1/fill/w_339,h_245,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_763f555c2dce450aa7f0834e27dfcbea~mv2_d_2111_1535_s_2.jpg" alt="">
+  <img src="https://static.wixstatic.com/media/cf687c_3372faa87e1041acb6b653090fe93f7b~mv2_d_2545_1399_s_2.jpg/v1/fill/w_447,h_245,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_3372faa87e1041acb6b653090fe93f7b~mv2_d_2545_1399_s_2.jpg" alt="">
+</div>
+
+<div class="flex-start-row2">
+  <img src="https://static.wixstatic.com/media/cf687c_c9e87861249746a4873d1f1c6ae44478~mv2.jpg/v1/fill/w_473,h_150,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_c9e87861249746a4873d1f1c6ae44478~mv2.jpg" alt="">
+  <img src="https://static.wixstatic.com/media/cf687c_ca759338601640878d81b74a711a5fc5~mv2.jpg/v1/fill/w_429,h_160,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_ca759338601640878d81b74a711a5fc5~mv2.jpg" alt="">
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

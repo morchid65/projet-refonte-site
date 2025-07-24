@@ -1,0 +1,284 @@
+.header {
+    background-color: cadetblue;
+    color: #999;
+}
+
+/* Configuration générale */
+body {
+    font-family: Arial, sans-serif; /* Définit la police par défaut */
+    margin: 20px; /* Ajoute une marge extérieure */
+    background-color: black; /* Fond noir */
+}
+
+/* Titres */
+h1 {
+    text-align: center; /* Centre le titre */
+    font-style: red; /* Couleur rouge */
+}
+
+/* Styles spécifiques */
+.titre-style {
+    color: rgb(215, 23, 26); /* Rouge spécifique */
+    font-size: 40px; /* Taille du texte */
+    font-weight: 100; /* Épaisseur minimale */
+    font-family: Daito Extended Regular; /* Police */
+}
+
+/* Alignement et espacement */
+.KUNG_FU {
+    text-align: center;
+}
+.TAI_CHI {
+    word-spacing: 5px; /* Espacement des mots */
+    line-height: 50px; /* Espacement entre les lignes */
+}
+
+/* Séparateur visuel */
+.separator {
+    margin: 20px 0; /* Espacement vertical */
+    font-size: 40px;
+    font-weight: 900; /* Épaisseur maximale */
+}
+
+/* Texte en chinois */
+.五 {
+    margin-left: 80px; /* Décalage */
+    font-weight: 520; /* Épaisseur */
+}
+.WU_TAO {
+    color: rgb(123, 255, 248); /* Bleu clair */
+    word-spacing: 10px; /* Espacement des mots */
+    line-height: 50px; /* Espacement entre lignes */
+}
+.道 {
+    font-weight: 400; /* Épaisseur moyenne */
+}
+
+/* Paragraphes */
+p {
+    color: #ffffff; /* Texte blanc */
+    text-align: center; /* Centrage */
+    font-size: 25px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+}
+.paragraphes1 {
+    color: rgb(201, 6, 6); /* Rouge foncé */
+}
+.paragraphes2 {
+    color: #dada07; /* Jaune foncé */
+}
+
+/* Espacement et alignement avancés */
+.Ecole {
+    color: rgb(137, 220, 13); /* Vert spécifique */
+    padding: 0 40px; /* Espacement interne */
+    word-spacing: normal;
+    letter-spacing: normal;
+    font-size: 30px; /* Taille du texte */
+}
+
+/* Texte en chinois avec espacement */
+.王_学_龙 {
+    letter-spacing: 30px; /* Espacement des lettres */
+    font-size: 60px;
+    font-weight: 250;
+    margin-left: 95px; /* Décalage gauche */
+}
+
+/* Texte en français */
+.WANG_XUE_LONG {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    word-spacing: 30px; /* Espacement des mots */
+}
+
+/* Boutons */
+.btn-group1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+/* Boutons */
+.btn-group2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    gap: 280px;
+}
+
+.btn-group3 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+/* Menu de navigation */
+.Menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #f5f5f5; /* Fond gris clair */
+}
+
+/* Éléments du menu */
+.Menu > li {
+    position: relative;
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s; /* Animation douce */
+    color: #222;
+}
+
+.Menu > li:hover {
+    background: #222; /* Fond sombre au survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+/* Sous-menu */
+.Menu > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    min-width: 220px;
+    z-index: 100;
+}
+
+/* Affichage du sous-menu */
+.Menu > li:hover > ul {
+    display: block;
+}
+
+/* Effet au survol des éléments du sous-menu */
+.Menu > li > ul > li {
+    background: #ffffff; /* Applique le fond sombre par défaut */
+    color: #222; /* Texte blanc */
+    padding: 10px 15px;
+    transition: background 0.2s;
+}
+
+/* Maintient l'effet au survol */
+.Menu > li > ul > li:hover {
+    background: #444; /* Un peu plus clair pour un effet visuel */
+}
+
+/* Liens */
+.Menu a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Image de titre */
+.img-titre {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+}
+
+/* 🔹 Conteneur principal */
+.container {
+    display: flex;
+    justify-content: center; /* Place les bannières aux extrémités */
+    align-items: flex-end; /* Alignement en bas */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative; /* Permet de positionner le logo */
+    margin-top: 200px; /* Espace au-dessus du conteneur */
+}
+
+/* 🔹 Bloc central avec le temple */
+.bloc-central {
+    display: flex;
+    flex-direction: column; /* Empile les éléments */
+    align-items: center;
+    position: relative; /* Permet de positionner le logo */
+}
+
+/* 🔹 Bannière de bambou */
+.Bannière {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #222;
+    background: #fff;
+}
+
+/* 🔹 Image du temple */
+.Maitre-du-Temple {
+
+    object-fit: contain;
+    border-radius: 7px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* 🔹 Logo Wu Tao */
+.WU_TAO_WANG_WUE_LONG {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #222;
+    background: #fff;
+    position: absolute;
+    top: -310px; /* Place le logo juste au-dessus du temple */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* 🔹 Bamboo Flex - Structure générale */
+.bamboo-flex {
+    display: flex;
+    justify-content: space-between; /* Place les images aux extrémités */
+    align-items: center; /* Centre verticalement */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Bamboo Center - Texte central */
+.bamboo-center {
+    text-align: center;
+    flex-grow: 1; /* Assure que le texte reste bien centré */
+}
+
+/* 🔹 Bamboo Images */
+.bamboo-img {
+    width: 150px; /* Taille des images */
+    height: auto;
+    border-radius: 50%;
+}
+
+.rouge-fonce {
+    color: rgb(150, 0, 0); /* Couleur rouge pour le titre */
+    font-size: 32px; /* Taille du texte */
+    text-align: center; /* Centre le titre */
+    font-weight: bold;
+}
+
+h1 {
+    color: red;
+}
+

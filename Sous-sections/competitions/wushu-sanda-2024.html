@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat Wushu/Sanda 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-wushu-sanda-2024">
+  <h1 class="title-main">Championnat de France Wushu/Sanda 2024</h1>
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_18f504f61a2549ca8b386ed8ced4d465~mv2.png" alt="Affiche Wushu 2024">
+    <img src="https://static.wixstatic.com/media/cf687c_f8e645da4aa24d3095b642519ab515b2~mv2.jpg" alt="Taolu 7">
+  </div>
+  <h2 class="title-sub">Participants</h2>
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_80520c5c2ddd4416aed60f1a5ea3328f~mv2.jpg" alt="Taolu 2">
+    <img src="https://static.wixstatic.com/media/cf687c_cc2558fdd7704edb9f4ef551d32e8d06~mv2.jpg" alt="Sanda 2">
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

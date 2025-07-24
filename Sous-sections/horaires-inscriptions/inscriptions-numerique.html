@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscriptions numériques – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/inscription.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-inscriptions">
+  <div class="text-align">
+<p class="text-standard">
+Avant toute démarche d’inscriptions, nous vous conseillons vivement de venir faire <a href="https://kfgc.fr/cours-dessai">deux cours d’essai</a>, gratuit et sans engagement. <br>Pour les réinscriptions, Certificat médical tous les 3 ans pour les majeurs, sous réserve de répondre NON à toutes les questions de l’auto-questionnaire <br> Santé - <br> Pour les mineurs (-18 ans) : le certificat médical est remplacé par le <a href="https://kfgc.fr/wp-content/uploads/2021/08/auto-questionnaire-mineur21-22.pdf">questionnaire Santé pour mineurs.</a> <br> <br>
+
+
+Certificat médical pour (selon votre pratique) : <br>
+« la pratique du Kung Fu sous forme de combat Sanda - Sanshou et de Taolu, y compris en compétition » <br>
+
+« la pratique du Taï Chi Chuan » <br>
+
+<span class="jaune">Inscription en ligne : </span> <br>
+Vous pourrez payer soit en 1 fois, soit en 3 échéances (règlement sécurisé CB). <br>
+
+En 3 échéances : 1er paiement le jour de l’inscription puis prélèvement au 10 du mois suivant et du mois +2 <br>
+
+Bien penser à fournir le Certificat Médical (sauf réinscription, tous les 3 ans ou mineurs) <br>
+
+Privilégiez FIREFOX  et Google Chrome  (Ne pas utiliser SAFARI  et Internet Explorer ) <br>
+</p>
+</div>
+</section>
+
+<section class="section-liens-inscription">
+<div class="container-global">
+<h2 class="title-sub">Pour le Kung-Fu</h2>
+<div class="container-inscription">
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/cours-enfants-5-11-ans">Inscription Enfants (5-10 ans)</a></button>
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/adhesion-cours-adolescents-11-15-ans-a-l-ecole-wu-tao-wang-xue-long-2024-2025">Inscription Adolescents (11-15 ans)</a></button>
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/adhesion-aux-cours-kung-fu-adultes-de-l-ecole-wu-tao-wang-xue-long-2024-2025">Inscription Adultes (+16 ans)</a></button>
+</div>
+  <h2 class="title-sub">Pour le Tai-Chi Style Chen</h2>
+<div class="container-inscription2">
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/adhesion-tai-chi-ecole-wu-tao-wang-xue-long-2024-2025"></a>Inscription Tai-Chi</button>
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/adhesion-pack-tai-chi-plus-kung-fu-de-l-ecole-wu-tao-wang-xue-long-2024-2025">Inscription Pack Tai-Chi + Kung-Fu</a></button>
+</div>
+<h2 class="title-sub">Pour le Self-Défense Femmes</h2>
+<div class="container-inscription3">
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/self-defense-femmes">Inscription Self-Défense Femmes</a></button>
+  <button class="btn"><a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/adhesions/self-defense-femmes-autres-discupline-de-notre-ecole">Inscription Self-Défense Femmes PLUS autre discipline de l'école</a></button>
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

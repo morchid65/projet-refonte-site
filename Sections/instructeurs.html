@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Instructeurs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté dynamiquement -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Instructeurs -->
+    <section class="section-instructeurs">
+      <div class="image-container0">
+        <div class="fond-gris"></div>
+              <h1 class="title-main">Deux instructeurs diplômés d'État</h1>
+        <img class="image-instructeur rounded-image" src="/Img/Instructeurs/1.avif" alt="Instructeurs">
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté dynamiquement -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

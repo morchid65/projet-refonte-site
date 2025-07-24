@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sabre & Duan Bing – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/kungfu.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-sabre-duan">
+    <div class="titre-texte">
+      <h2 class="h2">SABRE LASER / DUAN BING</h2>
+
+    <div class="text-img">
+
+        <p class="text-standard">
+          Le <span class="jaune">SABRE LASER</span> est une pratique multiple <br>  
+          <strong>sportive</strong> en duel, <br>
+          <strong>ludique</strong> avec ses pouvoirs et <br>
+          chorégraphiée en spectacle, <br> 
+          <strong>martiale</strong> avec ses enchaînements. <br><br>
+
+          C’est une pratique médiée par une arme <br>
+          contondante, composée d'une poignée en <br>
+          aluminium et d’une lame en polycarbonate <br>
+          illuminée de la poignée jusqu’à l’extrémité de <br>
+          l’embout grâce à une LED. <br><br>
+
+          Appelée « sabre laser », cette arme fait écho <br>
+          aux univers racontés par la science-fiction. <br>
+
+          Sa pratique constitue la création d’une activité à <br>
+          logique interne spécifique, qui ambitionne <br>
+          d’aller au-delà du simple concept de “toucher <br>
+          sans se faire toucher” avec une arme.
+        </p>
+      </div>
+
+      <div class="image-container">
+        <img class="sabre-img" src="https://static.wixstatic.com/media/cf687c_9c30c834207a416894a1815c41842a3a~mv2.jpg/v1/fill/w_483,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/sabrelasernouveau.jpg" alt="Sabre Laser Kung-Fu">
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="texte">
+      <p class="texte-duan2">
+        <span class="align-item">Le programme de formation et de <br>
+        pratique <span class="bleu">DUAN BING</span> de notre <br>
+        école est basé sur trois éléments <br>
+        d’étude interconnectés.</span> <br>
+
+        <strong>Tout d'abord, les formes (Tao <br>
+        Lu)</strong>, qui constituent l’axe technique du système. <br>
+
+        Deuxièmement, <strong>les bases et <br>
+        les fondamentaux de <br>
+        l’habileté</strong>, qui sont les <br>
+        transmis par le Kung-Fu <br>
+        fournit dans le maniement des <br>
+        armes. <br>
+
+        Enfin, <strong>les combats</strong>, Espace <br>
+        dans lequel des éléments <br>
+        importants tels que la <br>
+        stratégie, la tactique, la <br>
+        technique, la condition <br>
+        physique et la capacité du <br>
+        tireur sont mis à l'épreuve.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <img class="sabre-img2" src="https://static.wixstatic.com/media/cf687c_94e4f7114bff4286abeeb238475bff2a~mv2.jpg/v1/fill/w_375,h_262,al_c,lg_1,q_80,enc_avif,quality_auto/DUAN%20BING%20COMBAT%201_jfif.jpg" alt="Combat Duan Bing">
+    </div>
+  </div>
+</section>
+
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

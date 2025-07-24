@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Pratique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté dynamiquement -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Pratique -->
+    <section class="section-pratique">
+      <h3 class="h3">LA PRATIQUE CHEZ L'ADULTE & L'ENFANT</h3>
+
+      <div class="image-container">
+        <div class="image-wrapper2">
+          <img class="image-pratique2" src="https://static.wixstatic.com/media/cf687c_c80e6e42b717484384ba8c0bb2243cfe~mv2_d_2295_1741_s_2.jpg" alt="Pratique kung-fu">
+        </div>
+        <div class="image-wrapper">
+          <img class="image-pratique" src="https://static.wixstatic.com/media/cf687c_68d2c6453ccc49cab3d55c0866a7e237~mv2_d_1715_1480_s_2.jpg" alt="Pratique adulte et enfant">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté dynamiquement -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

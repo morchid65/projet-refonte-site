@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat de France Traditionnel 2023</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-france-moderne-2023">
+  <div class="image-container-row1">
+  <div class="image-container-column">
+    <img class="img-radius border-white" src="https://static.wixstatic.com/media/cf687c_5e4d3d72adc84eeda8d63f23e850c78a~mv2.png/v1/fill/w_691,h_155,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AFFICHE%20WUSHU%20SPORTIF.png" alt="Juge Sanshou & Taolu">
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_aa0c02be62e2460cbd45798da7c33986~mv2.jpg/v1/fill/w_596,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20230312-WA0006.jpg" alt="France Traditionnel 2023">
+    <p class="jaune1">Juge Taolu Moderne</p>
+    <img class="img-radius border-white" src="https://static.wixstatic.com/media/cf687c_5ae81c8e93104f3cb498a947a5c71052~mv2.jpg/v1/fill/w_596,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20230311_085950.jpg" alt="Compétition Taolu">
+  </div>
+  <div>
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_88c542992bc84190a1bcfa87cc4b5876~mv2.jpg/v1/fill/w_210,h_461,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20230311_192944.jpg" alt="">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

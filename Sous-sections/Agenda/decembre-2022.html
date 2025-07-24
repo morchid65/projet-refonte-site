@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Décembre 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/sous-section-agenda.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth = location.pathname.split('/').length - 2;
+    const path = '../'.repeat(depth) + 'header.html';
+    fetch(path)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+  <section class="section-decembre">
+
+  <div class="wrapper">
+    <div class="text-standard1">
+      <span class="title-main">JOURNÉE <br> Rencontre Arts Martiaux</span>
+      <span class="text-standard2">Dimanche 11 Décembre 2022 - Gymnase Rebuffat Auriol <br> (9H30 - 17H00) .</span>
+    </div>
+
+    <div class="image-text-container">
+      <p class="p1">
+        VENEZ DECOUVRIR <br> <span class="discipline">Les disciplines</span> <br> Kung-Fu <br> Tai-Chi <br> Qi Gong <br>
+        <span class="color-pistache">Ateliers pédagogiques pour <br> enfants(Psychomotricité, <br> vitesse, ...acrobatie</span>
+      </p>
+      <img class="image-decembre rounded-image" src="https://static.wixstatic.com/media/cf687c_9fc29c42c19c4af3878018f36987cfd1~mv2.png" alt="">
+    </div>
+  </div>
+  </section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

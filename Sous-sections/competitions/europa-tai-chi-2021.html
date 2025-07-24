@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Europa Tai Chi 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-europa-tai-chi-2021">
+  <div class="texte-image-ligne">
+    <img src="https://static.wixstatic.com/media/cf687c_3dc36705be974b04a92590e3f58db288~mv2.png" alt="Europa Tai Chi">
+    <div class="texte-image-colonne">
+<p class="paragraphe2">
+  RESULTATS <br>
+- 1ere  -  Place Taolu long (chen) <br>
+- 1ere- Place Taolu éventail (shaolin) <br>
+</p>
+<p class="paragrahe-vert">
+- 2ème - Place Taolu épée (chen) <br>
+- 2ème - Place Taolu rapide (chen) <br>
+- 2ème - Place Taolu Fouet (Wu Dang) <br>
+</p>
+</div>
+</div>
+
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

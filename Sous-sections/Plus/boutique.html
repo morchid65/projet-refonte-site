@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boutique – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-boutique">
+    <h1 class="titre">Notre Boutique</h1>
+    <h4 class="sous-titre4">Vous pouvez commander nos articles en ligne</h4>
+  </div>
+
+  <div class="containeur-global-centre-row1">
+  <div class="containeur-global-centre-column">
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_4273b2ebc8884d2b90d9916829cdd426~mv2.png/v1/fill/w_215,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/teeshirt%20dulac.png" alt="Tee-shirt Dulac">
+  </div>
+
+  <button><a class="btn-link" href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/boutiques/vente-de-tee-shirt-et-de-sweat-a-capuches-au-nom-de-notre-ecole" target="_blank">Tee Shirt & sweat Capuche</a></button>
+
+<div>
+  <img src="https://static.wixstatic.com/media/cf687c_c04da6d000b046b080841043da0afbbb~mv2.png/v1/fill/w_222,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_c04da6d000b046b080841043da0afbbb~mv2.png" alt="">
+</div>
+</div>
+
+  <div class="containeur-global-centre-column">
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_fcf484931a7941b09459e898e80abec3~mv2.png/v1/fill/w_172,h_220,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_fcf484931a7941b09459e898e80abec3~mv2.png" alt="Article Boutique">
+  </div>
+
+      <button><a class="btn-link" href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/boutiques/guide-technique-kung-fu-et-tai-chi" target="_blank">Guide Technique Kung-Fu & Tai-Chi</a></button>
+  <div>
+    <img src="https://static.wixstatic.com/media/cf687c_959ea73d27574e3fb666902187489c33~mv2.png/v1/fill/w_172,h_208,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cf687c_959ea73d27574e3fb666902187489c33~mv2.png" alt="Guide technique">
+  </div>
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

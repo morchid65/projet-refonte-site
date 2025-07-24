@@ -1,0 +1,406 @@
+.text-standard {
+    text-align: center;
+    color: #6bc412;
+    font-size: 20px;
+    right: 100px; /* Décalage horizontal */
+    font-weight: 50px;
+    position: relative;
+}
+
+.title-main {
+    font-size: 50px;
+    bottom: 30px;
+    position: relative;
+    font-weight: 100;
+}
+
+.section-wushu {
+    margin-top: 100px;
+}
+
+.image-container {
+    margin-top: 80px;
+}
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.image-decembre-2021 {
+    margin-top: 150px;
+    left: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+
+
+
+
+
+
+
+.section-september {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titre principal */
+.title-main {
+  font-weight: 600;
+  position: relative;
+  right: 330px;
+  bottom: 20px;
+}
+
+/* Texte sous le titre */
+.text-standard {
+  color: #fff;
+  position: relative;
+  right: 330px;
+  bottom: 20px;
+  left: 0; /* inutile ici car right est déjà défini */
+}
+
+/* Conteneur principal */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conteneur des deux images */
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  position: relative;
+}
+
+/* Première image */
+.association {
+  position: relative;
+  margin-bottom: 0; /* on évite les gros margin-bottom qui affectent le conteneur */
+  bottom: 270px;
+  left: 20px;
+}
+
+/* Deuxième image */
+.wutaoacademy {
+  border: 4px solid #fff;
+  position: relative;
+  margin-bottom: 200px;
+  bottom: 280px; /* ajuste comme tu veux ici */
+}
+
+.images-independantes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+}
+
+.schedule {
+    position: relative;
+    bottom: 470px;
+    left: 70px;
+    line-height: 0.5;
+
+}
+
+.schedule2 {
+    line-height: 0.5;
+    position: relative;
+    bottom: 460px;
+}
+
+.title-sub {
+    color: #6bc412;
+    position: relative;
+    left: 43%;
+
+}
+
+.venez {
+    color: red;
+}
+
+.title-event {
+    color: red;
+    font-size: 50px;
+    position: relative;
+    left: 40%;
+}
+
+.p0 {
+    color: rgb(162, 5, 5);
+    font-size: 25px;
+
+}
+
+.p2 {
+    color: rgb(162, 5, 5);
+}
+
+
+
+/* ✅ Conteneur global */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Ligne contenant les blocs */
+.image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Bloc pour image + bouton */
+.image-container,
+.image-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+/* ✅ Images (Kung-Fu et Taiji) */
+.image-juillet,
+.image-juillet2 {
+  width: 100%;
+  height: auto;
+}
+
+/* ✅ Conteneur texte central */
+.centered-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Titre de date */
+.title-main {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+
+/* ✅ Classe de texte standard (rouge) */
+.text-standard {
+  color: red;
+}
+
+
+/* 🔴 Section principale */
+.section-decembre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📸 Image + texte alignés horizontalement */
+.image-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-left: 70px;
+}
+
+/* 🖼️ Image encadrée */
+.image-decembre {
+  width: 20%;
+  height: auto;
+  border: 10px solid #fff;
+}
+
+/* 📝 Titre principal rouge */
+.p1 {
+  color: rgb(186, 8, 8);
+  line-height: 1.6;
+  font-size: 40px;
+}
+
+/* 🟢 Nom de discipline */
+.discipline {
+  color: #fff;
+}
+
+/* 🎯 Conteneur global centré */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📚 Bloc texte en colonne */
+.text-standard1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 🧾 Texte secondaire blanc centré */
+.text-standard2 {
+  line-height: 1.5;
+  font-size: 31px;
+  color: #fff;
+  text-align: center;
+  margin-left: 95px;
+}
+
+/* 🎬 Grand titre rouge */
+.title-main {
+  font-size: 68px;
+  line-height: 1.2;
+  color: red;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 🟩 Couleur pistache spéciale */
+.color-pistache {
+  color: #a0dc64;
+}
+
+
+
+
+
+.title-main{
+    font-size: 50px;
+}
+
+.section-global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sous-global {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.image-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.title-sub {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    left: 110px;
+    padding: 50px;
+}
+
+.image-container2,
+.image-container3,
+.image-container4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-container2 {
+    gap: 70px;
+}
+
+.image-container3 {
+    gap: 30px;
+}
+
+.image-container4 {
+    gap: 20px;
+}
+
+.image-decathlon1 {
+    position: relative;
+    right: 80px;
+}
+
+.image-decathlon3 {
+    border: 4px solid #222;
+    position: relative;
+    right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conteneur global de la section (centrage, largeur)
+Bloc en display: flex pour organiser les 3 sous-blocs côte à côte
+Conteneur de l’image 1 + bouton Kung-Fu
+Image 1 : style spécifique (bordure blanche, taille, etc.)
+Style commun à toutes les images (coins arrondis, etc.)
+Bloc central pour le titre <h1>
+spécifique au texte du titre
+Conteneur de l’image 2 + bouton Taiji

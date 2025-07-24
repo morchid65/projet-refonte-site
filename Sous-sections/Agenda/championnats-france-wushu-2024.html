@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat Wushu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/sous-section-agenda.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth = location.pathname.split('/').length - 2;
+    const path = '../'.repeat(depth) + 'header.html';
+    fetch(path)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+  <section class="section-wushu">
+    <p class="text-standard">NOTRE ÉCOLE ORGANISE...</p>
+    <h1 class="title-main">CHAMPIONNAT DE FRANCE</h1>
+    <div class="image-container">
+      <img class="image-wushu rounded-image" src="https://static.wixstatic.com/media/cf687c_342285c1805e48cf96b4a874c5bd19de~mv2.png/v1/fill/w_673,h_948,al_c,q_90,enc_avif,quality_auto/affiche%20avec%20viille%20auriol.png" alt="Affiche Championnats">
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

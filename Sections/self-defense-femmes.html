@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao – Self-Défense Femmes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Feuilles CSS nécessaires -->
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/Sections.css" />
+</head>
+<body>
+
+  <!-- En-tête injecté -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Self-Défense Présentation -->
+    <section class="self-defense-section">
+      <div class="content-container">
+        <h1 class="title-main1">SELF-DÉFENSE FEMMES</h1>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="text-container">
+          <p class="text-standard">
+            <br> Face à la montée de l'insécurité dans les milieux publics, de plus en plus de <br> femmes se tournent vers la Self-Défense.  
+            Une manière de se sécuriser tout en <br> pratiquant une activité physique.
+
+            <strong> <br> <br> 1 - Introduction </strong> <br> 
+            <br>La self-défense n'est pas un art de combat comme la boxe mais plutôt des <br> 
+            techniques permettant de se dégager d'une saisie ou autre agression <br> physique. <br>
+
+            <strong> <br> 2 - Pourquoi nous ?</strong><br>
+            <br> Le kung-fu regorge de techniques dites de "Chi Na" ou de clefs ainsi que de <br> coups portés dans les <strong>zones</strong> les plus <strong>sensibles</strong> du corps humain. <br>
+            La connaissance de l'instructeur sur des techniques plus ciblées sur la défense <br> rapprochée permet d'avoir un catalogue suffisant afin d'éloigner un agresseur. <br>
+
+            <br> Il en va de soi que la pratique de Self-Défense n'est pas une incitation à la <br> violence, bien au contraire, arriver à se <strong>maîtriser</strong> et à avoir de <strong>bons réflexes</strong>. <br>
+
+            <strong> <br> 3 - Pourquoi un cours exclusivement féminin ?</strong><br>
+            <br> Le but est de <strong>"rassurer"</strong> et de pouvoir faire <strong>"confiance"</strong> à sa partenaire <br>
+            pendant les exercices d'apprentissage. <br>
+            Cela dit, des "stages en immersion" sont prévus afin de mettre en situation les <br> personnes qui le souhaitent (basé sur le volontariat) avec des pratiquants <br> masculins équipés de protections afin de ne pas trop les endommager ! <br>
+          </p>
+        </div>
+
+        <div class="image-right">
+          <img class="image-self-defense rounded-image" src="https://static.wixstatic.com/media/cf687c_cb3114a326c24c1a91cf5e14c618a830~mv2.png" alt="Self-Défense femmes"> 
+        </div>
+      </div>
+
+      <div class="image-bottom">
+        <br> <img class="image-self-defense2 rounded-image" src="https://static.wixstatic.com/media/cf687c_49a573eef6be4f40ab6a108e33760417~mv2.jpg" alt="Entraînement Self-Défense">
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page injecté -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

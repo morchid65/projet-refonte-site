@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sélectifs France 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-selectifs-france-2020">
+  <h1 class="titre">SELECTIFS FRANCE 2020</h1>
+
+<div class="containeur-global-ligne2">
+<div class="texte-image-colonne2">
+<img class="border-white" src="https://static.wixstatic.com/media/cf687c_7b068b5c136b43bbbaad6cc0035d28fc~mv2.jpg/v1/fill/w_457,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/podium%20taiji%20paca%202020.jpg" alt="">
+<p>
+  Première place en Tai chi <br>
+Style Chen - Mains nues <br>
+<br>
+Première place en Tai chi <br>
+Style Chen - Épée <br>
+</p>
+</div>
+<div class="texte-image-colonne">
+<img class="border-white" src="https://static.wixstatic.com/media/cf687c_ba9c943066b84201bccbb7d8c8d3cb15~mv2.jpg/v1/fill/w_495,h_282,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/lenny%20podium%20officiel.jpg" alt="">
+<p>
+  Seconde place en Sanda (combat) <br>
+Lenny  Redouia - Cat Benjamin <br>
+</p>
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

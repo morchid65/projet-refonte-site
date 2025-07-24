@@ -1,0 +1,73 @@
+<footer id="site-footer">
+  <div class="cta-footer">
+    <button id="audio-toggle"><span class="icon"></span></button>
+    <p class="footer-text">© Wu Tao Auriol – Tous droits réservés</p>
+  </div>
+  <audio id="footer-audio" src="/audio/nom-du-fichier.mp3"></audio>
+
+<style>
+  #site-footer {
+  background: #111;
+  color: #f5f5f5;
+  padding: 30px 10px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cta-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#audio-toggle {
+  background-color: #c4d8ec; /* Bleu vif */
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 2px; /* Coins arrondis */
+  transition: transform 0.2s ease;
+}
+
+.icon::before {
+  content: "▶";
+  font-size: 1.1rem;
+  color: rgb(30, 45, 44); /* Icône blanche */
+}
+
+#audio-toggle.playing .icon::before {
+  content: "⏸";
+}
+
+#audio-toggle.playing:hover .icon::before {
+  content: "◼";
+}
+</style>
+  
+  <script>
+    const toggleBtn = document.getElementById('audio-toggle');
+    const audio = document.getElementById('footer-audio');
+
+    let isPlaying = false;
+
+    toggleBtn.addEventListener('click', () => {
+      isPlaying = !isPlaying;
+
+      if (isPlaying) {
+        audio.play().catch(() => {});
+        toggleBtn.classList.add('playing');
+      } else {
+        audio.pause();
+        toggleBtn.classList.remove('playing');
+      }
+    });
+  </script>
+</footer>
+
+

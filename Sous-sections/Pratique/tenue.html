@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tenue – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-tenue">
+  <div class="text-image">
+  <div class="text">
+  <h1 class="title-main">Histoire de la tenue</h1>
+  <p class="p3">
+
+    La tenue, symbole traditionnel du Wu Tao, appelée le Vo Phuc, (en vietnamien) et <br>
+    en chinois yifu (vêtement) ou fuzhuang (costume) est composée d’une veste <br> 
+    blanche et d’un pantalon noir.​
+    <br>
+    <br>
+    Cette tenue évoque plusieurs significations, d’ordre historique et philosophique. <br>
+    La première explication, historique, vient des paysans vietnamiens qui passaient <br> 
+    leur temps à travailler dans des rizières. Ils avaient alors constamment les jambes <br>
+    dans de l’eau boueuse, et pour cela ils avaient adopté un pantalon foncé (noir) <br>
+    car moins salissant.
+    <br>
+    <br>
+    En contre partie le Vietnam est un pays où il fait extrêmement chaud et comme <br>
+    les couleurs foncées attirent la chaleur, ils avaient adopté une veste claire (blanc) <br>
+    pour s’en protéger. Cette tenue est donc un rappel à la mémoire de ce peuple. <br>
+    On retrouve là un des aspects du salut aux Maîtres et aux Aînés.
+    <br>
+    <br>
+    Une autre explication voudrait que le blanc symbolise le ciel et le noir la terre. <br> 
+    Cette interprétation est à associer à la croyance que l’homme est la passerelle <br>
+    entre la terre et le ciel.
+</p>
+</div>
+  <div class="image-container">
+    <img class="img" src="https://static.wixstatic.com/media/cf687c_c3ce10ef98cd00cdc815992a95a1330b.gif" alt="Tenue traditionnelle">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

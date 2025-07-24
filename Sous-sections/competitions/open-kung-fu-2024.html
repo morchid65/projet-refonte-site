@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open Kung Fu 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-kungfu-2024">
+  <div class="super-global">
+  <div class="container-global2">
+  <div class="image-container">
+    <img src="https://static.wixstatic.com/media/cf687c_1ac4f56041364433ac6583f81e7e54b0~mv2.png/v1/fill/w_313,h_547,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/OPEN%20LEVENS.png" alt="">
+  </div>
+<p class="p1">
+  <strong class="jaune">
+  De belles médailles pour : <br>
+- Gascon Nel <br>
+- Gros jean alexis <br>
+- Benhima Nill <br>
+ </strong> <br>
+
+<strong class="rouge">
+Merci à : <br>
+- Grosjean damien <br>
+- Sellem william <br>
+- Benhima Yacine <br>
+Pour leurs participation en tant que Juges <br>
+</strong>
+</p>
+</div>
+
+<div class="image-container4">
+<img class="border-white" src="https://static.wixstatic.com/media/cf687c_fa11568cbd1d43ba9e0ed638b669e580~mv2.jpg/v1/fill/w_248,h_232,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20231203-WA0004.jpg" alt="">
+<img class="border-white" src="https://static.wixstatic.com/media/cf687c_304077565a794acb8742c56ff87aaf0c~mv2.jpg/v1/fill/w_298,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20231203-WA0006.jpg" alt="">
+<img class="border-white" src="https://static.wixstatic.com/media/cf687c_9521d0f611fd483ab1fbd51aed8f284f~mv2.jpg/v1/fill/w_239,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG-20231203-WA0008.jpg" alt="">
+</div>
+
+<div class="image-container5">
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_a81b0979a2fd4b238a37ffd8886010b0~mv2.jpg/v1/fill/w_367,h_193,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1702148512723.jpg" alt="">
+  <img class="border-white" src="https://static.wixstatic.com/media/cf687c_1a7b7116796c494197a71cfbae565d2c~mv2.jpg/v1/fill/w_442,h_202,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1702241047958.jpg" alt="">
+</div>
+</div>
+
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

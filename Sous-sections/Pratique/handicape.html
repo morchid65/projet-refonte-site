@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wu Tao & Handicap – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-handicap">
+  <h1 class="title-main5">Le Wu Tao et le Handicap</h1>
+
+  <div class="text-image4">
+    <div class="image-container4">
+    <img class="img5" src="https://static.wixstatic.com/media/cf687c_b04270ce82c14a73be3f85cd8b446ac0.jpg" alt="Wu Tao et inclusion">
+  </div>
+
+<p class="p5">
+Il existe 2 fédérations sportives agréées en France correspondant aux différents types de <br> 
+handicaps : <br> 
+La Fédération Française du Sport Adapté (handicap mental et troubles psychiques, troubles <br>
+de l'adaptation), la Fédération Française Handisport (handicap moteur et visuel et auditif). <br>
+Toutes deux sont multisports <br>
+
+L'école wu Tao d'Auriol accueil déjà des enfants avec des troubles diverses, comme la <br>
+dyslexie ....
+
+La pratique  de cet art martial permet notament de valoriser l'individu dans un domaine sportif <br>
+avec une progression dans son parcour martial. <br>
+
+l'instructeur principal, christian michaud reçoit régulièrement des formation lui permettant <br>
+d'accueillir ce type de public. <br>
+
+
+</p>
+
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

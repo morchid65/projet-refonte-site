@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guide Technique - Kung-Fu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/kungfu.css" />
+</head>
+<body>
+
+<div id="header-container"></div>
+<script>
+  fetch('header.html').then(r => r.text()).then(d => { document.getElementById('header-container').innerHTML = d; });
+</script>
+
+<section class="section-kungfu-guide-technique">
+  <div class="groupe-texte">
+    <p class="p1">Livre Technique Kung-Fu</p>
+    <p class="p2">
+      Notre école présente un guide technique permettant d'expliquer clairement notre pratique du <br> 
+      Kung-Fu, ainsi que les rituels, le travail de l'énergie...
+    </p>
+  </div>
+  <div class="image-container3">
+    <img class="guide1" src="https://static.wixstatic.com/media/cf687c_fcf484931a7941b09459e898e80abec3~mv2.png/v1/fill/w_319,h_408,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/page%20garde.png" alt="Page Garde - Livre Technique Kung-Fu">
+    <img class="guide2" src="https://static.wixstatic.com/media/cf687c_799e4021e5c042b5936e4f7974f6009e~mv2.png/v1/fill/w_579,h_413,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sommaire%20kf_PNG.png" alt="Sommaire - Livre Technique Kung-Fu">
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

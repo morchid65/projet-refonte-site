@@ -1,0 +1,83 @@
+.section-inscriptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align {
+}
+
+.text-standard {
+    text-align: left;
+    font-size: 1.2;
+    line-height: 1.8;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.jaune {
+    color: #f0c000;
+}
+
+.section-liens-inscription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.conatiner-inscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.title-sub {
+    font-size: 1.5em;
+    color: #f0c000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.container-inscription2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.container-inscription3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #333; /* Texte sombre bien visible sur fond clair */
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+ .btn a {
+    color: #333; /* Texte sombre bien visible sur fond clair */
+  text-decoration: none;
+ }

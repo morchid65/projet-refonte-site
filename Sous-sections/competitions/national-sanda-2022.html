@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat National Sanda 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-national-sanda-2022">
+  <h1 class="titre">Juge Arbitre Championnat National Sanda 2022</h1>
+
+  <div class="containeur-global1">
+  <div class="containeur-image1">
+    <img src="https://static.wixstatic.com/media/cf687c_346cfc2497f740f9b5bf64f69c87a861~mv2.jpg" alt="Championnat National Sanda 2022">
+    <img src="https://static.wixstatic.com/media/cf687c_b0eaadd193d842118fdb809b90cd15bd~mv2.png/v1/fill/w_251,h_563,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20220714_114140.png" alt="">
+  </div>
+
+  <div class="containeur-image1">
+    <img src="https://static.wixstatic.com/media/cf687c_c0e8c4f2fd5e48c980348dc300beb9e8~mv2.png/v1/fill/w_169,h_381,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20220714_114150.png" alt="Championnat National Sanda 2022">
+    <img src="https://static.wixstatic.com/media/cf687c_373b7bf16a8f415c9fb2b314d10488a6~mv2.jpg/v1/fill/w_499,h_362,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3.jpg" alt="">
+  </div>
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

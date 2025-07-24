@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Championnat de France Traditionnel 2023</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-championnat-france-tradi-2023">
+
+<div class="image-container-column">
+
+<div class="image-container-row">
+  <h2 class="title-sub">Juge Sanshou & Taolu</h2>
+  <div class="image-container-row-sub">
+    <img class="img-size border-white" src="https://static.wixstatic.com/media/cf687c_e0eb2adb86184a5db6d83ff680dbc61a~mv2.jpg" alt="Juge Sanshou & Taolu">
+    <img class="border-white" src="https://static.wixstatic.com/media/cf687c_3b6ba10a2f9d4aeb9e571b44aa0388b4~mv2.png" alt="France Traditionnel 2023">
+  </div>
+</div>
+
+  <div class="image-container-column">
+    <img class="img-size border-white" src="https://static.wixstatic.com/media/cf687c_51527591feed4c2e8910c1951c90b80c~mv2.jpg" alt="Compétition Taolu">
+  </div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

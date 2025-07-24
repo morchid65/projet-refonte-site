@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vidéos – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/plus.css" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-videos">
+<div class="containeur-global-centre-row">
+<div class="containeur-global-centre-column">
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=0LgBkVuKR7g" target="_blank">Ateliers Taolu Tai Chi</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=MuZb5JBqkLY" target="_blank">Tai Chi Raquette</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=bb0DvhD5AqA" target="_blank">Évitements Combats</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=hiGa7yGZsx0" target="_blank">Entraînement Nature</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=5FjMjRP5fFo">Epée chinoise Adultes</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=qQHuPIqkOKg">FORUM DES ASSOCIATIONS 2015</a></button>
+</div>  
+
+<div class="containeur-global-centre-column">
+  <img class="border-grey" src="https://static.wixstatic.com/media/cf687c_847f0ac536a74682b5998d9ac3e8378a~mv2.jpg/v1/fill/w_195,h_256,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/enf1.jpg" alt="">
+    <button><a class="btn-link2" href="https://www.youtube.com/watch?v=qQHuPIqkOKg">Gala Auriol 2016</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=qQHuPIqkOKg">Gala Hyeres 2017 (Sabre/Tri Batons)</a></button>
+</div>
+
+
+
+<div class="containeur-global-centre-column">
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=1WWVBVGxn38&feature=youtu.be">Jeux Cardio enfants</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=0s8aGxihgZk">Cardio enfants</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=mP17bFi8Lpg">Cardio Ados</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=nrZUQoHHNhw">Frappes Ados</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=PahIMY5YnU8">Etirements Ados</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=aswWv2DpVu0&t=3s">Combat Ados</a></button>
+  <button><a class="btn-link2" href="https://www.youtube.com/watch?v=WzPkhtGYwY8">Forum Associations 2016</a></button>
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

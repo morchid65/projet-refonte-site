@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wu Tao – Agenda</title>
+  <!-- Liens CSS globaux -->
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/Sections.css">
+</head>
+<body>
+
+  <!-- Injection du header -->
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <section class="agenda-section">
+      <h1 class="agenda-title">Les différents rendez-vous de la saison</h1>
+      <div class="image-container">
+        <img class="image-agenda rounded-image centered-image" src="/Img/Agenda/1b.avif" alt="Événements de la saison">
+      </div>
+    </section>
+  </main>
+
+  <!-- Injection du footer si tu en as un -->
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

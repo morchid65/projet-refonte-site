@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Espace Adhérents – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-adherents">
+  <div>
+  <h1 class="titre2">Espace réservé</h1>
+  <p class="size-paragraphe">Veuillez saisir le mot de passe ci-dessous.</p>
+  </div>
+  <input class="size" type="password" id="Mot-de-Passe" placeholder="Mot de passe">
+  <button class="btn" id="submit-password">OK</button>
+</section>
+
+<script>
+document.querySelector("#submit-password").addEventListener("click", function() {
+    let passwordInput = document.getElementById("Mot-de-Passe").value;
+    if (passwordInput === "") {
+        alert("Veuillez saisir un mot de passe.");
+    } else if (passwordInput.length < 6) {
+        alert("Le mot de passe doit contenir au moins 6 caractères.");
+    } else {
+        alert("Mot de passe valide !");
+    }
+});
+</script>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open National Kung-Fu 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/competition.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-open-national-kungfu-2020">
+  <h1 class="titre">Open National Kung-Fu <br> E-COMPETITION</h1>
+
+  <div class="containeur-image2">
+  <div>
+    <img class="border-gris" src="https://static.wixstatic.com/media/cf687c_d9d0e72a13774ac4b49a4f8d3e426b9c~mv2.jpg/v1/fill/w_312,h_441,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/affiche_e_competition_reduite_2.jpg" alt="">
+  </div>
+
+<div class="texte-image-colonne">
+      <p>
+      <strong class="jaune3">Résultat</strong> <br>
+      - 1er Christian Michaud en Vétéran 2 <br>
+      Arme Flexible (Tri-bâton)
+    </p>
+    <img class="border-gris" src="https://static.wixstatic.com/media/cf687c_067beb77f2f84249bdde944e8749d1c9~mv2.jpg/v1/fill/w_349,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/diplome%20open%20faemc.jpg" alt="">
+</div>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

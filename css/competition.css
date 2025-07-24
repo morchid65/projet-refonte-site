@@ -1,0 +1,419 @@
+.p1 {
+  font-size: 30px;
+  text-align: left;
+}
+
+.bloc-texte-image {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title-sub {
+  color: rgb(232, 232, 103);
+  text-align: center;
+  font-size: 60px;
+}
+
+.section-championnat-france-tradi-2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-radius {
+    border-radius: 50%;
+}
+
+.img-base {
+  border: 5px solid #fff;
+  width: 45%;
+  height: auto;
+}
+
+.img-base1 {
+    border: 5px solid #fff;
+    width: 75%;
+    height: auto; 
+}
+
+.img-base2 {
+    border: 5px solid #fff;
+    width: 95%;
+    height: auto; 
+}
+
+.img-base3 {
+    border: 5px solid #fff;
+    width: 55%;
+    height: auto; 
+}
+
+.img-base4 {
+    border: 5px solid #fff;
+    width: 195%;
+    height: auto; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.container-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
+.jaune {
+    color: goldenrod;
+}
+
+.rouge {
+    color: red;
+}
+
+.container-global2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.image-container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.image-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.super-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.border-white {
+    border: 5px solid #fff;
+}
+
+
+
+
+.img-size {
+    width: 30%;
+    height: auto;
+}
+
+.image-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container-row-sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.image-container-row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+    width: 110%;
+    height: auto;
+    padding: 50px;
+}
+
+.jaune1 {
+    color: goldenrod;
+    font-size: 55px;
+}
+
+
+.image-container-row-sub2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.image-container-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-container-row4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.img-global {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.titre {
+    font-size: 70px;
+}
+
+
+
+
+
+
+.containeur-global-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.containeur-global-ligne2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.containeur-image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.containeur-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.containeur-image3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.containeur-image-colonne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.containeur-global1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containeur-global2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-start-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.flex-start-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-end-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.flex-end-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.paragraphe1 {
+    font-size: 20px;
+    text-align: left;
+    color: red;
+}
+
+.paragraphe2 {
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+
+.paragraphe-jaune-left {
+    font-size: 20px;
+    text-align: left;
+    color: goldenrod;
+}
+
+.paragraphe-khaki-left {
+    font-size: 20px;
+    text-align: left;
+    color: khaki;
+}
+
+.paragraphe-vert {
+    font-size: 20px;
+    color: rgb(8, 175, 8);
+}
+
+.paragraphe-align-left {
+    text-align: left;
+}
+
+.texte-image-ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.texte-image-colonne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-championnat-france-2021 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.section-europa-tai-chi-2021 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.section-open-europeen-2018 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.jaune2 {
+    color: rgb(236, 236, 11);
+}
+
+.jaune3 {
+    color: rgb(236, 236, 11);
+    font-size: 45px;
+}
+
+.border-gris {
+    border: 4px solid #464242;
+}
+
+.position-right {
+    margin-right: 145px;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enseignement – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-enseignement">
+<div class="text">
+<h1 class="titre-rouge">L’enseignement : la non intervention (wu wei)​​</h1>
+<p class="p1">
+L’enseignant ne corrige pas les Pratiquants directement physiquement. C’est par la répétition des exercices <br> que le Pratiquant va adapter la posture à son propre corps, tout en étant en symbiose avec le groupe et <br> avec l’Enseignant. Cela est bon pour le développement d’observation : le fait de ne pas être corrigé <br> rend indépendant et on devient plus attentif. En Chine on​
+dit: "regarde et fais".
+</p>
+<h1 class="titre-rouge">L’enseignement : l’intervention (you wei)</h1>
+<p class="p1">
+Dans ce cas l’Enseignant corrige, qui une main, qui un pied, un port de tête etc. les Occidentaux apprécient <br> 
+cet enseignement mais cela les rend dépendants de l’Enseignant. Dès qu ’il ne montre plus, ne corrige <br> 
+plus, tout le groupe est perdu et souvent s’arrête de travailler, car "on ne se souvient plus de la suite". <br>
+L’Enseignant idéal doit fonctionner entre les deux aspects, mais surtout  connaître le niveau de chacun <br> 
+de ses Pratiquants, de façon à ne brusquer ni forcer personne. Chacun de nous à son propre rythme de <br>
+pratique et l’Enseignant le sait. Il doit connaître chacun, et c’est à lui de s’adapter et non pas le contraire.
+</p>
+
+<h1 class="titre-rouge">La parole : "Heureux celui qui a oublié les mots"</h1>
+<p class="p1">
+Dans la pratique les mots comptent, mais aussi la voix. Ils servent à fixer l’attention des Pratiquants sur <br>
+des points particuliers de leur pratique. Unis à la technique, ils enrichissent l’enchaînement et la fluidité. <br>
+<br> <span class="titre-rouge">L’évolution des Pratiquants :​</span> <br>
+
+L’apprentissage est difficile, nous sommes souvent en situation délicate face à un mouvement ou un <br>
+enchaînement. Mais nous progressons à chaque fois. L’Enseignant aussi. C’est grâce à ce double <br> 
+échange, progrès du Pratiquant, progrès de l’Enseignant, que l’alchimie existe. Chacun s’examine dans sa <br>
+pratique, "comment puis-je expliquer clairement ce mouvement" se dit l’Enseignant, et le Pratiquant aussi <br>
+se dit : "peut être devrais-je aller moins vite, mieux regarder etc". <br>
+C’est un enrichissement mutuel entre les deux personnes et c’est ce qui me fascine toujours dans les <br>
+cours. Il n’y en a pas un plus important que l’autre, c’est simplement un échange d’énergie. Chacun <br>
+prend le temps d’écouter l’autre, et c’est très rare dans nos sociétés ou tout doit être compris, assimilé, <br> 
+digéré, en un temps record. Vive la lenteur, disent les vieux textes Taoïstes, car c’est dans la lenteur, que <br>
+réside la vitesse. <br>
+Pour apprendre il faut se donner du temps, prendre du recul par rapport aux difficultés, mais aussi par <br> 
+rapport à la réussite, qui précède l’apparition de nouvelles difficultés. L’autonomie s’acquiert quand le <br> 
+Pratiquant, prenant conscience de ses difficultés, sait recevoir les informations qui vont être utiles à sa <br>
+progression. Ceci démontre que l’Enseignant à bien fait son travail. <br>
+L’étude avec le professeur s’achève, la pratique qui commence a pour seul modèle celle d’un pratiquant <br>
+face à lui-même.
+​</p>
+<p class="p2">
+Bernard Geay
+</p>
+</div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

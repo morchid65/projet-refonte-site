@@ -1,0 +1,56 @@
+.alignement-tableau {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.jaune {
+    color: rgb(216, 196, 14);
+}
+
+.text-align {
+    text-align: left;
+}
+
+.section-tarifs {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rouge {
+    color: rgb(255, 0, 0);
+}
+
+.global-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.double-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.encadre-blanc {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 2px solid #fff;
+  color: #e80808;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff; /* Fond blanc avec opacité */
+  border-radius: 6px;
+  margin: 10px auto;
+}

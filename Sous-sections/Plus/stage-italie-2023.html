@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stage Italie 2023 – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+
+<section class="carousel-dojo">
+  <h1 class="carousel-title">Stage en altitude - Italie 2023</h1>
+
+  <div class="main-display">
+    <button class="arrow left">⬅</button>
+    <img id="main-image" class="card-image" src="" alt="Image principale">
+    <button class="arrow right">➡</button>
+  </div>
+
+  <div class="thumbnail-wrapper">
+    <div class="thumbnail-track"></div>
+  </div>
+
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup-content">
+      <button id="close-popup">✖</button>
+      <button id="popup-prev" class="popup-arrow">⬅</button>
+      <button id="popup-next" class="popup-arrow">➡</button>
+      <img id="popup-img" src="" alt="Zoom">
+    </div>
+  </div>
+</section>
+
+<script>
+const images = [
+  "url1.jpg", "url2.jpg", "url3.jpg" // 👉 Spécifiques à la page
+];
+
+const mainImage = document.getElementById("main-image");
+const thumbnailTrack = document.querySelector(".thumbnail-track");
+const popup = document.getElementById("popup-overlay");
+const popupImg = document.getElementById("popup-img");
+const popupClose = document.getElementById("close-popup");
+const popupNext = document.getElementById("popup-next");
+const popupPrev = document.getElementById("popup-prev");
+const btnLeft = document.querySelector(".arrow.left");
+const btnRight = document.querySelector(".arrow.right");
+
+let index = 0;
+
+// Injecter dynamiquement les miniatures
+images.forEach((src, i) => {
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = "Miniature " + (i + 1);
+  img.addEventListener("click", () => updateMain(i));
+  thumbnailTrack.appendChild(img);
+});
+
+function updateMain(i) {
+  index = i;
+  mainImage.style.opacity = 0;
+  setTimeout(() => {
+    mainImage.src = images[i];
+    mainImage.style.opacity = 1;
+  }, 300);
+}
+
+btnLeft.addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
+  updateMain(index);
+});
+
+btnRight.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  updateMain(index);
+});
+
+mainImage.addEventListener("click", () => {
+  popup.style.display = "flex";
+  popupImg.src = images[index];
+});
+
+popupNext.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  popupImg.src = images[index];
+  updateMain(index);
+});
+
+popupPrev.addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
+  popupImg.src = images[index];
+  updateMain(index);
+});
+
+popupClose.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Scroll dynamique déclenché au survol
+const thumbnailWrapper = document.querySelector(".thumbnail-wrapper");
+
+let autoScroll = null;
+thumbnailWrapper.addEventListener("mousemove", (e) => {
+  const { left, width } = thumbnailWrapper.getBoundingClientRect();
+  const trackWidth = thumbnailTrack.scrollWidth;
+  if (trackWidth <= width) return;
+
+  const mouseX = e.clientX - left;
+  const zone = width / 3;
+  clearInterval(autoScroll);
+
+  if (mouseX < zone) {
+    autoScroll = setInterval(() => thumbnailTrack.scrollLeft -= 2, 10);
+  } else if (mouseX > width - zone) {
+    autoScroll = setInterval(() => thumbnailTrack.scrollLeft += 2, 10);
+  }
+});
+thumbnailWrapper.addEventListener("mouseleave", () => clearInterval(autoScroll));
+</script>
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

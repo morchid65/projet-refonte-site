@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarifs – École Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/tarifs.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-tarifs">
+
+
+  <div class="alignement-tableau">
+<p class="text-align">
+  <span></span>Disciplines <br>
+ <span class="jaune">
+  Kung-Fu (Adultes à partir de 16 ans),  <br>
+  Kung-Fu Femmes & Famille,  <br>
+  Kung-Fu Enfants (5 à 10 ans),  <br>
+  Kung-Fu Enfants (5 à 10 ans),  <br>
+  Kung-Fu Ados (11 à 15 ans),  <br>
+  Kung-Fu Ados (11 à 15 ans),  <br>
+  </span>
+  Tai-Chi,  <br>
+  Tai-Chi Famille,  <br>
+  Tai-Chi Femmes & Ados,  <br>
+  Kung-Fu + Tai-Chi,  <br>
+<span class="jaune">
+  Self-Défense Femmes,  <br>
+  Self-Défense Femme + Autre <br>
+</span>
+</p>
+
+<p>
+  Tableau Tarifs <br>
+  Avec Assurance & Ceinture <br>
+  Type <br>
+  <span class="jaune">
+  Normal <br>
+  Réduit <br>
+  Normal <br>
+  Réduit <br>
+  Normal <br>
+  Réduit <br>
+</span>
+  Normal <br>
+  Réduit <br>
+  Réduit <br>
+  Spécial <br>
+<span class="jaune">
+  Réduit <br>
+  Spécial
+</p>
+
+
+<p>
+  Tarifs <br>
+   <span class="jaune">
+  240,00 €<br>
+  220,00 €<br>
+  190,00 €<br>
+  160,00 €<br>
+  190,00 €<br>
+  160,00 €<br>
+  </span>
+  220,00 €<br>
+  190,00 €<br>
+  190,00 €<br>
+  380,00 €<br>
+
+  <span class="jaune">
+  190,00 €<br>
+  380,00 €
+  </span>
+</p>
+
+</div>
+
+
+
+
+  <p class="rouge">* Possibilité de paiement en 3 fois.</p>
+  <p class="jaune">Le tarif réduit est réservé pour deux adhésions minimum ainsi que les femmes <br> (réduction sur les deux adhésions)</p>
+
+  <h2 class="title-sub">Avantages</h2>
+
+<div class="global-p">
+<p class="encadre-blanc">
+  CEINTURE : OFFERTE (Si perte de ceinture la seconde 5€)
+</p>
+<div class="double-p">
+
+<p class="encadre-blanc">
+  UN VENTAIL OFFERT POUR TOUTE NOUVELLE INSCRIPTION <br> EN TAI-CHI
+</p>
+<p class="encadre-blanc">
+  UNE PAIRE DE GANTS OFFERT <br> POUR TOUTE NOUVELLE INSCRIPTION EN KUNG-FU
+</p>
+</div>
+
+<div>
+
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

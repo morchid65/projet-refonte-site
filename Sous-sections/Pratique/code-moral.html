@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Code Moral – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-code-moral">
+  <h1 class="title-main">Le Code Moral de l'école Wang Xue Long</h1>
+<section class="section-valeurs">
+  <p>
+    <span class="jaune">LA MORALE</span><br>
+    Être en accord avec soi-même et les autres, amenant ainsi chaque jour la plénitude<br>
+    
+    <span class="jaune">LA VOLONTÉ</span><br>
+    L’amour que tu as pour ton art permettra d’éveiller ton propre dragon<br>
+    
+    <span class="jaune">LA RÉFLEXION</span><br>
+    Guider sa vie avec sang froid afin d’éviter toute imprudence<br>
+    
+    <span class="jaune">LE RESPECT</span><br>
+    Faire naître la confiance<br>
+    
+    <span class="jaune">LE COURAGE</span><br>
+    Faire ce qui est juste et surmonter ses peurs<br>
+    
+    <span class="jaune">L’ÉMOTION</span><br>
+    Violence, colère, jalousie : les passions rempliront ton esprit mais ne le domineront pas<br>
+    
+    <span class="jaune">LE CONTRÔLE DE SOI</span><br>
+    Savoir taire sa colère et se maîtriser en toute circonstance<br>
+    
+    <span class="jaune">LA MODESTIE</span><br>
+    Parler de soi-même sans orgueil<br>
+    
+    <span class="jaune">AMITIÉ</span><br>
+    Le plus pur des sentiments humain<br><br>
+
+    <span class="jaune">TEL EST LE CHEMIN DE L’HOMME….</span>
+  </p>
+</section>
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

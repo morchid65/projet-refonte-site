@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pratique chez la femme – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-femme"> 
+  <h1 class="title-main">La pratique du Wu Tao chez la femme</h1>
+  <div class="align-image">
+<p class="p4">
+  L’accès de tous à la pratique sportive et aux instances dirigeantes est <br>
+  réglementairement prévu. Les articles L.100-1, et L131 -9 du code du <br>
+  sport mentionnent que "les activités physiques et sportives constituent un <br>
+  élément important de l’éducation, de la culture, de l’intégration et de la vie <br> sociale. <br>  
+
+  Elles contribuent notamment à la lutte contre l’échec scolaire et à la <br>
+  réduction des inégalités sociales et culturelles, ainsi qu’à la santé. La <br>
+  promotion et le développement des activités physiques et sportives pour <br>
+  tous, notamment pour les personnes handicapées, sont d’intérêt général ». <br> <br>
+
+
+  Agir pour favoriser l’engagement des femmes dans le sport suppose <br>
+  d’avoir en tête les freins individuels mais aussi les résistances sociales et <br>
+  culturelles qui conduisent à cette situation. En effet, le premier frein au <br>
+  développement des pratiques sportives féminines réside dans la précarité <br>
+  rencontrée par les femmes. Les difficultés sociales et financières qui <br>
+  en découlent rendent la pratique sportive plus difficile. <br>
+  Le second frein est d’ordre culturel. La représentation sociale de la place <br>
+  de la femme et de son rapport à l’espace public (dont le sport fait partie), <br>
+  les contraintes familiales et le manque d’offres adaptées retreignent l’égal <br>
+  accès aux loisirs sportifs et au sport fédéral pour les femmes. <br>
+</p>
+
+  <div class="image-container">
+    <img class="image" src="https://static.wixstatic.com/media/cf687c_d64b399b7097436ea7c4d78e6953efbb~mv2_d_2211_1442_s_2.jpg/v1/fill/w_544,h_354,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/femme%201.jpg" alt="Pratique chez la femme">
+  </div>
+</div>
+
+  <h2 class="title-sub">Les femmes et le Wu Tao</h2>
+
+<p class="p4">
+  Dans les clubs, le pourcentage  pratiquants est très variable et demeure modeste. De nombreuses raisons, notamment pour les pratiquantes mariées, rendent <br>
+  une pratique régulière plus difficile. L'enseignant veillera à préserver la place de la pratiquante au sein du groupe en procédant à des révisions collectives ou <br>
+  individuelles. La souplesse naturelle est habituellement (mais pas toujours) une aide précieuse pour les  différents apprentissages notamment dans les <br>
+  techniques de pied. <br>    
+
+  Le Wu Dao est très riche par ses mouvements et ses posture pour s'adapter au sport féminin. Son origine sino-Vietnamienne, lui permet d'avoir de nombreux <br>
+  mouvements en arrondie permettant ainsi d'éviter les chocs directs. "L'absorption" d'une attaque permet de mettre en place un évitement et non un contact brutal <br>
+  et direct avec l'attaque, tout en se protégeant de l'adversaire <br>    
+
+  Les exercices de souplesse et de renforcements musculaires sont adaptés aux femmes et permettent un meilleur maintien postural. <br> <br>   
+  C’est pour toutes ces raisons que l’école Wang Xué Long porte une sincère attention à développer un art martial adapté à son public et notamment aux femmes.
+</p>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

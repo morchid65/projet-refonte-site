@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Septembre 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css" />
+  <link rel="stylesheet" href="/css/sous-section-agenda.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth3 = location.pathname.split('/').length - 2;
+    const path3 = '../'.repeat(depth3) + 'header.html';
+    fetch(path3)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+  <section class="section-decathlon">
+    <h1 class="title-main"><u>Samedi 14 Septembre 2019</u> <br> 8H-18H <br> Décathlon Aubagne</h1> 
+        
+    <div class="section-global">
+    <div class="image-container1">
+      <img class="image-decathlon0 rounded-image" src="https://static.wixstatic.com/media/cf687c_7cd71d789e4d475ea12d4f61a850e2e6~mv2.jpg/v1/fill/w_187,h_139,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/hqdefault.jpg" alt="">
+      <img class="image-decathlon rounded-image" src="https://static.wixstatic.com/media/cf687c_082da7c246fa4bc8bbd48b18d7e17bdb~mv2.jpg/v1/fill/w_518,h_113,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/vital-sport-1.jpg" alt="">
+    </div>
+
+    <div class="centered-text2">
+        <h2 class="title-sub">Stand et démonstrations</h2>
+    </div>
+
+    <div class="sous-global">
+    <div class="image-container2">
+       <img class="image-decathlon1 rounded-image" src="https://static.wixstatic.com/media/cf687c_f197f352abff40c7bcd5683aaf165182~mv2.jpg/v1/fill/w_159,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41804309_662057264180759_495988492698910.jpg" alt="">
+       <img class="image-decathlon2 rounded-image" src="https://static.wixstatic.com/media/cf687c_fd38fb5861484ac0a0043dbf7f4352aa~mv2.jpg/v1/fill/w_313,h_156,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41922364_1103582429809170_18435382270303.jpg" alt="">
+    </div>    
+
+    <div class="image-container3">
+     <img class="image-decathlon3 rounded-image" src="https://static.wixstatic.com/media/cf687c_859ce5d22ee64a1c99e486b265232a43~mv2.jpg/v1/fill/w_413,h_282,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41784486_1503739676436768_57332463504436.jpg" alt="">
+     <img class="image-decathlon4 rounded-image" src="https://static.wixstatic.com/media/cf687c_4f1ca156e6cc4befb7d6ac20d102252c~mv2.jpg/v1/fill/w_317,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41843192_644890582578749_858674097457777.jpg" alt="">
+    </div>
+
+    <div class="image-container4">
+      <img class="image-decathlon5 rounded-image" src="https://static.wixstatic.com/media/cf687c_764fbf728f394cccb8314d4b5183eee8~mv2.jpg/v1/fill/w_204,h_146,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41803413_2139187433012187_59800941497627.jpg" alt="">
+      <img class="image-decathlon6 rounded-image" src="https://static.wixstatic.com/media/cf687c_7ff0a93287f847b286d85fa5922665ac~mv2.jpg/v1/fill/w_208,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/41824718_397250230809492_643445211716701.jpg" alt="">
+    </div>
+
+    </div>
+    </div>
+  </section>
+
+    
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

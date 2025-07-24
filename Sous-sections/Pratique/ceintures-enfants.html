@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ceintures enfants – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css" />
+  <link rel="stylesheet" href="/css/pratique.css" />
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-ceintures-enfants">
+  <h1 class="title-main">Les ceintures enfants</h1>
+  <div class="image-container1">
+    <img class="image-1" src="https://static.wixstatic.com/media/cf687c_656dc2e46ce147148ffd6908630488f8~mv2.jpg/v1/fill/w_580,h_451,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ceintures%20enfants_JPG.jpg" alt="Ceintures enfants">
+    <img class="image-2" src="https://static.wixstatic.com/media/cf687c_5b07e8d6d3c9400f8c36e3e2c3698d07~mv2.jpg/v1/fill/w_503,h_150,al_c,lg_1,q_80,enc_avif,quality_auto/ceinture%202_JPG.jpg" alt="Ceintures progression">
+  </div>
+</section>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

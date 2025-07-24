@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tai Chi Raquette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/accueil.css">
+  <link rel="stylesheet" href="/css/tai-chi.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+<section class="section-tai-chi-raquette">
+
+  <h2 class="titre-rouge">TAI CHI RAQUETTE</h2>
+
+  <div class="bloc-flex">
+
+    <!-- Image gauche -->
+    <div class="image-wrapper">
+      <img class="img-taichi" src="https://static.wixstatic.com/media/cf687c_8aee07c4de3946e8b97ddd11537dadc6~mv2.png" alt="Tai Chi Ball">
+    </div>
+
+    <!-- Texte au centre -->
+    <div>
+    <div class="texte-wrapper">
+      <p class="description">
+        Taiji Soft-Strength Ball est un exercice à multiples facettes <br>
+        pour tout le corps. Comme il est basé sur la théorie profonde <br>
+        de Taiji, il peut améliorer et développer la fonction du cou, <br>
+        des épaules, de la taille, des jambes, du cerveau et des <br>
+        organes internes. L'exercice n'est ni limité par où il est <br>
+        pratiqué ni l'âge de la personne. <br><br>
+
+        Comme il est « conduit par des courbes » composées de <br>
+        mouvements différents et changeants, il peut améliorer la <br>
+        fonction de notre système nerveux central et développer la <br>
+        créativité. Après un certain temps, la capacité du pratiquant à <br>
+        coordonner ses mouvements et à répondre sera augmentée. <br><br>
+
+        Beaucoup de ses mouvements sont accomplis en tournant, <br>
+        en faisant des courbes, en faisant des cercles ; il faut donc <br>
+        concentrer son énergie, son esprit, ses yeux et ses quatre <br>
+        membres doivent être coordonnés pour contrôler la <br>
+        trajectoire de la balle et réduire les interférences de <br>
+        l'environnement ; de cette façon, l'esprit et la balle peuvent <br>
+        être un. <br>
+        Les possibilités de travail sont multiples, avec ou sans <br>
+        musique !
+      </p>
+    </div>
+
+    <!-- Image droite -->
+    <div class="image-wrapper2">
+      <img class="img-taichi" src="https://static.wixstatic.com/media/cf687c_80139901c24a46f69eefe50b2b6d3edb~mv2.jpg" alt="Tai Chi Raquette">
+    </div>
+    </div>
+
+  </div>
+
+  <button>
+    <a href="https://www.youtube.com/watch?v=xVH46szo_4E" target="_blank">
+      Présentation Vidéo (à partir de 3m50)
+    </a>
+  </button>
+
+</section>
+
+
+  <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
