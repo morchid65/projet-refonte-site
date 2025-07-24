@@ -177,7 +177,6 @@ m’ont rendu meilleur à chaque ligne de code.
 
 Ce projet n’est pas qu’un site.  
 C’est un **dojo de progression**, une **trace d’apprentissage**.  
-Tu n’as pas juste codé — tu as reconstruit, reformé, et transmis.
 
 ---
 
