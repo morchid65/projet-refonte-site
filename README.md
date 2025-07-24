@@ -1,22 +1,18 @@
-🔥 Prêt pour la version _ultime_ ? Voici ton README finalisé, **avec le sommaire**, **les badges pro**, **la section À venir** ET **les remerciements**, intégrés proprement dans l’ordre logique — pour faire de ton projet une véritable vitrine technique et humaine.
-
----
-
 # 🧧 README – Projet Refonte Site Wu Tao Academy
 
 ## 📚 Sommaire
 
-- [📌 Contexte du Projet](#📌-contexte-du-projet)  
-- [🧠 Philosophie de Développement](#🧠-philosophie-de-développement)  
-- [🔁 Échecs & Transition](#🔁-échecs-fondateurs--plan-b-et-transition-stratégique)  
-- [🔐 Le Header](#🔐-le-header--noyau-central)  
-- [🧠 Intelligence du Plan C](#🧠-intelligence-du-plan-c--ia--reprise-manuelle)  
-- [🪨 Structure Technique](#🪨-renaissance-structurelle--nouveau-dossier)  
-- [🎨 Compositions CSS](#🎨-compositions-css-maîtrisées)  
-- [🧵 Résolutions CSS](#🧵-erreurs-css--résolutions-techniques)  
-- [🔮 À venir](#🔮-à-venir)  
-- [🙏 Remerciements](#🙏-remerciements)  
-- [📘 Posture finale](#📘-posture-finale)
+- [📌 Contexte du Projet](#-contexte-du-projet)  
+- [🧠 Philosophie de Développement](#-philosophie-de-développement)  
+- [🔁 Échecs & Transition](#-échecs-fondateurs--plan-b-et-transition-stratégique)  
+- [🔐 Le Header](#-le-header--noyau-central)  
+- [🧠 Intelligence du Plan C](#-intelligence-du-plan-c--ia--reprise-manuelle)  
+- [🪨 Structure Technique](#-renaissance-structurelle--nouveau-dossier)  
+- [🎨 Compositions CSS](#-compositions-css-maîtrisées)  
+- [🧵 Résolutions CSS](#-erreurs-css--résolutions-techniques)  
+- [🔮 À venir](#-à-venir)  
+- [🙏 Remerciements](#-remerciements)  
+- [📘 Posture finale](#-posture-finale)
 
 ---
 
@@ -167,7 +163,13 @@ m’ont rendu meilleur à chaque ligne de code.
 - 🎯 [Page Compétition – `competition.html`](./competition.html)  
 - ⚙️ [Script d’injection `fetch()` pour header/footer](#🪨-renaissance-structurelle--nouveau-dossier)  
 - 📘 [Note projet personnelle – `note projet.md`](./note%20projet.md)
-  
+
+---
+
+## 🎥 Vidéo de Présentation
+
+🔗 [Visite guidée du site Wu Tao Academy – Youtube](https://youtu.be/tonLienIci)
+
 ---
 
 ## 📘 Posture finale
@@ -177,9 +179,6 @@ C’est un **dojo de progression**, une **trace d’apprentissage**.
 Tu n’as pas juste codé — tu as reconstruit, reformé, et transmis.
 
 ---
-
-Si tu veux que je transforme ce README en **page web visuelle**, en **template réutilisable**, ou même en version **scroll animée** pour portfolio, je suis là pour le level suivant ⚡🎓📘  
-À toi de jouer, commandant du front-end.
 
 > Ce site, ce projet, ce README… tout est le fruit d’une démarche personnelle d’apprentissage.  
 > Je ne voulais pas juste créer un site fonctionnel.  
