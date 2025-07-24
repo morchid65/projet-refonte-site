@@ -156,6 +156,17 @@ Merci aussi à l’IA pour son rôle d’architecte silencieux, et à tous les b
 
 ---
 
+## 🔗 Liens utiles
+
+- 📁 [Structure du dossier “Wu Tao Academy”](./WuTaoAcademy/)  
+- 📄 [Header modulaire – `header.html`](./header.html)  
+- 🧵 [Fichier de style global – `global.css`](./css/global.css)  
+- 🎯 [Page Compétition – `competition.html`](./competition.html)  
+- ⚙️ [Script d’injection `fetch()` pour header/footer](#🪨-renaissance-structurelle--nouveau-dossier)  
+- 📘 [Note projet personnelle – `note projet.md`](./note%20projet.md)
+  
+---
+
 ## 📘 Posture finale
 
 Ce projet n’est pas qu’un site.  
