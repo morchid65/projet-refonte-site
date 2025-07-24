@@ -147,12 +147,15 @@ Mais derrière ce chaos, une volonté claire : **comprendre**, **progresser**, *
 
 ---
 
-🙏 Remerciements
-Ce projet n’aurait jamais existé sans le stage que j’ai pu effectuer — C’est grâce à cette opportunité, à ce cadre, à cet encadrement que j’ai pu progresser autant.
+## 🙏 Remerciements
+Ce projet n’aurait jamais existé sans le stage que j’ai pu effectuer — C’est grâce à cette 
+opportunité, à ce cadre, à cet encadrement que j’ai pu progresser autant.
 
-Je remercie sincèrement mon encadrant et l’environnement du stage, car il a été le catalyseur de cette transformation technique et personnelle.
+Je remercie sincèrement mon encadrant et l’environnement du stage, car il a été le 
+catalyseur de cette transformation technique et personnelle.
 
-Merci aussi à l’IA pour son rôle d’architecte silencieux, et à tous les bugs, erreurs… qui m’ont rendu meilleur à chaque ligne de code.
+Merci aussi à l’IA pour son rôle d’architecte silencieux, et à tous les bugs, erreurs… qui 
+m’ont rendu meilleur à chaque ligne de code.
 
 ---
 
