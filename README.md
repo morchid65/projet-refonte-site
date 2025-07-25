@@ -23,15 +23,12 @@
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
-[![Fetch API](https://img.shields.io/badge/Fetch%20API-JavaScript-yellow)]()
 [![Flexbox](https://img.shields.io/badge/Layout-Flexbox-green)]()
 [![Positionnement CSS](https://img.shields.io/badge/Positionnement-CSS%20Relative-purple)]()
+[![Fetch API](https://img.shields.io/badge/Fetch%20API-JavaScript-yellow)]()
 
 [![Dojo de Progression](https://img.shields.io/badge/Dojo-Progression%20Continue-black)]()
 [![Collaboration IA](https://img.shields.io/badge/Collaboration-IA%20&%20Manuelle-lightgrey)]()
-
-[![MadeWith](https://img.shields.io/badge/Made%20with-HTML%20%26%20CSS-blue)]()  
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()  
 [![Responsive](https://img.shields.io/badge/Layout-Responsive-green)]()
 
 ---
