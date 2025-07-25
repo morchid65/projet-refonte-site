@@ -1,19 +1,5 @@
 # 🧧 README – Projet Refonte Site Wu Tao Academy
 
-[![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
-[![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
-[![Résolution de Problèmes](https://img.shields.io/badge/Compétence-Résolution%20de%20Problèmes-red)]()
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
-[![Fetch API](https://img.shields.io/badge/Fetch%20API-JavaScript-yellow)]()
-[![Flexbox](https://img.shields.io/badge/Layout-Flexbox-green)]()
-[![Positionnement CSS](https://img.shields.io/badge/Positionnement-CSS%20Relative-purple)]()
-
-[![Dojo de Progression](https://img.shields.io/badge/Dojo-Progression%20Continue-black)]()
-[![Collaboration IA](https://img.shields.io/badge/Collaboration-IA%20&%20Manuelle-lightgrey)]()
-
-
 ## 📚 Sommaire
 
 - [📌 Contexte du Projet](#-contexte-du-projet)  
@@ -30,6 +16,19 @@
 - [📘 Posture finale](#-posture-finale)
 
 ---
+
+[![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
+[![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
+[![Résolution de Problèmes](https://img.shields.io/badge/Compétence-Résolution%20de%20Problèmes-red)]()
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
+[![Fetch API](https://img.shields.io/badge/Fetch%20API-JavaScript-yellow)]()
+[![Flexbox](https://img.shields.io/badge/Layout-Flexbox-green)]()
+[![Positionnement CSS](https://img.shields.io/badge/Positionnement-CSS%20Relative-purple)]()
+
+[![Dojo de Progression](https://img.shields.io/badge/Dojo-Progression%20Continue-black)]()
+[![Collaboration IA](https://img.shields.io/badge/Collaboration-IA%20&%20Manuelle-lightgrey)]()
 
 [![MadeWith](https://img.shields.io/badge/Made%20with-HTML%20%26%20CSS-blue)]()  
 [![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)]()  
