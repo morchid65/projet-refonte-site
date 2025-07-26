@@ -21,7 +21,7 @@
 
 [![Statistiques GitHub](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=radical)](https://github.com/morchid65/projet-refonte-site)
 
-[![Statistiques du repo Refonte Site Wu Tao Academy](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=red_dark)](https://github.com/morchid65/projet-refonte-site)
+[![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=morchid65&show_icons=true&theme=red_dark)](https://github.com/morchid65)
 
 ---
 
