@@ -21,9 +21,7 @@
 
 [![Statistiques GitHub](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=radical)](https://github.com/morchid65/projet-refonte-site)
 
-[![Langages utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=morchid65&repo=projet-refonte-site&layout=compact&theme=radical)](https://github.com/morchid65/projet-refonte-site)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=morchid65&theme=radical&hide_border=true)](https://github.com/morchid65)
+[![Statistiques du repo Refonte Site Wu Tao Academy](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=red_dark)](https://github.com/morchid65/projet-refonte-site)
 
 ---
 
