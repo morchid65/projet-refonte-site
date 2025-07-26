@@ -19,10 +19,11 @@
 
 ## 📊 Statistiques du projet Refonte Site Wu Tao Academy
 
-[![Statistiques GitHub](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=radical)](https://github.com/morchid65/projet-refonte-site)
+[![Statistiques du projet](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=red_dark)](https://github.com/morchid65/projet-refonte-site)
 
-[![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=morchid65&show_icons=true&theme=red_dark)](https://github.com/morchid65)
-
+[![Commits](https://img.shields.io/github/commit-activity/y/morchid65/projet-refonte-site?color=red&label=commits)]
+[![Issues ouvertes](https://img.shields.io/github/issues/morchid65/projet-refonte-site?color=red&label=issues)]
+[![Pull Requests](https://img.shields.io/github/issues-pr/morchid65/projet-refonte-site?color=red&label=PR)]
 ---
 
 [![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
