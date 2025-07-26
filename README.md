@@ -1,7 +1,5 @@
 # 🧧 README – Projet Refonte Site Wu Tao Academy
 
-![Stats Wu Tao Academy](https://github.com/morchid65/projet-refonte-site/raw/main/github-metrics.svg)
-
 ## 📚 Sommaire
 
 - [📌 Contexte du Projet](#-contexte-du-projet)  
@@ -18,6 +16,9 @@
 - [📘 Posture finale](#-posture-finale)
 
 ---
+
+## 📊 Statistiques du projet
+![Metrics](https://github.com/morchid65/projet-refonte-site/raw/main/github-metrics.svg)
 
 [![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
 [![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
