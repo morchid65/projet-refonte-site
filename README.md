@@ -17,8 +17,15 @@
 
 ---
 
-## 📊 Statistiques du projet
-![Metrics](https://github.com/morchid65/projet-refonte-site/raw/main/github-metrics.svg)
+## 📊 Statistiques du projet Refonte Site Wu Tao Academy
+
+[![Statistiques GitHub](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=radical)](https://github.com/morchid65/projet-refonte-site)
+
+[![Langages utilisés](https://github-readme-stats.vercel.app/api/top-langs/?username=morchid65&repo=projet-refonte-site&layout=compact&theme=radical)](https://github.com/morchid65/projet-refonte-site)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=morchid65&theme=radical&hide_border=true)](https://github.com/morchid65)
+
+---
 
 [![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
 [![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
