@@ -17,12 +17,6 @@
 
 ---
 
-## 📊 Statistiques du projet Refonte Site Wu Tao Academy
-
-[![Statistiques du projet](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=redshadow)](https://github.com/morchid65/projet-refonte-site)
-
----
-
 [![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
 [![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
 [![Résolution de Problèmes](https://img.shields.io/badge/Compétence-Résolution%20de%20Problèmes-red)]()
