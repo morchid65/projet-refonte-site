@@ -1,6 +1,6 @@
 # 🧧 README – Projet Refonte Site Wu Tao Academy
 
-![Stats Wu Tao Academy](https://github.com/morchid65/WuTaoAcademy/raw/main/github-metrics.svg)
+![Stats Wu Tao Academy](https://github.com/morchid65/projet-refonte-site/raw/main/github-metrics.svg)
 
 ## 📚 Sommaire
 
