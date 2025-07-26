@@ -19,7 +19,7 @@
 
 ## 📊 Statistiques du projet Refonte Site Wu Tao Academy
 
-[![Statistiques du projet](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=shadow red)](https://github.com/morchid65/projet-refonte-site)
+[![Statistiques du projet](https://github-readme-stats.vercel.app/api/pin/?username=morchid65&repo=projet-refonte-site&theme=redshadow)](https://github.com/morchid65/projet-refonte-site)
 
 ---
 
