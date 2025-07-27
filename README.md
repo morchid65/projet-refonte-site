@@ -199,7 +199,7 @@ WuTaoAcademy/
 </p>
 
 
-[![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=morchid65&show_icons=true&theme=highcontrast)](https://github.com/morchid65)
+[![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=morchid65&show_icons=true&theme=highcontrast)](https://github.com/morchid65/projet-refonte-site)
 
 <!-- GitHub Metrics avec notation (A, B, etc.) -->
 <p align="center">
