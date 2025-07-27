@@ -101,34 +101,7 @@ Mais derrière ce chaos, une volonté claire : **comprendre**, **progresser**, *
 
 ### 📁 Structure du Dossier – Arborescence Finale
 
-WuTaoAcademy/
-├── accueil.html
-├── header.html
-├── footer.html
-├── README.md
-├── note projet.md
-├── css/
-│   ├── global.css
-│   ├── competition.css
-│   ├── plus.css
-│   └── responsive.css
-├── Sections/
-│   ├── agenda.html
-│   ├── competitions.html
-│   ├── enfants.html
-│   └── …
-├── Sous-sections/
-│   ├── agenda-local.html
-│   ├── competitions-1.html
-│   ├── enfants-danse.html
-│   └── …
-├── Img/
-│   ├── accueil/
-│   ├── competitions/
-│   ├── enfants/
-│   └── …
-└── js/
-    └── injectHeaderFooter.js
+WuTaoAcademy/ ├── accueil.html ├── header.html ├── footer.html ├── README.md ├── note projet.md ├── css/ │ ├── global.css │ ├── competition.css │ ├── plus.css │ └── responsive.css ├── Sections/ │ ├── agenda.html │ ├── competitions.html │ ├── enfants.html │ └── … ├── Sous-sections/ │ ├── agenda-local.html │ ├── competitions-1.html │ ├── enfants-danse.html │ └── … ├── Img/ │ ├── accueil/ │ ├── competitions/ │ ├── enfants/ │ └── … └── js/ └── injectHeaderFooter.js
 
 ### 📊 Statistiques Techniques & GitHub
 
