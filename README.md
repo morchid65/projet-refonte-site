@@ -146,8 +146,9 @@ fetch(path2)
 document.getElementById('header-container').innerHTML = data;
 })
 .catch(error => console.error('Erreur chargement header:', error));
-</script>
-</code></pre>
+</script></code>
+
+</pre>
 📊 Analyse & Résolution
 📊 Statistiques Techniques & GitHub
 <table>
