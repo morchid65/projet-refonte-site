@@ -96,7 +96,7 @@ Mais derrière ce chaos, une volonté claire : **comprendre**, **progresser**, *
 ## 🗂️ Structure & Code
 
 ### 📁 Structure du Dossier – Arborescence Finale
-
+<pre>
 WuTaoAcademy/
 ├── accueil.html
 ├── header.html
@@ -125,6 +125,7 @@ WuTaoAcademy/
 │   └── …
 └── js/
     └── injectHeaderFooter.js
+</pre>
 
 🎨 Compositions CSS maîtrisées
 | Classe CSS | Rôle |
