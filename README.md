@@ -147,7 +147,7 @@ WuTaoAcademy/
   <tbody>
     <tr>
       <td>🧩 Fichiers HTML créés</td>
-      <td>24+ (accueil, sections, sous-sections)</td>
+      <td>90+ (accueil, sections, sous-sections)</td>
     </tr>
     <tr>
       <td>🎨 Fichiers CSS modulaires</td>
@@ -218,16 +218,21 @@ WuTaoAcademy/
 - Chemins relatifs vérifiés  
 - Script JS universel pour `header` et `footer`
   
-<script>
+<h3>📥 Script d’injection dynamique du <code>header.html</code></h3>
+
+<pre><code>&lt;script&gt;
   const depth2 = location.pathname.split('/').length - 2;
   const path2 = '../'.repeat(depth2) + 'header.html';
+
   fetch(path2)
-    .then(response => response.text())
-    .then(data => {
+    .then(response =&gt; response.text())
+    .then(data =&gt; {
       document.getElementById('header-container').innerHTML = data;
     })
-    .catch(error => console.error('Erreur chargement header:', error));
-</script>
+    .catch(error =&gt; console.error('Erreur chargement header:', error));
+&lt;/script&gt;
+</code></pre>
+
 
 ---
 
