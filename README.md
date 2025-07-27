@@ -218,8 +218,10 @@ document.getElementById('header-container').innerHTML = data;
 > “À chaque bug, une solution. À chaque ligne, une leçon.”
 
 
-🎥 Vidéo de Présentation
-🔗 Visite guidée du site Wu Tao Academy – Youtube
+## 🎥 Vidéo de Présentation
+
+[Visite guidée du site Wu Tao Academy - YouTube](**INSÉREZ_LE_LIEN_YOUTUBE_ICI**)
+
 🔮 À venir & Remerciements
 🔮 À venir
  * 🔄 Finalisation de la section “Plus” avec carousel responsive
