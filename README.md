@@ -1,5 +1,7 @@
 # 🧧 README – Projet Refonte Site Wu Tao Academy
 
+![Phoenix Refactor – Dojo de Résilience](./assets/banner-phoenix.svg)
+
 [![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
 [![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
 [![Résolution de Problèmes](https://img.shields.io/badge/Compétence-Résolution%20de%20Problèmes-red)]()
