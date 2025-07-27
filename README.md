@@ -203,6 +203,7 @@ document.getElementById('header-container').innerHTML = data;
 <p><em>“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”</em></p>
 
 ### 🧵 Résolutions CSS
+
 | ❌ Erreur rencontrée | ✅ Solution mise en place |
 |---|---|
 | Classes en double (.img1, .img1, etc.) | Classes universelles (.img-base, .container-global) |
@@ -213,7 +214,8 @@ document.getElementById('header-container').innerHTML = data;
 | Fichiers CSS trop lourds | Fragmentation logique (plus.css, etc.) |
 | Hiérarchie HTML déstructurée | Structuration parent-enfant optimisée |
 > “À chaque bug, une solution. À chaque ligne, une leçon.”
-> 
+
+
 🎥 Vidéo de Présentation
 🔗 Visite guidée du site Wu Tao Academy – Youtube
 🔮 À venir & Remerciements
@@ -222,14 +224,18 @@ document.getElementById('header-container').innerHTML = data;
  * 🖌️ Création d’une version HTML stylisée du README
  * 🌍 Traduction en anglais pour portfolio international
  * 📄 Ajout d’un système de composants réutilisables
-🙏 Remerciements
+   
+### 🙏 Remerciements
+
 Ce projet n’aurait jamais existé sans le stage que j’ai pu effectuer — C’est grâce à cette
 opportunité, à ce cadre, à cet encadrement que j’ai pu progresser autant.
 Je remercie sincèrement mon encadrant et l’environnement du stage, car il a été le
 catalyseur de cette transformation technique et personnelle.
 Merci aussi à l’IA pour son rôle d’architecte silencieux, et à tous les bugs, erreurs… qui
 m’ont rendu meilleur à chaque ligne de code.
-📘 Posture finale
+
+### 📘 Posture finale
+
 Ce projet n’est pas qu’un site.
 C’est un dojo de progression, une trace d’apprentissage.
 > Ce site, ce projet, ce README… tout est le fruit d’une démarche personnelle d’apprentissage.
@@ -237,6 +243,3 @@ C’est un dojo de progression, une trace d’apprentissage.
 > Je voulais apprendre à mieux coder, à résoudre les problèmes, à maîtriser chaque étape.
 > Chaque fichier que j’ai structuré est un symbole de progression.
 > Ce dojo numérique est mon espace d’évolution.
-> 
-
-
