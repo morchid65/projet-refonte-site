@@ -190,31 +190,6 @@ WuTaoAcademy/
 
 <p><em>“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”</em></p>
 
-### 🚀 Statistiques GitHub – Wu Tao Academy
-<h2>📊 Langages Utilisés & Niveau du Projet</h2>
-
-<!-- Compteur de visites -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=morchid65&color=green" alt="Compteur de visites">
-</p>
-
-[![Statistiques du Projet Refonte du Site](https://github-readme-stats.vercel.app/api?username=morchid65&repo=projet-refonte-site&show_icons=true&theme=highcontrast)](https://github.com/morchid65/projet-refonte-site)
-
-
-<!-- GitHub Metrics avec notation (A, B, etc.) -->
-<p align="center">
-  <a href="https://github.com/morchid65">
-    <img src="https://raw.githubusercontent.com/morchid65/morchid65/gh-pages/metrics.svg" alt="GitHub Metrics">
-  </a>
-</p>
-
-<!-- Langages les plus utilisés -->
-<p align="center">
-  <a href="https://github.com/morchid65">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=morchid65&layout=compact&theme=radical" alt="Langages utilisés">
-  </a>
-</p>
-
 ## 🪨 Renaissance structurelle – Nouveau Dossier
 
 - Regroupement propre des éléments  
