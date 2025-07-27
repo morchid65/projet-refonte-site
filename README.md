@@ -105,19 +105,60 @@ WuTaoAcademy/ ├── accueil.html ├── header.html ├── footer.html
 
 ### 📊 Statistiques Techniques & GitHub
 
-🧠 Statistiques Techniques – Refonte du Projet
-📌 Indicateur	⚙️ Valeur approximative
-🧩 Fichiers HTML créés	24+ (accueil, sections, sous-sections)
-🎨 Fichiers CSS modulaires	4 (global.css, competition.css, plus.css, responsive.css)
-🖼️ Dossiers images organisés	5 (accueil, competitions, enfants, etc.)
-📦 Volume total du projet	≈ 3,4 Mo (en local, avant minification)
-🔁 Refactorisations principales	3 (Plan B → Plan C → Header/Footer modulaires)
-🕰️ Temps de développement estimé	+110h (hors recherches et documentation)
-🤖 Interactions IA	67 sessions (structuration, conseils, bugfixes)
-🧪 Tests manuels effectués	≈ 45+ (navigation, responsive, inclusion JS, etc.)
-📚 Lignes de code tapées	+3 000 (HTML + CSS + JS cumulés)
-🔧 Bugs détectés & résolus	32+
-“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”
+<h2>🧠 Statistiques Techniques – Refonte du Projet</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>📌 Indicateur</th>
+      <th>⚙️ Valeur approximative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🧩 Fichiers HTML créés</td>
+      <td>24+ (accueil, sections, sous-sections)</td>
+    </tr>
+    <tr>
+      <td>🎨 Fichiers CSS modulaires</td>
+      <td>4 (global.css, competition.css, plus.css, responsive.css)</td>
+    </tr>
+    <tr>
+      <td>🖼️ Dossiers images organisés</td>
+      <td>5 (accueil, competitions, enfants, etc.)</td>
+    </tr>
+    <tr>
+      <td>📦 Volume total du projet</td>
+      <td>≈ 3,4 Mo (en local, avant minification)</td>
+    </tr>
+    <tr>
+      <td>🔁 Refactorisations principales</td>
+      <td>3 (Plan B → Plan C → Header/Footer modulaires)</td>
+    </tr>
+    <tr>
+      <td>🕰️ Temps de développement estimé</td>
+      <td>+110h (hors recherches et documentation)</td>
+    </tr>
+    <tr>
+      <td>🤖 Interactions IA</td>
+      <td>67 sessions (structuration, conseils, bugfixes)</td>
+    </tr>
+    <tr>
+      <td>🧪 Tests manuels effectués</td>
+      <td>≈ 45+ (navigation, responsive, inclusion JS, etc.)</td>
+    </tr>
+    <tr>
+      <td>📚 Lignes de code tapées</td>
+      <td>+3 000 (HTML + CSS + JS cumulés)</td>
+    </tr>
+    <tr>
+      <td>🔧 Bugs détectés & résolus</td>
+      <td>32+ (conflits CSS, chargements dynamiques, erreurs structurelles)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”</em></p>
 
 ### 🚀 Statistiques GitHub – Wu Tao Academy
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=morchid65&color=green" alt="Compteur de visites"> </p>
