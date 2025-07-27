@@ -8,12 +8,15 @@
 - [🔐 Le Header](#-le-header--noyau-central)  
 - [🧠 Intelligence du Plan C](#-intelligence-du-plan-c--ia--reprise-manuelle)  
 - [🪨 Structure Technique](#-renaissance-structurelle--nouveau-dossier)  
+- [📁 Structure du Dossier](#-structure-du-dossier--arborescence-finale)  
+- [📊 Statistiques du Projet](#-statistiques-techniques--github)  
 - [🎨 Compositions CSS](#-compositions-css-maîtrisées)  
-- [🧵 Résolutions CSS](#-erreurs-css--résolutions-techniques)
-- [🎥 Vidéo de Présentation](#-Vidéo-de-Présentation)  
+- [🧵 Résolutions CSS](#-erreurs-css--résolutions-techniques)  
+- [🎥 Vidéo de Présentation](#-vidéo-de-présentation)  
 - [🔮 À venir](#-à-venir)  
 - [🙏 Remerciements](#-remerciements)  
 - [📘 Posture finale](#-posture-finale)
+
 
 ---
 
@@ -96,13 +99,63 @@ Mais derrière ce chaos, une volonté claire : **comprendre**, **progresser**, *
 
 ---
 
+### 📁 Structure du Dossier – Arborescence Finale
+
+WuTaoAcademy/
+├── accueil.html
+├── header.html
+├── footer.html
+├── README.md
+├── note projet.md
+├── css/
+│   ├── global.css
+│   ├── competition.css
+│   ├── plus.css
+│   └── responsive.css
+├── Sections/
+│   ├── agenda.html
+│   ├── competitions.html
+│   ├── enfants.html
+│   └── …
+├── Sous-sections/
+│   ├── agenda-local.html
+│   ├── competitions-1.html
+│   ├── enfants-danse.html
+│   └── …
+├── Img/
+│   ├── accueil/
+│   ├── competitions/
+│   ├── enfants/
+│   └── …
+└── js/
+    └── injectHeaderFooter.js
+
+### 📊 Statistiques Techniques & GitHub
+
+🧠 Statistiques Techniques – Refonte du Projet
+📌 Indicateur	⚙️ Valeur approximative
+🧩 Fichiers HTML créés	24+ (accueil, sections, sous-sections)
+🎨 Fichiers CSS modulaires	4 (global.css, competition.css, plus.css, responsive.css)
+🖼️ Dossiers images organisés	5 (accueil, competitions, enfants, etc.)
+📦 Volume total du projet	≈ 3,4 Mo (en local, avant minification)
+🔁 Refactorisations principales	3 (Plan B → Plan C → Header/Footer modulaires)
+🕰️ Temps de développement estimé	+110h (hors recherches et documentation)
+🤖 Interactions IA	67 sessions (structuration, conseils, bugfixes)
+🧪 Tests manuels effectués	≈ 45+ (navigation, responsive, inclusion JS, etc.)
+📚 Lignes de code tapées	+3 000 (HTML + CSS + JS cumulés)
+🔧 Bugs détectés & résolus	32+
+“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”
+
+### 🚀 Statistiques GitHub – Wu Tao Academy
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=morchid65&color=green" alt="Compteur de visites"> </p>
+
 ## 🪨 Renaissance structurelle – Nouveau Dossier
 
 - Regroupement propre des éléments  
 - Chemins relatifs vérifiés  
 - Script JS universel pour `header` et `footer`
-
-```html
+- 
+``html
 <div id="header-container"></div>
 <script>
   const depth2 = location.pathname.split('/').length - 2;
