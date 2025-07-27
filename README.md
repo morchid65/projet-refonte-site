@@ -198,8 +198,8 @@ WuTaoAcademy/
   <img src="https://komarev.com/ghpvc/?username=morchid65&color=green" alt="Compteur de visites">
 </p>
 
+[![Statistiques du Projet Refonte du Site](https://github-readme-stats.vercel.app/api?username=morchid65&repo=projet-refonte-site&show_icons=true&theme=highcontrast)](https://github.com/morchid65/projet-refonte-site)
 
-[![Statistiques GitHub](https://github-readme-stats.vercel.app/api?username=morchid65&show_icons=true&theme=highcontrast)](https://github.com/morchid65/projet-refonte-site)
 
 <!-- GitHub Metrics avec notation (A, B, etc.) -->
 <p align="center">
