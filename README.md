@@ -218,17 +218,17 @@ WuTaoAcademy/
 - Chemins relatifs vérifiés  
 - Script JS universel pour `header` et `footer`
   
-    <div id="header-container"></div>
-  <script>
-    const depth2 = location.pathname.split('/').length - 2;
-    const path2 = '../'.repeat(depth2) + 'header.html';
-    fetch(path2)
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      })
-      .catch(error => console.error('Erreur chargement header:', error));
-  </script>
+<script>
+  const depth2 = location.pathname.split('/').length - 2;
+  const path2 = '../'.repeat(depth2) + 'header.html';
+  fetch(path2)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    })
+    .catch(error => console.error('Erreur chargement header:', error));
+</script>
+
 ---
 
 ## 🎨 Compositions CSS maîtrisées
