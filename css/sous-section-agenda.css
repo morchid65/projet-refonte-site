@@ -43,168 +43,70 @@
 
 
 
-
-
-
-
-.section-september {
+.flex-column {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-/* Titre principal */
-.title-main {
-  font-weight: 600;
-  position: relative;
-  right: 330px;
-  bottom: 20px;
-}
-
-/* Texte sous le titre */
-.text-standard {
-  color: #fff;
-  position: relative;
-  right: 330px;
-  bottom: 20px;
-  left: 0; /* inutile ici car right est déjà défini */
-}
-
-/* Conteneur principal */
-.wrapper {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-/* Conteneur des deux images */
-.container2 {
+.flex-row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 50px;
-  position: relative;
+  flex-direction: row;
 }
 
-/* Première image */
-.association {
-  position: relative;
-  margin-bottom: 0; /* on évite les gros margin-bottom qui affectent le conteneur */
-  bottom: 270px;
-  left: 20px;
+.rouge {
+  color: red;
 }
 
-/* Deuxième image */
-.wutaoacademy {
-  border: 4px solid #fff;
-  position: relative;
-  margin-bottom: 200px;
-  bottom: 280px; /* ajuste comme tu veux ici */
-}
-
-.images-independantes {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 100px;
-}
-
-.schedule {
-    position: relative;
-    bottom: 470px;
-    left: 70px;
-    line-height: 0.5;
-
-}
-
-.schedule2 {
-    line-height: 0.5;
-    position: relative;
-    bottom: 460px;
-}
-
-.title-sub {
-    color: #6bc412;
-    position: relative;
-    left: 43%;
-
-}
-
-.venez {
-    color: red;
-}
-
-.title-event {
-    color: red;
-    font-size: 50px;
-    position: relative;
-    left: 40%;
-}
-
-.p0 {
-    color: rgb(162, 5, 5);
-    font-size: 25px;
-
-}
-
-.p2 {
-    color: rgb(162, 5, 5);
+.gold {
+  color: gold;
 }
 
 
 
-/* ✅ Conteneur global */
-.wrapper {
+
+.flex-column {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-/* ✅ Ligne contenant les blocs */
-.image-row {
-  display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-/* ✅ Bloc pour image + bouton */
-.image-container,
-.image-container2 {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 90px;
 }
 
-/* ✅ Images (Kung-Fu et Taiji) */
-.image-juillet,
-.image-juillet2 {
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.image-juillet {    
+  border: solid 4px #fff;
   width: 100%;
   height: auto;
 }
 
-/* ✅ Conteneur texte central */
+.image-juillet2 {    
+  border: solid 4px #222;
+  width: 100%;
+  height: auto;
+}
+
 .centered-text {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* ✅ Titre de date */
-.title-main {
-  text-align: center;
-  font-size: 20px;
-  position: relative;
-  left: 50px;
-  top: 20px;
+.h1 {
+  font-size: 60px;
 }
 
-/* ✅ Classe de texte standard (rouge) */
-.text-standard {
-  color: red;
-}
+
 
 
 /* 🔴 Section principale */
@@ -220,7 +122,6 @@
   align-items: center;
   justify-content: center;
   gap: 70px;
-  margin-left: 70px;
 }
 
 /* 🖼️ Image encadrée */
@@ -247,6 +148,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
 }
 
 /* 📚 Bloc texte en colonne */
@@ -280,7 +184,18 @@
   color: #a0dc64;
 }
 
-
+.image-centre {
+  background-color: rgb(168, 164, 164);
+  box-shadow: 5px 5px 10px #222;
+  border: solid 20px rgb(107, 107, 107);
+  padding: 0 150px 700px;
+  margin-left: 38%;
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

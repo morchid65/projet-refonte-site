@@ -53,10 +53,19 @@
 }
 
 
+
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.flex-column {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .text-images {
@@ -72,9 +81,10 @@
 }
 
 .texte {
+  display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .title-main {
@@ -110,51 +120,16 @@
   letter-spacing: 1px;
   margin: 20px auto;
   text-align: right;
-  margin-left: 380px;
 }
 
 
 
-
-/* --- Disposition générale --- */
-.section-sabre-duan {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 70px 20px;
-}
-
-.container-superglobal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.text-img {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 /* --- Typo et titres --- */
 .h2 {
   color: chartreuse;
   text-align: center;
-  position: relative;
+  font-size: 50px;
 }
 
 .text-standard,
@@ -172,14 +147,6 @@
   margin-left: 200px;
 }
 
-/* --- Blocs texte flexibles --- */
-.texte {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
 
 /* --- Décoratif et couleurs --- */
 .jaune {
@@ -202,6 +169,16 @@
   border-radius: 100%;
 }
 
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-
-
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

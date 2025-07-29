@@ -14,6 +14,16 @@
     padding: 30px;
 }
 
+.alignement2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 30px;
+    gap: 60px;
+    width: 103%;
+}
+
 .alignement1 {
     display: flex;
     justify-content: center;
@@ -22,10 +32,22 @@
     padding: 30px;
 }
 
+.alignement4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
 .img1 {
     border: 5px solid #fff;
-    width: 18%;
-    height: auto;
+    width: 17%;
 }
 
 .p1 {

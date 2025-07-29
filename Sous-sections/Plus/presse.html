@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boutique – Wu Tao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/Accueil.css">
+  <link rel="stylesheet" href="/css/plus.css" />
+</head>
+<body>
+    <div id="header-container"></div>
+  <script>
+    const depth2 = location.pathname.split('/').length - 2;
+    const path2 = '../'.repeat(depth2) + 'header.html';
+    fetch(path2)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erreur chargement header:', error));
+  </script>
+
+
+<section class="section-articles-presse">
+<div class="carrousel-container">
+  <div class="carrousel-images">
+    <img src="/media/img1.jpg" class="carrousel-main" alt="Image principale">
+    <div class="carrousel-nav left">&#10094;</div>
+    <div class="carrousel-nav right">&#10095;</div>
+  </div>
+  <div class="carrousel-thumbnails">
+    <img src="/media/img1.jpg" class="miniature active" alt="Mini 1">
+    <img src="/media/img2.jpg" class="miniature" alt="Mini 2">
+    <img src="/media/img3.jpg" class="miniature" alt="Mini 3">
+    <!-- Ajoute autant de miniatures que nécessaire -->
+  </div>
+
+  <!-- Fenêtre modale -->
+  <div class="modal-overlay hidden">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+      <img src="" class="modal-img" alt="Zoom image">
+      <div class="modal-nav left">&#10094;</div>
+      <div class="modal-nav right">&#10095;</div>
+    </div>
+  </div>
+</div>
+</section>
+
+ <div id="footer-container"></div>
+  <script>
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

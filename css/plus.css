@@ -218,7 +218,7 @@ label {
 
 .section-articles-presse {
   padding: 50px;
-  background-color: #111;
+  background-color: #989292;
   color: #fff;
   text-align: center;
 }
@@ -229,6 +229,157 @@ label {
   margin-bottom: 30px;
 }
 
+/* 📦 Conteneur principal */
+.carrousel-container {
+  background-color: #f0f0f0; /* gris clair */
+  padding: 20px;
+  border-radius: 8px; /* optionnel pour adoucir */
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+  font-family: inherit;
+}
+
+/* 🖼️ Image principale */
+.carrousel-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel-main {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.carrousel-main:hover {
+  transform: scale(1.02);
+}
+
+/* ➡️ Flèches de navigation */
+.carrousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+  padding: 12px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+  border-radius: 5px;
+}
+
+.carrousel-nav.left { left: 15px; }
+.carrousel-nav.right { right: 15px; }
+
+.carrousel-images:hover .carrousel-nav {
+  display: block;
+}
+
+/* 📚 Miniatures */
+.carrousel-thumbnails {
+  display: flex;
+  flex-direction: row; /* 🔁 Assure l'affichage en ligne */
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  scrollbar-width: none;
+  padding: 5px 0;
+}
+
+.carrousel-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.miniature {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: border 0.3s, opacity 0.3s;
+}
+
+.miniature.active,
+.miniature:hover {
+  border-color: #fdfdfd;
+  opacity: 1;
+}
+
+/* 🖼️ Fenêtre modale */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* ❌ Croix fermeture */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ⬅️➡️ Flèches dans la modale */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.modal-nav.left { left: -60px; }
+.modal-nav.right { right: -60px; }
+
+@media (max-width: 768px) {
+  .carrousel-nav,
+  .modal-nav {
+    font-size: 2rem;
+    padding: 8px;
+  }
+
+  .modal-nav.left { left: 10px; }
+  .modal-nav.right { right: 10px; }
+}
 
 
 

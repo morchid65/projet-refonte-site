@@ -88,8 +88,19 @@
     flex-direction: row;
 }
 
+.containeur-global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
 
-
+.championnat-kung-fu-sanshou-2025 {
+    background-color: rgb(159, 141, 141);
+    padding: 150px 0px 800px;
+    margin: 0px 2107px 0px;
+}
 
 .jaune {
     color: goldenrod;
@@ -97,6 +108,11 @@
 
 .rouge {
     color: red;
+}
+
+.rouge1 {
+    color: red;
+    font-size: 60px;
 }
 
 .container-global2 {
@@ -407,6 +423,11 @@
 .jaune3 {
     color: rgb(236, 236, 11);
     font-size: 45px;
+}
+
+.jaune4 {
+    color: rgb(236, 236, 11);
+    font-size: 35px;
 }
 
 .border-gris {

@@ -6,6 +6,10 @@
     gap: 60px;
 }
 
+.position {
+    margin-bottom: 50px;
+}
+
 .jaune {
     color: rgb(216, 196, 14);
 }
@@ -53,4 +57,16 @@
   background-color: #fff; /* Fond blanc avec opacité */
   border-radius: 6px;
   margin: 10px auto;
+}
+
+.section-tarifs {
+  background-color: rgb(74, 37, 37);
+  box-shadow: 5px 5px 10px #222;
+  padding: 0 30px 200px;
+  margin-left: 33%;
+  width: 34.6%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
