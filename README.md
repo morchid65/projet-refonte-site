@@ -154,7 +154,7 @@ function showImage(index) {
 
 ## 🎨 Extrait du code CSS du menu général
 
-``css
+```css
 .Menu {
   width: 1700px;
   margin: 0 auto;
