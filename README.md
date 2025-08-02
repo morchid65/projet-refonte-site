@@ -82,7 +82,7 @@ _Organisation des fichiers et logique technique._
 …Stats GitHub ici…
 
 ### 🧭 Suivi WakaTime (semaine 1)
-![Graph](img-doc/graph-wakatime.png)
+![Graph](graph-wakatime.png)
 *(Activité sur les 7 premiers jours)*
 
 ---
