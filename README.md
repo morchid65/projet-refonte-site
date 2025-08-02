@@ -83,7 +83,7 @@ Objectifs :
 
 🧠 Architecture du projet
 
-`plaintext
+
 WuTaoAcademy/
 ├── accueil.html
 ├── header.html
@@ -99,7 +99,6 @@ WuTaoAcademy/
 │   └── img-doc/
 ├── js/
 │   └── injectHeaderFooter.js
-`
 
 ---
 
