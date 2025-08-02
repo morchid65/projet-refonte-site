@@ -107,8 +107,7 @@ WuTaoAcademy/
 
 📦 Injection du Header
 
-!Header injecté  
-!Header version 2
+<img src="header.png" alt="Aperçu du Header injecté" style="width:100%; display:block; margin:0 auto;">
 
 `js
 const depth2 = location.pathname.split('/').length - 2;
@@ -124,6 +123,8 @@ fetch(path2)
 💡 Centralise le header, évite les répétitions, facilite la maintenance.
 
 ---
+
+<img src="header2.png" alt="Deuxième version du Header injecté" style="width:100%;">
 
 🎨 Menu CSS lié au Header
 
@@ -194,7 +195,7 @@ fetch(path2)
 
 📥 Injection du Footer
 
-!Footer
+<img src="footer.png" alt="Footer affiché" style="width:100%;">
 
 `js
 fetch('/footer.html')
@@ -211,7 +212,7 @@ fetch('/footer.html')
 
 🔐 Formulaire mot de passe
 
-!Mot de passe
+<img src="formulaire-mot-de-passe.png" alt="Formulaire de mot de passe affiché" style="width:100%;">
 
 `js
 document.querySelector("#submit-password").addEventListener("click", function() {
@@ -233,8 +234,9 @@ document.querySelector("#submit-password").addEventListener("click", function() 
 
 🖼️ Carrousel d’images
 
-!Carrousel  
-!Carrousel img
+<img src="caroussel-img.png" alt="Images utilisées dans le carrousel" style="width:100%;">  
+
+<img src="image-caroussel.png" alt="Visuel du carrousel actif" style="width:100%;">
 
 `js
 function showImage(index) {
