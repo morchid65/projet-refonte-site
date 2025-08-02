@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation Technique – Wu Tao Academy</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #fdfdfd; color: #222; }
+    h1, h2 { color: #444; }
+    pre { background: #eee; padding: 1rem; overflow-x: auto; border-left: 5px solid #ccc; }
+    ul { padding-left: 1.5rem; margin-bottom: 2rem; list-style-type: disc; }
+    ul li { margin-bottom: 0.5rem; }
+    ul ul { list-style-type: circle; }
+    section { margin-bottom: 3rem; padding: 1rem; background-color: #fafafa; border: 1px solid #ddd; border-radius: 8px; }
+    code { font-family: Consolas, monospace; }
+    img { width: 100%; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 0 6px #aaa; }
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.3rem; margin-top: 0; }
+  </style>
+</head>
+<body>
+
+<h1>📘 Documentation Technique – Wu Tao Academy</h1>
+
+<!-- SECTION INJECTION HEADER -->
+<section>
+  <h2>📦 Injection du Header (modularisation)</h2>
+  <img src="header.png" alt="Aperçu du Header injecté" style="width:25%; display:block; margin:0 auto;">
+  <img src="header2.png" alt="Aperçu du Header injecté">
+  <pre><code>
+&lt;script&gt;
+  const depth2 = location.pathname.split('/').length - 2;
+  const path2 = '../'.repeat(depth2) + 'header.html';
+  fetch(path2)
+    .then(response =&gt; response.text())
+    .then(data =&gt; {
+      document.getElementById('header-container').innerHTML = data;
+    })
+    .catch(error =&gt; console.error('Erreur chargement header:', error));
+&lt;/script&gt;
+  </code></pre>
+  <ul>
+    <li><strong>depth2</strong> : calcule la profondeur du fichier</li>
+    <li><strong>fetch()</strong> : charge dynamiquement le fichier `header.html`</li>
+    <li><strong>Modularisation</strong> : permet un code plus propre et réutilisable</li>
+  </ul>
+</section>
+
+<!-- SECTION FOOTER -->
+<section>
+  <h2>📥 Injection du Footer</h2>
+  <img src="footer.png" alt="Aperçu du Footer injecté">
+  <pre><code>
+&lt;div id="footer-container"&gt;&lt;/div&gt;
+&lt;script&gt;
+  fetch('/footer.html')
+    .then(res =&gt; res.text())
+    .then(html =&gt; {
+      document.getElementById('footer-container').innerHTML = html;
+    });
+&lt;/script&gt;
+  </code></pre>
+  <p>Injection dynamique du footer pour centraliser la mise à jour.</p>
+</section>
+
+<!-- SECTION AUDIO -->
+<section>
+  <h2>🎧 Bouton Audio (lecture/pause)</h2>
+  <img src="LIEN_IMAGE_AUDIO.png" alt="Bouton audio affiché">
+  <pre><code>
+&lt;button id="audio-toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;audio id="footer-audio" src="chemin/vers/audio.mp3"&gt;&lt;/audio&gt;
+
+&lt;script&gt;
+  const toggleBtn = document.getElementById('audio-toggle');
+  const audio = document.getElementById('footer-audio');
+  let isPlaying = false;
+
+  toggleBtn.addEventListener('click', () =&gt; {
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+      audio.play().catch(() =&gt; {});
+      toggleBtn.classList.add('playing');
+    } else {
+      audio.pause();
+      toggleBtn.classList.remove('playing');
+    }
+  });
+&lt;/script&gt;
+  </code></pre>
+</section>
+
+<!-- SECTION MOT DE PASSE -->
+<section>
+  <h2>🔐 Validation du mot de passe</h2>
+  <img src="formulaire-mot-de-passe.png" alt="Formulaire de mot de passe affiché">
+  <pre><code>
+&lt;input type="password" id="Mot-de-Passe" placeholder="Mot de passe"&gt;
+&lt;button id="submit-password"&gt;OK&lt;/button&gt;
+
+&lt;script&gt;
+document.querySelector("#submit-password").addEventListener("click", function() {
+  let passwordInput = document.getElementById("Mot-de-Passe").value;
+  if (passwordInput === "") {
+    alert("Veuillez saisir un mot de passe.");
+  } else if (passwordInput.length &lt; 6) {
+    alert("Le mot de passe doit contenir au moins 6 caractères.");
+  } else {
+    alert("Mot de passe valide !");
+  }
+});
+&lt;/script&gt;
+  </code></pre>
+</section>
+
+<!-- SECTION GALERIE -->
+<section>
+  <h2>🖼️ Script Carrousel – Galerie interactive</h2>
+  <img src="image-caroussel.png" alt="Carrousel interactif affiché">
+  <img src="caroussel-img.png" alt="Carrousel interactif affiché">
+  <pre><code>
+const images = [...]; // Tableau d’URLs
+function showImage(index) {
+  if (images[index]) {
+    mainImg.style.opacity = 0;
+    setTimeout(() =&gt; {
+      mainImg.src = images[index];
+      mainImg.style.opacity = 1;
+    }, 200);
+  }
+}
+
+leftArrow.addEventListener("click", () =&gt; {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+});
+  </code></pre>
+</section>
+
+<!-- SECTION README EN MARKDOWN -->
+<section>
+  <h2>📒 README – Projet Web Wu Tao Academy</h2>
+  <pre><code>
+# 🧠 Projet Web – Injection Dynamique & Modularisation
+
+Ce projet représente une approche progressive de la création d’un site web modulaire, stylisé, et optimisé pour le responsive.
+
+## 🔧 Fonctionnalités clés
+
+...
+
+## 🙏 Remerciements
+
+Merci à mon encadrant, à l’équipe, à l’IA…  
+…et aux bugs, qui m’ont forcé à devenir meilleur.
+  </code></pre>
+</section>
+
+</body>
+</html>
