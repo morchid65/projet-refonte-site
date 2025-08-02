@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <title>Boutique – Wu Tao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/Accueil.css">
-  <link rel="stylesheet" href="/css/plus.css" />
+  <link rel="stylesheet" href="/css/header-Accueil-css/Accueil.css">
+  <link rel="stylesheet" href="/css/sous-sections-css/plus.css" />
 </head>
 <body>
     <div id="header-container"></div>
@@ -24,15 +24,27 @@
 <section class="section-articles-presse">
 <div class="carrousel-container">
   <div class="carrousel-images">
-    <img src="/media/img1.jpg" class="carrousel-main" alt="Image principale">
+    <img src="/Img/Plus/img1.avif" class="carrousel-main" alt="Image principale">
     <div class="carrousel-nav left">&#10094;</div>
     <div class="carrousel-nav right">&#10095;</div>
   </div>
   <div class="carrousel-thumbnails">
-    <img src="/media/img1.jpg" class="miniature active" alt="Mini 1">
-    <img src="/media/img2.jpg" class="miniature" alt="Mini 2">
-    <img src="/media/img3.jpg" class="miniature" alt="Mini 3">
-    <!-- Ajoute autant de miniatures que nécessaire -->
+    <img src="/Img/Plus/img1.avif" class="miniature active1" alt="Mini 1">
+    <img src="/Img/Plus/img2.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img3.avif" class="miniature active" alt="Mini 1"> 
+      <img src="/Img/Plus/img4.avif" class="miniature active" alt="Mini 1">
+    <img src="/Img/Plus/img5.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img6.avif" class="miniature active" alt="Mini 1">     
+    <img src="/Img/Plus/img7.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img8.avif" class="miniature active" alt="Mini 1">    
+    <img src="/Img/Plus/img9.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img10.avif" class="miniature active" alt="Mini 1">     
+    <img src="/Img/Plus/img11.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img12.avif" class="miniature active" alt="Mini 1">     
+    <img src="/Img/Plus/img13.avif" class="miniature active" alt="Mini 1">
+    <img src="/Img/Plus/img14.avif" class="miniature active" alt="Mini 1">
+  <img src="/Img/Plus/img15.avif" class="miniature active" alt="Mini 1">    
+    <img src="/Img/Plus/img16.avif" class="miniature active" alt="Mini 1">
   </div>
 
   <!-- Fenêtre modale -->
@@ -46,6 +58,111 @@
   </div>
 </div>
 </section>
+
+<script>
+  // ✅ Tableau des images pour le carrousel
+  const images = [
+    "/Img/Plus/img1.avif",
+    "/Img/Plus/img2.avif",
+    "/Img/Plus/img3.avif",
+    "/Img/Plus/img4.avif",
+    "/Img/Plus/img5.avif",
+    "/Img/Plus/img6.avif",
+    "/Img/Plus/img7.avif",
+    "/Img/Plus/img8.avif",
+    "/Img/Plus/img9.avif",
+    "/Img/Plus/img10.avif",
+    "/Img/Plus/img11.avif",
+    "/Img/Plus/img12.avif",
+    "/Img/Plus/img13.avif",
+    "/Img/Plus/img14.avif",
+    "/Img/Plus/img15.avif",
+    "/Img/Plus/img16.avif",
+  ];
+
+  // 🔍 Sélection des éléments HTML
+  const mainImg = document.querySelector(".carrousel-main");
+  const leftArrow = document.querySelector(".carrousel-nav.left");
+  const rightArrow = document.querySelector(".carrousel-nav.right");
+  const thumbnails = document.querySelectorAll(".miniature");
+  const modalOverlay = document.querySelector(".modal-overlay");
+  const modalImg = document.querySelector(".modal-img");
+  const closeModal = document.querySelector(".modal-close");
+  const modalNavLeft = document.querySelector(".modal-nav.left");
+  const modalNavRight = document.querySelector(".modal-nav.right");
+
+  let currentIndex = 0;
+
+  // 📸 Affiche l’image principale avec effet fondu
+  function showImage(index) {
+    if (images[index]) {
+      mainImg.style.opacity = 0;
+      setTimeout(() => {
+        mainImg.src = images[index];
+        mainImg.style.opacity = 1;
+      }, 200);
+    }
+  }
+
+  // ⬅️ Flèche gauche
+  leftArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  // ➡️ Flèche droite
+  rightArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  // 🧊 Initialisation
+  showImage(currentIndex);
+
+  // 🖱️ Clic sur miniature
+  thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener("click", () => {
+      mainImg.src = thumbnail.src;
+      modalImg.src = thumbnail.src;
+      document.querySelector(".miniature.active")?.classList.remove("active");
+      thumbnail.classList.add("active");
+      currentIndex = index;
+    });
+  });
+
+  // 🔍 Clic image principale → ouverture modale
+  mainImg.addEventListener("click", () => {
+    modalOverlay.classList.remove("hidden");
+    modalImg.src = mainImg.src;
+  });
+
+  // ❌ Fermeture modale
+  closeModal.addEventListener("click", () => {
+    modalOverlay.classList.add("hidden");
+  });
+
+  // ⬅️ Navigation modale gauche
+  modalNavLeft.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    const thumb = thumbnails[currentIndex];
+    mainImg.src = thumb.src;
+    modalImg.src = thumb.src;
+    document.querySelector(".miniature.active")?.classList.remove("active");
+    thumb.classList.add("active");
+  });
+
+  // ➡️ Navigation modale droite
+  modalNavRight.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % thumbnails.length;
+    const thumb = thumbnails[currentIndex];
+    mainImg.src = thumb.src;
+    modalImg.src = thumb.src;
+    document.querySelector(".miniature.active")?.classList.remove("active");
+    thumb.classList.add("active");
+  });
+</script>
+
+
 
  <div id="footer-container"></div>
   <script>

@@ -47,7 +47,7 @@ h1 {
 
 .img1 {
     border: 5px solid #fff;
-    width: 17%;
+    width: 8%;
 }
 
 .p1 {
@@ -92,12 +92,14 @@ text-align: center;
 }
 
 
+/* 🎯 SECTION PRINCIPALE */
 .carousel-dojo {
   text-align: center;
   padding: 30px;
   background-color: #000;
 }
 
+/* 🖼️ Zone d'affichage principal */
 .main-display {
   display: flex;
   align-items: center;
@@ -117,8 +119,10 @@ text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 10px #333;
   transition: opacity 0.5s ease;
+  cursor: pointer;
 }
 
+/* 🔼 Flèches gauche/droite */
 .arrow {
   background-color: #042447;
   color: white;
@@ -130,6 +134,7 @@ text-align: center;
   z-index: 2;
 }
 
+/* 🖼️ Miniatures */
 .thumbnail-wrapper {
   overflow: hidden;
   width: 100%;
@@ -157,6 +162,7 @@ text-align: center;
   transform: scale(1.1);
 }
 
+/* ✨ Auto-scroll */
 .thumbnail-wrapper.hovering .thumbnail-track {
   animation: scroll-track 40s linear infinite;
 }
@@ -166,7 +172,76 @@ text-align: center;
   100% { transform: translateX(-50%); }
 }
 
+/* 🌑 MODALE ZOOM */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(15,15,15,0.9);
+  display: none; /* masqué par défaut */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
 
+.popup-overlay.show {
+  display: flex;
+  animation: fade-in 0.3s ease-in-out;
+}
 
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
+.popup-content {
+  position: relative;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content img {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  transition: opacity 0.4s ease;
+}
+
+/* ⬅️➡️ Boutons flèches modale */
+.popup-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #042447;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#popup-prev { left: 20px; }
+#popup-next { right: 20px; }
+
+/* ❌ Croix fermeture modale */
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  z-index: 10;
+}
 

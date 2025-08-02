@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <title>Guide Technique - Kung-Fu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/accueil.css" />
-  <link rel="stylesheet" href="/css/kungfu.css" />
+  <link rel="stylesheet" href="/css/header-Accueil-css/Accueil.css" />
+  <link rel="stylesheet" href="/css/sous-sections-css/kungfu.css" />
 </head>
 <body>
 
-<div id="header-container"></div>
-<script>
-  fetch('header.html').then(r => r.text()).then(d => { document.getElementById('header-container').innerHTML = d; });
-</script>
+  <div id="header-container"></div>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 
 <section class="section-kungfu-guide-technique">
   <div class="groupe-texte">

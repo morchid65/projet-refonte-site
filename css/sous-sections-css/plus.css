@@ -252,7 +252,7 @@ label {
   height: auto;
   display: block;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .carrousel-main:hover {
@@ -312,6 +312,12 @@ label {
   border-color: #fdfdfd;
   opacity: 1;
 }
+
+.miniature:hover {
+  transform: scale(1.08);
+  border-color: goldenrod;
+}
+
 
 /* 🖼️ Fenêtre modale */
 .modal-overlay {
@@ -381,6 +387,19 @@ label {
   .modal-nav.right { right: 10px; }
 }
 
+.image:hover {
+  transform: scale(1.1) translateZ(10px);
+  z-index: 10;
+}
+ 
+.image {
+  width: 90%;
+  transition: transform 0.3s ease;
+  margin: 5px;
+}
+.image:hover {
+  transform: scale(1.05);
+}
 
 
 .carousel-title {
@@ -506,4 +525,9 @@ label {
   font-weight: bold;
   border-radius: 6px;
   z-index: 10;
+}
+
+
+.container {
+  overflow: visible;
 }

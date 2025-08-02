@@ -1,6 +1,6 @@
-.header {
-    background-color: cadetblue;
-    color: #999;
+header {
+    background-color: rgb(113, 131, 132);  
+    padding: 40px;  
 }
 
 /* Configuration générale */
@@ -99,8 +99,8 @@ p {
     flex-direction: row;
     gap: 20px;
     border-radius: 100px;
-    padding: 10px 20px;
 }
+
 
 /* Boutons */
 .btn-group2 {
@@ -109,7 +109,6 @@ p {
     flex-direction: row;
     gap: 20px;
     border-radius: 100px;
-    padding: 10px 20px;
     gap: 280px;
 }
 
@@ -120,6 +119,17 @@ p {
     gap: 20px;
     border-radius: 100px;
     padding: 10px 20px;
+}
+
+.btn-link {
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    user-select: none;
+    transition: transform 0.1s ease;
 }
 
 /* Menu de navigation */

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <title>Rencontres Martiales – Wu Tao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/accueil.css" />
-  <link rel="stylesheet" href="/css/instructeurs.css" />
+  <link rel="stylesheet" href="/css/header-Accueil-css/Accueil.css">
+  <link rel="stylesheet" href="/css/sous-sections-css/instructeurs.css">
 </head>
 <body>
     <div id="header-container"></div>
@@ -21,12 +21,18 @@
   </script>
 
 <section class="carousel-dojo">
-  <h1 class="titre">RENCONTRES MARTIALES</h1>
   <div class="main-display">
     <button class="arrow left">⬅</button>
-      <img id="main-image" src="https://static.wixstatic.com/media/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg/v1/fill/w_300,h_165,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg" alt="Miniature 1">
+
+    <img id="main-image"
+         src="https://static.wixstatic.com/media/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg"
+         alt="Image principale" />
+
     <button class="arrow right">➡</button>
   </div>
+</section>
+
+
 
   <div class="thumbnail-wrapper">
     <div class="thumbnail-track">
@@ -56,48 +62,54 @@
 
 
 <script>
+window.addEventListener("DOMContentLoaded", () => {
   const images = [
-    "https://static.wixstatic.com/media/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg/v1/fill/w_300,h_165,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_3b8088de1450459f890981ce520f06c5~mv2.jpg/v1/fill/w_140,h_64,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_3b8088de1450459f890981ce520f06c5~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_d75f845081904471b5d315b82712261c~mv2.jpg/v1/fill/w_153,h_147,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_d75f845081904471b5d315b82712261c~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_6d87860f983c49ed808a5d874b7bd9e2~mv2.jpg/v1/fill/w_300,h_159,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_6d87860f983c49ed808a5d874b7bd9e2~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_614a0c32f2a34e0892ae3ab39dbb2d84~mv2.jpg/v1/fill/w_189,h_214,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_614a0c32f2a34e0892ae3ab39dbb2d84~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_33ad6258147a43a0896fb88eb6ad8441~mv2.jpg/v1/fill/w_273,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_33ad6258147a43a0896fb88eb6ad8441~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_01d57b04186a47fb83a53df35e3bf4a7~mv2.jpg/v1/fill/w_199,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_01d57b04186a47fb83a53df35e3bf4a7~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_e77d4545b6464eec81aa44770ae51430~mv2_d_2509_2976_s_4_2.jpg/v1/fill/w_285,h_338,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_e77d4545b6464eec81aa44770ae51430~mv2_d_2509_2976_s_4_2.jpg",
-    "https://static.wixstatic.com/media/cf687c_7252b9b5e428486f8ff3ef6c38514f7a~mv2.jpg/v1/fill/w_344,h_349,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_7252b9b5e428486f8ff3ef6c38514f7a~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_76a1ea4404734f389b92e6b469749221~mv2.jpg/v1/fill/w_300,h_132,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_76a1ea4404734f389b92e6b469749221~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_ecb0772773334b118dc59224baee560b~mv2.jpg/v1/fill/w_300,h_170,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_ecb0772773334b118dc59224baee560b~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_4b4eb866d86d4f2cbb35a0a9869c8abe~mv2.jpg/v1/fill/w_300,h_225,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_4b4eb866d86d4f2cbb35a0a9869c8abe~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_ad009a94d01d464393ff9ad5bc0863a7~mv2.jpg/v1/fill/w_225,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_ad009a94d01d464393ff9ad5bc0863a7~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_9a646d991c3d47209fc36a11d6889a55~mv2.jpg/v1/fill/w_225,h_169,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_9a646d991c3d47209fc36a11d6889a55~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_9602345a1c444eaf821623183f19cbd6~mv2.jpg/v1/fill/w_300,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_9602345a1c444eaf821623183f19cbd6~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_caf362e5b7dd43bfbadfc1a38d361d21~mv2.jpg/v1/fill/w_300,h_198,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_caf362e5b7dd43bfbadfc1a38d361d21~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_e7576b3932fe4052a7cf9ca7e8f84e71~mv2.jpg/v1/fill/w_300,h_289,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_e7576b3932fe4052a7cf9ca7e8f84e71~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_430b0297db8f4e938f3c00dc71c67129~mv2.jpg/v1/fill/w_300,h_213,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_430b0297db8f4e938f3c00dc71c67129~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_dad290a3114a40009023b7e33dcfb57e~mv2.jpg/v1/fill/w_225,h_170,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_dad290a3114a40009023b7e33dcfb57e~mv2.jpg",
-    "https://static.wixstatic.com/media/cf687c_48ef95bf552c400b8458bca826953705~mv2.jpg/v1/fill/w_197,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cf687c_48ef95bf552c400b8458bca826953705~mv2.jpg",
-]
+    "https://static.wixstatic.com/media/cf687c_4760b2f4508c4467a66446be56af7a85~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_3b8088de1450459f890981ce520f06c5~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_d75f845081904471b5d315b82712261c~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_6d87860f983c49ed808a5d874b7bd9e2~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_614a0c32f2a34e0892ae3ab39dbb2d84~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_33ad6258147a43a0896fb88eb6ad8441~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_01d57b04186a47fb83a53df35e3bf4a7~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_e77d4545b6464eec81aa44770ae51430~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_7252b9b5e428486f8ff3ef6c38514f7a~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_76a1ea4404734f389b92e6b469749221~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_ecb0772773334b118dc59224baee560b~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_4b4eb866d86d4f2cbb35a0a9869c8abe~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_ad009a94d01d464393ff9ad5bc0863a7~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_9a646d991c3d47209fc36a11d6889a55~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_9602345a1c444eaf821623183f19cbd6~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_caf362e5b7dd43bfbadfc1a38d361d21~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_e7576b3932fe4052a7cf9ca7e8f84e71~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_430b0297db8f4e938f3c00dc71c67129~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_dad290a3114a40009023b7e33dcfb57e~mv2.jpg",
+    "https://static.wixstatic.com/media/cf687c_48ef95bf552c400b8458bca826953705~mv2.jpg"
+  ];
 
   const mainImage = document.getElementById("main-image");
   const thumbnailTrack = document.querySelector(".thumbnail-track");
-  const thumbnailWrapper = document.querySelector(".thumbnail-wrapper");
   const btnLeft = document.querySelector(".arrow.left");
   const btnRight = document.querySelector(".arrow.right");
+  const popupOverlay = document.querySelector(".popup-overlay");
+  const popupImage = document.getElementById("popup-image");
+  const popupPrev = document.getElementById("popup-prev");
+  const popupNext = document.getElementById("popup-next");
+  const closePopup = document.getElementById("close-popup");
 
   let index = 0;
   let autoScroll;
   let hoverActive = false;
 
-  // Crée les miniatures et les injecte dans la piste
+  // 🔹 Génération des miniatures
   images.forEach((src, i) => {
     const img = document.createElement("img");
     img.src = src;
-    img.alt = "Miniature " + (i + 1);
+    img.alt = `Miniature ${i + 1}`;
     img.addEventListener("click", () => updateMainImage(i));
     thumbnailTrack.appendChild(img);
   });
 
+  // 🔹 Fonction pour afficher image principale
   function updateMainImage(i) {
     if (images[i]) {
       mainImage.style.opacity = 0;
@@ -109,6 +121,7 @@
     }
   }
 
+  // 🔹 Navigation flèches
   btnLeft.addEventListener("click", () => {
     index = (index - 1 + images.length) % images.length;
     updateMainImage(index);
@@ -119,18 +132,16 @@
     updateMainImage(index);
   });
 
+  // 🔹 Auto-scroll
   function startAutoScroll() {
     if (hoverActive) return;
     hoverActive = true;
-
-autoScroll = setInterval(() => {
-  index = (index + 1) % images.length;
-  updateMainImage(index);
-
-  const first = thumbnailTrack.firstElementChild;
-  thumbnailTrack.appendChild(first);
-}, 2000); // ➜ Passage toutes les 5 secondes au lieu de 4
-
+    autoScroll = setInterval(() => {
+      index = (index + 1) % images.length;
+      updateMainImage(index);
+      const first = thumbnailTrack.firstElementChild;
+      thumbnailTrack.appendChild(first);
+    }, 2000);
   }
 
   function stopAutoScroll() {
@@ -142,7 +153,32 @@ autoScroll = setInterval(() => {
   thumbnailTrack.addEventListener("mouseenter", startAutoScroll);
   mainImage.addEventListener("mouseleave", stopAutoScroll);
   thumbnailTrack.addEventListener("mouseleave", stopAutoScroll);
+
+  // 🔹 Modale Zoom
+  mainImage.addEventListener("click", () => {
+    popupOverlay.classList.add("show");
+    popupImage.src = images[index];
+  });
+
+  popupPrev.addEventListener("click", () => {
+    index = (index - 1 + images.length) % images.length;
+    popupImage.src = images[index];
+    updateMainImage(index);
+  });
+
+  popupNext.addEventListener("click", () => {
+    index = (index + 1) % images.length;
+    popupImage.src = images[index];
+    updateMainImage(index);
+  });
+
+  closePopup.addEventListener("click", () => {
+    popupOverlay.classList.remove("show");
+  });
+});
 </script>
+
+
 
   <div id="footer-container"></div>
   <script>
