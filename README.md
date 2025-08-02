@@ -1,4 +1,3 @@
-```markdown
 # 🐉 Projet Wu Tao Academy – Site Web HTML/CSS/JS
 
 ---
