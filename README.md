@@ -37,6 +37,7 @@ Objectifs :
 
 ### 📂 Organisation du projet  
 🎥 [Voir la vidéo](videos/structure-arborescence.mp4)
+
 ---
 
 🚀 Progression technique personnelle
