@@ -108,7 +108,7 @@ WuTaoAcademy/
 
 <img src="header.png" alt="Aperçu du Header injecté" style="width:100%; display:block; margin:0 auto;">
 
-`js
+```js
 const depth2 = location.pathname.split('/').length - 2;
 const path2 = '../'.repeat(depth2) + 'header.html';
 fetch(path2)
@@ -116,7 +116,7 @@ fetch(path2)
   .then(data => {
     document.getElementById('header-container').innerHTML = data;
   });
-`
+```
 
 📌 Ce script injecte le header.html automatiquement dans chaque page selon sa profondeur.  
 💡 Centralise le header, évite les répétitions, facilite la maintenance.
@@ -127,7 +127,7 @@ fetch(path2)
 
 🎨 Menu CSS lié au Header
 
-`css
+```css
 .Menu {
   width: 1700px;
   margin: 0 auto;
@@ -185,7 +185,7 @@ fetch(path2)
   color: inherit;
   display: block;
 }
-`
+```
 
 📌 Menu stylisé, fluide, avec sous-menus au survol.  
 🔗 Étroitement lié à l’injection du header, car il s’affiche dans cette zone.
@@ -196,13 +196,13 @@ fetch(path2)
 
 <img src="footer.png" alt="Footer affiché" style="width:100%;">
 
-`js
+```js
 fetch('/footer.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('footer-container').innerHTML = html;
   });
-`
+```
 
 📌 Le footer est injecté automatiquement sans duplication.  
 ✅ Ajout de bas de page standardisé dans toutes les vues.
@@ -213,7 +213,7 @@ fetch('/footer.html')
 
 <img src="formulaire-mot-de-passe.png" alt="Formulaire de mot de passe affiché" style="width:100%;">
 
-js
+```js
 document.querySelector("#submit-password").addEventListener("click", function() {
   let passwordInput = document.getElementById("Mot-de-Passe").value;
   if (passwordInput === "") {
@@ -224,7 +224,7 @@ document.querySelector("#submit-password").addEventListener("click", function() 
     alert("Mot de passe valide !");
   }
 });
-
+```
 
 📌 Contrôle basique côté client : vide ou trop court.  
 🔐 Améliore l’interactivité du site.
@@ -237,7 +237,7 @@ document.querySelector("#submit-password").addEventListener("click", function() 
 
 <img src="image-caroussel.png" alt="Visuel du carrousel actif" style="width:100%;">
 
-`js
+```js
 function showImage(index) {
   if (images[index]) {
     mainImg.style.opacity = 0;
@@ -247,7 +247,7 @@ function showImage(index) {
     }, 200);
   }
 }
-`
+```
 
 📌 Explication :
 - Permet de faire défiler les images avec une animation fluide
@@ -260,25 +260,25 @@ function showImage(index) {
 
 🔁 Ancienne version (HTML brut)
 
-`html
+```html
 <li>Agenda
   <ul>
     <li>Décembre 2022</li>
     ...
   </ul>
 </li>
-`
+```
 
 🚀 Version actuelle (structure dynamique)
 
-`html
+```html
 <li><a href="/sections/agenda.html">Agenda</a>
   <ul>
     <li><a href="/sous-sections/agenda/decembre-2022.html">Décembre 2022</a></li>
     ...
   </ul>
 </li>
-`
+```
 
 📌 Avantages de la nouvelle version :
 - Liens clairs et accessibles
