@@ -1,3 +1,4 @@
+```markdown
 # 🐉 Projet Wu Tao Academy – Site Web HTML/CSS/JS
 
 ---
@@ -101,7 +102,7 @@ WuTaoAcademy/
 ![Header injecté](img-doc/header.png)
 ![Header version 2](img-doc/header2.png)
 
-``js
+```js
 const depth2 = location.pathname.split('/').length - 2;
 const path2 = '../'.repeat(depth2) + 'header.html';
 fetch(path2)
@@ -109,22 +110,23 @@ fetch(path2)
   .then(data => {
     document.getElementById('header-container').innerHTML = data;
   });
+```
 
 ### 📥 Injection du Footer
 ![Footer](img-doc/footer.png)
 
-``js
+```js
 fetch('/footer.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('footer-container').innerHTML = html;
   });
-
+```
 
 ### 🔐 Formulaire mot de passe
 ![Mot de passe](img-doc/formulaire-mot-de-passe.png)
 
-``js
+```js
 document.querySelector("#submit-password").addEventListener("click", function() {
   let passwordInput = document.getElementById("Mot-de-Passe").value;
   if (passwordInput === "") {
@@ -135,13 +137,13 @@ document.querySelector("#submit-password").addEventListener("click", function() 
     alert("Mot de passe valide !");
   }
 });
-
+```
 
 ### 🖼️ Carrousel images
 ![Carrousel](img-doc/image-caroussel.png)
 ![Carrousel img](img-doc/carrousel-img.png)
 
-``js
+```js
 function showImage(index) {
   if (images[index]) {
     mainImg.style.opacity = 0;
@@ -151,6 +153,9 @@ function showImage(index) {
     }, 200);
   }
 }
+```
+
+---
 
 ## 🎨 Extrait du code CSS du menu général
 
@@ -189,6 +194,9 @@ function showImage(index) {
 .Menu > li:hover > ul {
   display: block;
 }
+```
+
+---
 
 ## ⏳ Avant / Après – Évolution du menu
 
@@ -203,14 +211,16 @@ function showImage(index) {
 ```
 
 ### 🚀 Version actuelle (structure dynamique)
-``html
+```html
 <li><a href="/sections/agenda.html">Agenda</a>
   <ul>
     <li><a href="/sous-sections/agenda/decembre-2022.html">Décembre 2022</a></li>
     ...
   </ul>
 </li>
+```
 
+---
 
 ## 🧩 Idées d'amélioration
 
@@ -233,3 +243,5 @@ Merci aux bugs qui ont réveillé ma rigueur, et à l’IA pour m’avoir donné
 
 > Ce README reflète mon parcours : de débutant dépendant à un développeur autonome et structuré.  
 > J'ai appris à coder, organiser, corriger, maintenir — mais surtout à penser et décider.
+
+```
