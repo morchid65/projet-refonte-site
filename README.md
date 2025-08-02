@@ -25,11 +25,18 @@ Site web vitrine pour une école d’arts martiaux. Réalisé en HTML, CSS, Java
 
 ---
 
-## 📽️ Vidéos de démonstration
+### 🏠 Présentation générale du site
+🎥 [Voir la vidéo](videos/presentation-site.mp4)  
+_Aperçu du site terminé, navigation principale, esthétisme._
 
-- 🏠 Vue générale du site : `structure + navigation + esthétique`  
-- 🧩 Intégration `header`, `footer`, fichiers CSS liés  
-- 📂 Structure du projet par dossier, logique technique appliquée
+### 🧩 Présentation du Header, Footer, Accueil + fichier HTML et CSS
+🎥 [Voir la vidéo](videos/integration-header-footer.mp4)  
+_Modularisation du layout avec JS + découpage CSS._
+
+### 📂 Structure du projet
+🎥 [Voir la vidéo](videos/structure-arborescence.mp4)  
+_Organisation des fichiers et logique technique._
+
 
 > _⚠️ Vidéos sans son mais très visuelles. Durée moyenne : 5 min._
 
