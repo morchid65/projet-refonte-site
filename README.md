@@ -30,13 +30,13 @@ Objectifs :
 ---
 
 ### 🏠 Présentation du site terminé  
-🎥 [Voir la vidéo](https://youtu.be/8evOv7ZdwoM?si=rVhjbqUGKnwt2UNR)
+🎥 [Voir la vidéo]([https://youtu.be/8evOv7ZdwoM?si=rVhjbqUGKnwt2UNR](https://youtu.be/7UcR9B5vopw))
 
 ### 🧩 Intégration du Header et Footer  
-🎥 [Voir la vidéo](https://youtu.be/hjaZKhWxcPA?si=mQtj2T7jc26jfqWd)
+🎥 [Voir la vidéo]([https://youtu.be/qX-6cPamaQ8)]
 
 ### 📂 Organisation du projet  
-🎥 [Voir la vidéo]([videos/structure-arborescence.mp4)](https://online-video-cutter.com/projects/08565020-8f49-44d0-9717-c944c851b50b)
+🎥 [Voir la vidéo](https://youtu.be/hhYByzohUGI)
 
 ---
 
