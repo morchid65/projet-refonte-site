@@ -83,7 +83,8 @@ _Organisation des fichiers et logique technique._
 
 ### 🧭 Suivi WakaTime (semaine 1)
 ![Graph](graph-wakatime.png)
-*(Activité sur les 7 premiers jours)*
+
+*(Activité sur les 7 jours)*
 
 ---
 
