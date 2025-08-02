@@ -242,5 +242,3 @@ Merci aux bugs qui ont réveillé ma rigueur, et à l’IA pour m’avoir donné
 
 > Ce README reflète mon parcours : de débutant dépendant à un développeur autonome et structuré.  
 > J'ai appris à coder, organiser, corriger, maintenir — mais surtout à penser et décider.
-
-```
