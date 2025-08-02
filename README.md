@@ -77,7 +77,7 @@ Objectifs :
 | 🔄 Commits | 80+ |
 | 🤖 Usage IA | Fort en début, autonomie ensuite |
 
-[![Wakatime](https://img.shields.io/badge/WakaTime-Stats-black?logo=wakatime&logoColor=white)](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b)
+[![Code Time](https://img.shields.io/badge/Code%20Time-19h%2037min-black?logo=wakatime&logoColor=white)](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b)
 
 📊 Activité semaine 1 via WakaTime  
 <img src="graph-wakatime.png" alt="Graphique WakaTime de la semaine 1" style="width:100%;">
