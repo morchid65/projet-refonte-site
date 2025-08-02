@@ -74,7 +74,7 @@ Site web vitrine pour une école d’arts martiaux. Réalisé en HTML, CSS, Java
 
 ## 🧠 Architecture et organisation des fichiers
 
-``plaintext
+```plaintext
 WuTaoAcademy/
 ├── accueil.html
 ├── header.html
@@ -203,7 +203,7 @@ function showImage(index) {
 ```
 
 ### 🚀 Version actuelle (structure dynamique)
-``html
+```html
 <li><a href="/sections/agenda.html">Agenda</a>
   <ul>
     <li><a href="/sous-sections/agenda/decembre-2022.html">Décembre 2022</a></li>
