@@ -30,10 +30,10 @@ Objectifs :
 ---
 
 ### 🏠 Présentation du site terminé  
-🎥 [Voir la vidéo]([https://youtu.be/8evOv7ZdwoM?si=rVhjbqUGKnwt2UNR](https://youtu.be/7UcR9B5vopw))
+🎥 [Voir la vidéo](https://youtu.be/7UcR9B5vopw)
 
 ### 🧩 Intégration du Header et Footer  
-🎥 [Voir la vidéo]([https://youtu.be/qX-6cPamaQ8)]
+🎥 [Voir la vidéo](https://youtu.be/qX-6cPamaQ8)
 
 ### 📂 Organisation du projet  
 🎥 [Voir la vidéo](https://youtu.be/hhYByzohUGI)
