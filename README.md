@@ -1,6 +1,6 @@
 🐉 Projet Wu Tao Academy – Site Web HTML/CSS/JS
 
-![Visiteurs](https://komarev.com/ghpvc/?username=morchid65&color=dc143c)
+![Visiteurs](https://komarev.com/ghpvc/username=morchid65&label=Profile%20views&color=000000&style=dc143c)
 
 ---
 
