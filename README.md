@@ -77,7 +77,12 @@ Objectifs :
 | 🔄 Commits | 80+ |
 | 🤖 Usage IA | Fort en début, autonomie ensuite |
 
-[![wakatime](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b.svg)](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b)
+<div style="background-color:#0d0d0d; padding:4px; border-radius:6px; display:inline-block;">
+  <a href="https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b">
+    <img src="https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b.svg" />
+  </a>
+</div>
+
 
 📊 Activité semaine 1 via WakaTime  
 <img src="graph-wakatime.png" alt="Graphique WakaTime de la semaine 1" style="width:100%;">
