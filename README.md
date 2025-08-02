@@ -213,7 +213,7 @@ fetch('/footer.html')
 
 <img src="formulaire-mot-de-passe.png" alt="Formulaire de mot de passe affiché" style="width:100%;">
 
-`js
+js
 document.querySelector("#submit-password").addEventListener("click", function() {
   let passwordInput = document.getElementById("Mot-de-Passe").value;
   if (passwordInput === "") {
@@ -224,7 +224,7 @@ document.querySelector("#submit-password").addEventListener("click", function() 
     alert("Mot de passe valide !");
   }
 });
-`
+
 
 📌 Contrôle basique côté client : vide ou trop court.  
 🔐 Améliore l’interactivité du site.
