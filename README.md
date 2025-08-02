@@ -2,25 +2,18 @@
 
 ---
 
-📘 Sommaire
-
-- 🎓 Présentation du projet
-- 📽️ Vidéos de démonstration
-- 🚀 Progression technique personnelle
-- 🛠️ Difficultés rencontrées & solutions
-- 📊 Statistiques GitHub & WakaTime
-- 🧠 Architecture du projet
-- 🔧 Scripts JavaScript avec explication
-  - 📦 Injection du Header
-  - 🎨 Menu CSS lié au Header
-  - 📥 Injection du Footer
-  - 🔐 Formulaire mot de passe
-  - 🖼️ Carrousel d’images
-- ⏳ Avant / Après – Évolution du menu
-- ⭐ Fonctionnalités clés du site
-- 🧩 Idées d'amélioration
-- 🙏 Remerciements
-- 📚 Résumé pédagogique
+- [🎓 Présentation du projet](#présentation-du-projet)
+- [📽️ Vidéos de démonstration](#vidéos-de-démonstration)
+- [🚀 Progression technique personnelle](#progression-technique-personnelle)
+- [🛠️ Difficultés rencontrées & solutions](#difficultés-rencontrées--solutions)
+- [📊 Statistiques GitHub & WakaTime](#statistiques-github--wakatime)
+- [🧠 Architecture du projet](#architecture-du-projet)
+- [🔧 Scripts JavaScript avec explication](#scripts-javascript-avec-explication)
+- [⏳ Avant / Après – Évolution du menu](#avant--après--évolution-du-menu)
+- [⭐ Fonctionnalités clés du site](#fonctionnalités-clés-du-site)
+- [🧩 Idées d'amélioration](#idées-damélioration)
+- [🙏 Remerciements](#remerciements)
+- [📚 Résumé pédagogique](#résumé-pédagogique)
 
 ---
 
@@ -36,14 +29,14 @@ Objectifs :
 
 ---
 
-📽️ Vidéos de démonstration
+### 🏠 Présentation du site terminé  
+🎥 [Voir la vidéo](videos/presentation-site.mp4)
 
-- 🎥 Présentation du site terminé
-- 🎥 Intégration du Header et Footer
-- 🎥 Organisation des fichiers
+### 🧩 Intégration du Header et Footer  
+🎥 [Voir la vidéo](videos/integration-header-footer.mp4)
 
-> ⚠️ Vidéos sans audio mais claires et visuelles (durée moyenne : 5 min)
-
+### 📂 Organisation du projet  
+🎥 [Voir la vidéo](videos/structure-arborescence.mp4)
 ---
 
 🚀 Progression technique personnelle
