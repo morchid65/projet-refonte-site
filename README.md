@@ -193,7 +193,7 @@ function showImage(index) {
 ## ⏳ Avant / Après – Évolution du menu
 
 ### 🔁 Ancienne version (HTML brut)
-``html
+```html
 <li>Agenda
   <ul>
     <li>Décembre 2022</li>
@@ -203,7 +203,7 @@ function showImage(index) {
 ```
 
 ### 🚀 Version actuelle (structure dynamique)
-```html
+``html
 <li><a href="/sections/agenda.html">Agenda</a>
   <ul>
     <li><a href="/sous-sections/agenda/decembre-2022.html">Décembre 2022</a></li>
