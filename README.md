@@ -30,7 +30,7 @@ Objectifs :
 ---
 
 ### 🏠 Présentation du site terminé  
-🎥 [Voir la vidéo](videos/presentation-site.mp4)
+🎥 [Voir la vidéo](https://youtu.be/hjaZKhWxcPA?si=mQtj2T7jc26jfqWd)
 
 ### 🧩 Intégration du Header et Footer  
 🎥 [Voir la vidéo](videos/integration-header-footer.mp4)
