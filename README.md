@@ -140,7 +140,7 @@ document.querySelector("#submit-password").addEventListener("click", function() 
 
 ### 🖼️ Carrousel images
 ![Carrousel](image-caroussel.png)
-![Carrousel img](carrousel-img.png)
+![Carrousel img](caroussel-img.png)
 
 ```js
 function showImage(index) {
