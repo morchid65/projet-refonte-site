@@ -1,7 +1,3 @@
-Bien joué Jebril 🙌, voici la version **finale du README.md** avec les images intégrées aux sections correspondantes, des explications claires, ta progression technique, tes scripts, ton CSS, et toutes tes idées. Un README **visuel, narratif et structuré**, prêt à être copié dans ton dépôt GitHub :
-
----
-
 # 🐉 Projet Wu Tao Academy – Site Web HTML/CSS/JS
 
 ---
