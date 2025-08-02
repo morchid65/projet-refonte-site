@@ -77,6 +77,14 @@ _Organisation des fichiers et logique technique._
 | 🔄 Commits | 60 à 100 |
 | 🧠 Apprentissage IA | Intense en début, autonomie progressive |
 
+## 📊 Statistiques GitHub & WakaTime
+
+…Stats GitHub ici…
+
+### 🧭 Suivi WakaTime (semaine 1)
+![Graph](img-doc/graph-wakatime.png)
+*(Activité sur les 7 premiers jours)*
+
 ---
 
 ## 🧠 Architecture et organisation des fichiers
