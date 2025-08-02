@@ -115,7 +115,7 @@ WuTaoAcademy/
 
 ## 🔧 Exemples de scripts JavaScript
 
-### 📦 Injection du Header
+### 📦 Injection du Header + Menu CSS (rajouter explication sous chaque code)
 ![Header injecté](header.png)
 ![Header version 2](header2.png)
 
