@@ -1,249 +1,333 @@
-# 🧧 README – Projet Refonte Site Wu Tao Academy
+# 🧠 Projet Web – Wu Tao Academy
 
-[![Statut du Projet](https://img.shields.io/badge/Statut-En%20Cours%20(Phénix)-orange)]()
-[![Méthodologie](https://img.shields.io/badge/Méthodologie-Agile%20&%20Résiliente-blue)]()
-[![Résolution de Problèmes](https://img.shields.io/badge/Compétence-Résolution%20de%20Problèmes-red)]()
-[![Dojo de Progression](https://img.shields.io/badge/Dojo-Progression%20Continue-black)]()
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
-[![Flexbox](https://img.shields.io/badge/Layout-Flexbox-green)]()
-[![Positionnement CSS](https://img.shields.io/badge/Positionnement-CSS%20Relative-purple)]()
-[![Fetch API](https://img.shields.io/badge/Fetch%20API-JavaScript-yellow)]()
-
-[![Collaboration IA](https://img.shields.io/badge/Collaboration-IA%20&%20Manuelle-lightgrey)]()
-[![Responsive](https://img.shields.io/badge/Layout-Responsive-green)]()
+Ce projet représente une approche progressive de la création d’un site web modulaire, stylisé, et optimisé pour le responsive. Il illustre un véritable cheminement technique, depuis des échecs initiaux jusqu’à une solution maîtrisée et documentée.
 
 ---
 
-## 📚 Sommaire
+## 🔧 Fonctionnalités clés
 
-- [📌 Contexte & Philosophie du Projet](#-contexte--philosophie-du-projet)
-- [🔁 Déroulement du Développement](#-déroulement-du-développement)
-  - [🧨 Échecs & Transition](#-échecs--transition)
-  - [🔐 Le Header - Noyau Central](#-le-header--noyau-central)
-  - [🧠 Intelligence du Plan C](#-intelligence-du-plan-c--ia--reprise-manuelle)
-- [🗂️ Structure & Code](#️-structure--code)
-  - [📁 Structure du Dossier](#-structure-du-dossier--arborescence-finale)
-  - [🎨 Compositions CSS](#-compositions-css-maîtrisées)
-  - [📥 Script d’injection dynamique](#-script-dinjection-dynamique)
-- [📊 Analyse & Résolution](#-analyse--résolution)
-  - [📊 Statistiques Techniques](#-statistiques-techniques--github)
-  - [🧵 Résolutions CSS](#-résolutions-css)
-- [🎥 Vidéo de Présentation](#-vidéo-de-présentation)
-- [🔮 À venir & Remerciements](#-à-venir--remerciements)
-  - [🔮 À venir](#-à-venir)
-  - [🙏 Remerciements](#-remerciements)
-  - [📘 Posture finale](#-posture-finale)
+### 💡 Injection du Header avec Fetch
 
+html
+<script>
+  const depth2 = location.pathname.split('/').length - 2;
+  const path2 = '../'.repeat(depth2) + 'header.html';
+  fetch(path2)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    })
+    .catch(error => console.error('Erreur chargement header:', error));
+</script>
+```
+
+- `depth2` : calcule le niveau de profondeur du fichier actuel
+- `fetch()` : charge dynamiquement le header
+- Modularisation : réutilisation du même composant `header.html`
 
 ---
 
-## 📌 Contexte & Philosophie du Projet
+### 📥 Injection du Footer
 
-### Contexte du Projet
-Tout a commencé avec un site désorganisé.
-Des fichiers éparpillés, des chemins brisés, un CSS difficile à maintenir.
-Mais derrière ce chaos, une volonté claire : **comprendre**, **progresser**, **reconstruire**.
+html
+<div id="footer-container"></div>
+<script>
+  fetch('/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer-container').innerHTML = html;
+    });
+</script>
+```
 
-### Philosophie de Développement
-> “Je n’ai pas voulu tricher avec des raccourcis.
-> J’ai voulu apprendre vraiment, en codant chaque partie moi-même.”
+- Centralisation du footer → une seule source pour toutes les pages
 
-- Codage manuel de l’accueil
-- Création du menu complet tapé à la main
-- Regroupement des éléments visuels
-- Structuration assistée par IA → reprise manuelle
-- Réutilisation des plans échoués comme ressources
+---
+
+### 🎨 Style CSS pour image centrée
+
+```css
+.image-centre {
+  background-color: rgb(168, 164, 164);
+  box-shadow: 5px 5px 10px #222;
+  border: solid 20px rgb(107, 107, 107);
+}
+```
+
+- Style visuel avec ombrage & encadrement personnalisé
+
+---
+
+### 🔐 Validation de mot de passe
+
+html
+<input type="password" id="Mot-de-Passe" placeholder="Mot de passe">
+<button id="submit-password">OK</button>
+
+<script>
+document.querySelector("#submit-password").addEventListener("click", function() {
+  let passwordInput = document.getElementById("Mot-de-Passe").value;
+  if (passwordInput === "") {
+    alert("Veuillez saisir un mot de passe.");
+  } else if (passwordInput.length < 6) {
+    alert("Le mot de passe doit contenir au moins 6 caractères.");
+  } else {
+    alert("Mot de passe valide !");
+  }
+});
+</script>
+
+
+- Sécurité de base pour bloquer l’accès à certaines sections
+
+---
+
+### 🖼️ Carrousel interactif (galerie)
+
+javascript
+const images = [...]; // Tableau d’URLs
+function showImage(index) {
+  if (images[index]) {
+    mainImg.style.opacity = 0;
+    setTimeout(() => {
+      mainImg.src = images[index];
+      mainImg.style.opacity = 1;
+    }, 200);
+  }
+}
+
+leftArrow.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+});
+
+- Galerie avec transitions fondues et navigation fluide
+
+---
+
+## 📌 Difficultés rencontrées
+
+- Conflits de classes CSS → résolus via `.img-base`
+- Sections peu responsive → correction avec **Flexbox**
+- Navigation instable → réglée via composants injectés
+- Tentative initiale de tout centraliser → trop lourd à maintenir
+
+---
+
+## ✔️ Solutions techniques
+
+- 🔧 Séparation des composants HTML (`header.html`, `footer.html`)
+- 🎨 CSS fragmenté en fichiers thématiques
+- 🧪 Tests manuels sur chaque inclusion JS / responsive
+- 📁 Organisation claire des fichiers, logique modulaire
 
 ---
 
 ## 🔁 Déroulement du Développement
 
 ### 🧨 Échecs & Transition
-#### Plan B échoué
+
 > “Le Plan B consistait à tout réunir — mais c’était une impasse.”
 
 - Trop de contenu → surcharge
 - CSS ingérable, navigation fragile
 - Résultat : instabilité et confusion
 
-#### Rebirth avec Plan C
-- Granularité → fichiers spécifiques par rôle
-- Création de `header.html` et `footer.html` modulaires
+---
 
-### 🔐 Le Header – Noyau central
+### ✨ Rebirth avec Plan C
+
 > “Une fois que le header a fonctionné, tout a changé.”
 
-- Fusion `<head>` / `<header>` provoquait des bugs
-- Résolution :
-  - Séparation structurée
-  - Chargement dynamique via `fetch()`
-  - Navigation rétablie + stylisation fluide
-
-### 🧠 Intelligence du Plan C – IA + Reprise manuelle
-> “J’ai extrait, structuré avec l’IA, et repris chaque ligne moi-même.”
-
-| Étape | Action |
-| --- | --- |
-| 🟡 Extraction | Séparation HTML par section |
-| 🔵 Structuration | Forme optimisée par IA |
-| 🔴 Reprise | Relecture et corrections manuelles |
-| 🟢 Stylisation | Application ciblée du design |
+- Granularité → fichiers spécifiques par rôle
+- Création de `header.html` et `footer.html` modulaires
+- Structuration parent-enfant optimisée
+- Fragmentation du CSS pour lisibilité
+- Responsive system mis en place manuellement
 
 ---
 
-## 🗂️ Structure & Code
+### 🧠 Intelligence du Plan C – IA + Reprise manuelle
 
-### 📁 Structure du Dossier – Arborescence Finale
-<pre>
-WuTaoAcademy/
-├── accueil.html
-├── header.html
-├── footer.html
-├── README.md
-├── note projet.md
-├── css/
-│   ├── global.css
-│   ├── competition.css
-│   ├── plus.css
-│   └── responsive.css
-├── Sections/
-│   ├── agenda.html
-│   ├── competitions.html
-│   ├── enfants.html
-│   └── …
-├── Sous-sections/
-│   ├── agenda-local.html
-│   ├── competitions-1.html
-│   ├── enfants-danse.html
-│   └── …
-├── Img/
-│   ├── accueil/
-│   ├── competitions/
-│   ├── enfants/
-│   └── …
-└── js/
-    └── injectHeaderFooter.js
-</pre>
+| Étape        | Action                              |
+|--------------|--------------------------------------|
+| 🟡 Extraction | Séparation HTML par section          |
+| 🔵 Structuration | Forme optimisée par IA               |
+| 🔴 Reprise     | Relecture et corrections manuelles   |
+| 🟢 Stylisation | Application ciblée du design         |
 
-🎨 Compositions CSS maîtrisées
-| Classe CSS | Rôle |
-|---|---|
-| .container-global | Structure de la page |
-| .row, .column | Flexbox pour disposition |
-| .side-left, .side-right | Alignements latéraux |
-| .image-wrapper | Conteneur d’image modulaire |
-| .main-display | Zone d’exposition centrale |
-📥 Script d’injection dynamique
-> “J’ai extrait, structuré avec l’IA, et repris chaque ligne moi-même.”
-> 
-<pre><code><script>
-const depth2 = location.pathname.split('/').length - 2;
-const path2 = '../'.repeat(depth2) + 'header.html';
-fetch(path2)
-.then(response => response.text())
-.then(data => {
-document.getElementById('header-container').innerHTML = data;
-})
-.catch(error => console.error('Erreur chargement header:', error));
-</script></code>
+---
 
-</pre>
-📊 Analyse & Résolution
-📊 Statistiques Techniques & GitHub
-<table>
-<thead>
-<tr>
-<th>📌 Indicateur</th>
-<th>⚙️ Valeur approximative</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>🧩 Fichiers HTML créés</td>
-<td>90+ (accueil, sections, sous-sections)</td>
-</tr>
-<tr>
-<td>🎨 Fichiers CSS modulaires</td>
-<td>4 (global.css, competition.css, plus.css, responsive.css)</td>
-</tr>
-<tr>
-<td>🖼️ Dossiers images organisés</td>
-<td>5 (accueil, competitions, enfants, etc.)</td>
-</tr>
-<tr>
-<td>📦 Volume total du projet</td>
-<td>≈ 3,4 Mo (en local, avant minification)</td>
-</tr>
-<tr>
-<td>🔁 Refactorisations principales</td>
-<td>3 (Plan B → Plan C → Header/Footer modulaires)</td>
-</tr>
-<tr>
-<td>🕰️ Temps de développement estimé</td>
-<td>+110h (hors recherches et documentation)</td>
-</tr>
-<tr>
-<td>🤖 Interactions IA</td>
-<td>67 sessions (structuration, conseils, bugfixes)</td>
-</tr>
-<tr>
-<td>🧪 Tests manuels effectués</td>
-<td>≈ 45+ (navigation, responsive, inclusion JS, etc.)</td>
-</tr>
-<tr>
-<td>📚 Lignes de code tapées</td>
-<td>+3 000 (HTML + CSS + JS cumulés)</td>
-</tr>
-<tr>
-<td>🔧 Bugs détectés & résolus</td>
-<td>32+ (conflits CSS, chargements dynamiques, erreurs structurelles)</td>
-</tr>
-</tbody>
-</table>
-<p><em>“Chaque chiffre est un fragment de l’histoire. Chaque test un pas vers la maîtrise.”</em></p>
+## 📘 Posture finale
 
-### 🧵 Résolutions CSS
+Ce projet n’est pas simplement un site.  
+C’est un **dojo numérique**, une trace d’évolution, le reflet d’un apprentissage **technique et personnel**.
 
-| ❌ Erreur rencontrée | ✅ Solution mise en place |
-|---|---|
-| Classes en double (.img1, .img1, etc.) | Classes universelles (.img-base, .container-global) |
-| Style injecté au mauvais endroit | Séparation dans fichiers CSS ciblés |
-| Mauvais regroupement des images | Containers (.wrapper-img, .row) |
-| Positionnement impossible | position: relative + display: flex |
-| Casse non respectée (.img-base ≠ .Img-base) | Uniformisation et rigueur syntaxique |
-| Fichiers CSS trop lourds | Fragmentation logique (plus.css, etc.) |
-| Hiérarchie HTML déstructurée | Structuration parent-enfant optimisée |
-> “À chaque bug, une solution. À chaque ligne, une leçon.”
+> “Je ne voulais pas juste créer un site fonctionnel.  
+> Je voulais apprendre à mieux coder, à résoudre les problèmes, à maîtriser chaque étape.”
 
+---
 
-## 🎥 Vidéo de Présentation
+## 🙏 Remerciements
 
-[Visite guidée du site Wu Tao Academy - YouTube](**INSÉREZ_LE_LIEN_YOUTUBE_ICI**)
+Merci à mon encadrant, à l’équipe, à l’IA…  
+…et aux bugs, qui m’ont forcé à devenir meilleur.
 
-🔮 À venir & Remerciements
-🔮 À venir
- * 🔄 Finalisation de la section “Plus” avec carousel responsive
- * 🖌️ Création d’une version HTML stylisée du README
- * 🌍 Traduction en anglais pour portfolio international
- * 📄 Ajout d’un système de composants réutilisables
-   
-### 🙏 Remerciements
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentation Technique – Wu Tao Academy</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background-color: #fdfdfd; color: #222; }
+    h1, h2 { color: #444; }
+    pre { background: #eee; padding: 1rem; overflow-x: auto; border-left: 5px solid #ccc; }
+    ul { padding-left: 1.5rem; margin-bottom: 2rem; list-style-type: disc; }
+    ul li { margin-bottom: 0.5rem; }
+    ul ul { list-style-type: circle; }
+    section { margin-bottom: 3rem; padding: 1rem; background-color: #fafafa; border: 1px solid #ddd; border-radius: 8px; }
+    code { font-family: Consolas, monospace; }
+    img { width: 100%; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 0 6px #aaa; }
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.3rem; margin-top: 0; }
+  </style>
+</head>
+<body>
 
-Ce projet n’aurait jamais existé sans le stage que j’ai pu effectuer — C’est grâce à cette
-opportunité, à ce cadre, à cet encadrement que j’ai pu progresser autant.
-Je remercie sincèrement mon encadrant et l’environnement du stage, car il a été le
-catalyseur de cette transformation technique et personnelle.
-Merci aussi à l’IA pour son rôle d’architecte silencieux, et à tous les bugs, erreurs… qui
-m’ont rendu meilleur à chaque ligne de code.
+<h1>📘 Documentation Technique – Wu Tao Academy</h1>
 
-### 📘 Posture finale
+<!-- SECTION INJECTION HEADER -->
+<section>
+  <h2>📦 Injection du Header (modularisation)</h2>
+  <img src="header.png" alt="Aperçu du Header injecté" style="width:25%; display:block; margin:0 auto;">
+  <img src="header2.png" alt="Aperçu du Header injecté">
+  <pre><code>
+&lt;script&gt;
+  const depth2 = location.pathname.split('/').length - 2;
+  const path2 = '../'.repeat(depth2) + 'header.html';
+  fetch(path2)
+    .then(response =&gt; response.text())
+    .then(data =&gt; {
+      document.getElementById('header-container').innerHTML = data;
+    })
+    .catch(error =&gt; console.error('Erreur chargement header:', error));
+&lt;/script&gt;
+  </code></pre>
+  <ul>
+    <li><strong>depth2</strong> : calcule la profondeur du fichier</li>
+    <li><strong>fetch()</strong> : charge dynamiquement le fichier `header.html`</li>
+    <li><strong>Modularisation</strong> : permet un code plus propre et réutilisable</li>
+  </ul>
+</section>
 
-Ce projet n’est pas qu’un site.
-C’est un dojo de progression, une trace d’apprentissage.
-> Ce site, ce projet, ce README… tout est le fruit d’une démarche personnelle d’apprentissage.
-> Je ne voulais pas juste créer un site fonctionnel.
-> Je voulais apprendre à mieux coder, à résoudre les problèmes, à maîtriser chaque étape.
-> Chaque fichier que j’ai structuré est un symbole de progression.
-> Ce dojo numérique est mon espace d’évolution.
+<!-- SECTION FOOTER -->
+<section>
+  <h2>📥 Injection du Footer</h2>
+  <img src="footer.png" alt="Aperçu du Footer injecté">
+  <pre><code>
+&lt;div id="footer-container"&gt;&lt;/div&gt;
+&lt;script&gt;
+  fetch('/footer.html')
+    .then(res =&gt; res.text())
+    .then(html =&gt; {
+      document.getElementById('footer-container').innerHTML = html;
+    });
+&lt;/script&gt;
+  </code></pre>
+  <p>Injection dynamique du footer pour centraliser la mise à jour.</p>
+</section>
+
+<!-- SECTION AUDIO -->
+<section>
+  <h2>🎧 Bouton Audio (lecture/pause)</h2>
+  <img src="LIEN_IMAGE_AUDIO.png" alt="Bouton audio affiché">
+  <pre><code>
+&lt;button id="audio-toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;audio id="footer-audio" src="chemin/vers/audio.mp3"&gt;&lt;/audio&gt;
+
+&lt;script&gt;
+  const toggleBtn = document.getElementById('audio-toggle');
+  const audio = document.getElementById('footer-audio');
+  let isPlaying = false;
+
+  toggleBtn.addEventListener('click', () =&gt; {
+    isPlaying = !isPlaying;
+    if (isPlaying) {
+      audio.play().catch(() =&gt; {});
+      toggleBtn.classList.add('playing');
+    } else {
+      audio.pause();
+      toggleBtn.classList.remove('playing');
+    }
+  });
+&lt;/script&gt;
+  </code></pre>
+</section>
+
+<!-- SECTION MOT DE PASSE -->
+<section>
+  <h2>🔐 Validation du mot de passe</h2>
+  <img src="formulaire-mot-de-passe.png" alt="Formulaire de mot de passe affiché">
+  <pre><code>
+&lt;input type="password" id="Mot-de-Passe" placeholder="Mot de passe"&gt;
+&lt;button id="submit-password"&gt;OK&lt;/button&gt;
+
+&lt;script&gt;
+document.querySelector("#submit-password").addEventListener("click", function() {
+  let passwordInput = document.getElementById("Mot-de-Passe").value;
+  if (passwordInput === "") {
+    alert("Veuillez saisir un mot de passe.");
+  } else if (passwordInput.length &lt; 6) {
+    alert("Le mot de passe doit contenir au moins 6 caractères.");
+  } else {
+    alert("Mot de passe valide !");
+  }
+});
+&lt;/script&gt;
+  </code></pre>
+</section>
+
+<!-- SECTION GALERIE -->
+<section>
+  <h2>🖼️ Script Carrousel – Galerie interactive</h2>
+  <img src="image-caroussel.png" alt="Carrousel interactif affiché">
+  <img src="caroussel-img.png" alt="Carrousel interactif affiché">
+  <pre><code>
+const images = [...]; // Tableau d’URLs
+function showImage(index) {
+  if (images[index]) {
+    mainImg.style.opacity = 0;
+    setTimeout(() =&gt; {
+      mainImg.src = images[index];
+      mainImg.style.opacity = 1;
+    }, 200);
+  }
+}
+
+leftArrow.addEventListener("click", () =&gt; {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+});
+  </code></pre>
+</section>
+
+<!-- SECTION README EN MARKDOWN -->
+<section>
+  <h2>📒 README – Projet Web Wu Tao Academy</h2>
+  <pre><code>
+# 🧠 Projet Web – Injection Dynamique & Modularisation
+
+Ce projet représente une approche progressive de la création d’un site web modulaire, stylisé, et optimisé pour le responsive.
+
+## 🔧 Fonctionnalités clés
+
+...
+
+## 🙏 Remerciements
+
+Merci à mon encadrant, à l’équipe, à l’IA…  
+…et aux bugs, qui m’ont forcé à devenir meilleur.
+  </code></pre>
+</section>
+
+</body>
+</html>
