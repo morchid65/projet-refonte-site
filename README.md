@@ -69,6 +69,8 @@ _Organisation des fichiers et logique technique._
 
 ## 📊 Statistiques GitHub
 
+[![wakatime](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b.svg)](https://wakatime.com/badge/user/3d07be02-2a28-4eec-96eb-751c50769ce3/project/815baf83-8831-4339-845c-df23def8ea2b)
+
 | 🔢 Métrique | Valeur (estimée) |
 |------------|------------------|
 | 🗂️ Nombre de fichiers HTML | ~100 |
