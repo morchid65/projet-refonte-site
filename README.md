@@ -98,8 +98,8 @@ WuTaoAcademy/
 ## 🔧 Exemples de scripts JavaScript
 
 ### 📦 Injection du Header
-![Header injecté](img-doc/header.png)
-![Header version 2](img-doc/header2.png)
+![Header injecté](header.png)
+![Header version 2](header2.png)
 
 ```js
 const depth2 = location.pathname.split('/').length - 2;
@@ -112,7 +112,7 @@ fetch(path2)
 ```
 
 ### 📥 Injection du Footer
-![Footer](img-doc/footer.png)
+![Footer](footer.png)
 
 ```js
 fetch('/footer.html')
@@ -123,7 +123,7 @@ fetch('/footer.html')
 ```
 
 ### 🔐 Formulaire mot de passe
-![Mot de passe](img-doc/formulaire-mot-de-passe.png)
+![Mot de passe](formulaire-mot-de-passe.png)
 
 ```js
 document.querySelector("#submit-password").addEventListener("click", function() {
@@ -139,8 +139,8 @@ document.querySelector("#submit-password").addEventListener("click", function() 
 ```
 
 ### 🖼️ Carrousel images
-![Carrousel](img-doc/image-caroussel.png)
-![Carrousel img](img-doc/carrousel-img.png)
+![Carrousel](image-caroussel.png)
+![Carrousel img](carrousel-img.png)
 
 ```js
 function showImage(index) {
