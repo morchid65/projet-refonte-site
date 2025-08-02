@@ -1,6 +1,6 @@
 🐉 Projet Wu Tao Academy – Site Web HTML/CSS/JS
 
-![Visiteurs](https://komarev.com/ghpvc/?username=TON-NOM-GITHUB&label=Vues%20du%20projet&color=blue&style=plastic)
+![Visiteurs](https://komarev.com/ghpvc/?username=TON-NOM-GITHUB&label=Vues%20du%20projet&color=blue&style=dc143c)
 
 ---
 
