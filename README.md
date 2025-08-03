@@ -236,9 +236,9 @@ document.querySelector("#submit-password").addEventListener("click", function() 
 
 🖼️ Carrousel d’images
 
-<img src="caroussel-img.png" alt="Images utilisées dans le carrousel" style="width:100%;">  
+<img src="caroussel-img.png" alt="Images utilisées dans le carrousel" style="width:50%;">  
 
-<img src="image-caroussel.png" alt="Visuel du carrousel actif" style="width:100%;">
+<img src="image-caroussel.png" alt="Visuel du carrousel actif" style="width:50%;">
 
 ```js
 function showImage(index) {
