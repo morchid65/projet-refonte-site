@@ -109,7 +109,7 @@ WuTaoAcademy/
 
 📦 Injection du Header
 
-<img src="header.png" alt="Aperçu du Header injecté" style="width:50%; display:block; margin:0 auto;">
+<img src="header.png" alt="Aperçu du Header injecté" style="width:30%; display:block; margin:0 auto;">
 
 ```js
 const depth2 = location.pathname.split('/').length - 2;
